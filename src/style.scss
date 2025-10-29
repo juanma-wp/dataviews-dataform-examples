@@ -1,5 +1,55 @@
 @import "@wordpress/dataviews/build-style/style.css";
 
+// Styles for the new root element
+#dataviews-examples-root {
+  background: white;
+
+  .dashboard-manager,
+  .dataviews-picker-manager,
+  .dataform-manager {
+    padding: 20px;
+
+    .dashboard-header,
+    .picker-header,
+    .dataform-header {
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #1e1e1e;
+      }
+
+      .dashboard-description,
+      .example-description {
+        color: #757575;
+        font-style: italic;
+        margin-top: 8px;
+      }
+    }
+
+    .dashboard-content,
+    .picker-content,
+    .dataform-content {
+      min-height: 400px;
+    }
+  }
+
+  .topic_photos {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      background-color: rgb(166, 165, 165);
+      color: white;
+      padding: 2px 4px;
+      margin: 2px;
+    }
+  }
+}
+
+// Keep old selector for backward compatibility during migration
 #add-media-from-third-party-service {
   background: white;
 
@@ -35,43 +85,6 @@
           pointer-events: none;
         }
       }
-    }
-  }
-
-  .dashboard-manager {
-    padding: 20px;
-
-    .dashboard-header {
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-
-      h2 {
-        margin: 0;
-        font-size: 1.5rem;
-        color: #1e1e1e;
-      }
-
-      .dashboard-description {
-        color: #757575;
-        font-style: italic;
-        margin-top: 8px;
-      }
-    }
-
-    .dashboard-content {
-      min-height: 400px;
-    }
-  }
-
-  .topic_photos {
-    display: flex;
-    flex-wrap: wrap;
-    span {
-      background-color: rgb(166, 165, 165);
-      color: white;
-      padding: 2px 4px;
-      margin: 2px;
     }
   }
 }
