@@ -1,10 +1,12 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '../../data/planets';
+import { data } from '../../data/planets';
 import { useState, useMemo } from '@wordpress/element';
-import fieldsFree from './fieldsFree';
+import fields from './fieldsFree';
 import actions from './actionsFree';
 
 const LAYOUT_GRID = 'grid';
+const LAYOUT_LIST = 'list';
+const LAYOUT_TABLE = 'table';
 
 /**
  * Dashboard demonstrating the groupBy functionality
@@ -15,26 +17,20 @@ const DashboardGroupedByLayout = () => {
 		type: LAYOUT_GRID,
 		search: '',
 		page: 1,
-		perPage: 100, // Show all items to demonstrate grouping
+		perPage: 20,
 		filters: [],
-		fields: [ 'description', 'satellites' ], // Fields to display in the card
+		fields: [ 'satellites' ],
 		titleField: 'title',
-		descriptionField: 'satellites', // Show satellites count as secondary info
+		descriptionField: 'description',
 		mediaField: 'image',
-		groupBy: 'type', // Group items by their type field
+		groupByField: 'type',
 		layout: {
-			groupBy: 'type', // Enable grouping in grid layout
-		},
+			badgeFields: [ 'satellites' ]
+		}
 	} );
 
 	const { data: shownData, paginationInfo } = useMemo( () => {
-		// Map the data to ensure title/description fields are at root level
-		const mappedData = dataPlanets.map( item => ({
-			...item,
-			title: item.name?.title || item.title || '',
-			description: item.name?.description || item.description || ''
-		}));
-		return filterSortAndPaginate( mappedData, view, fieldsFree );
+		return filterSortAndPaginate( data, view, fields );
 	}, [ view ] );
 
 	return (
@@ -43,13 +39,13 @@ const DashboardGroupedByLayout = () => {
 			paginationInfo={ paginationInfo }
 			data={ shownData }
 			view={ view }
-			fields={ fieldsFree }
+			fields={ fields }
 			onChangeView={ setView }
 			actions={ actions }
 			defaultLayouts={ {
-				[ LAYOUT_GRID ]: {
-					groupBy: 'type', // Enable grouping by type in grid layout
-				},
+				[ LAYOUT_GRID ]: {},
+				[ LAYOUT_LIST ]: {},
+				[ LAYOUT_TABLE ]: {}
 			} }
 		/>
 	);

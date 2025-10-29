@@ -73,11 +73,26 @@ const DashboardManager = () => {
 					<SelectControl
 						label={ __( 'Select Dashboard' ) }
 						value={ selectedDashboard }
-						options={ dashboards.map( ( d ) => ( {
-							label: d.label,
-							value: d.id,
-						} ) ) }
-						onChange={ setSelectedDashboard }
+						options={ [
+							{
+								label: dashboards[ 0 ].label,
+								value: dashboards[ 0 ].id,
+							},
+							{
+								label: '──────────',
+								value: 'separator',
+								disabled: true,
+							},
+							...dashboards.slice( 1 ).map( ( d ) => ( {
+								label: d.label,
+								value: d.id,
+							} ) ),
+						] }
+						onChange={ ( value ) => {
+							if ( value !== 'separator' ) {
+								setSelectedDashboard( value );
+							}
+						} }
 						__nextHasNoMarginBottom
 					/>
 					{ currentDashboard && (

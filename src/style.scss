@@ -3,6 +3,41 @@
 #add-media-from-third-party-service {
   background: white;
 
+  .dataviews-examples-app {
+    padding: 20px;
+
+    .app-navigation {
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+
+      .example-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+
+        &:not(.is-disabled):hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        &.is-disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        .page-icon button {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
   .dashboard-manager {
     padding: 20px;
 

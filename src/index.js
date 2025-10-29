@@ -1,10 +1,11 @@
 import domReady from '@wordpress/dom-ready';
 import { createRoot } from '@wordpress/element';
-import DashboardManager from './DashboardManager';
+import App from './App';
 
 domReady( () => {
-	const root = createRoot(
-		document.getElementById( 'add-media-from-third-party-service' )
-	);
-	root.render( <DashboardManager /> );
+	const rootElement = document.getElementById( 'dataviews-examples-root' );
+	if ( rootElement ) {
+		const root = createRoot( rootElement );
+		root.render( <App /> );
+	}
 } );
