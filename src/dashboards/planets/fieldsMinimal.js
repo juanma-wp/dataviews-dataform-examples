@@ -1,25 +1,5 @@
-import { DataViews } from '@wordpress/dataviews';
-import { data as dataPlanets } from '../data/planets';
 import { __experimentalHStack as HStack, Icon } from '@wordpress/components';
 import { SVG, Path } from '@wordpress/primitives';
-
-console.log( 'dataPlanets', dataPlanets );
-// const primaryField = 'id';
-// const mediaField = 'image';
-
-// const defaultLayouts = {
-// 	table: {
-// 		layout: {
-// 			primaryField,
-// 		},
-// 	},
-// 	grid: {
-// 		layout: {
-// 			primaryField,
-// 			mediaField,
-// 		},
-// 	},
-// };
 
 const fields = [
 	{
@@ -245,35 +225,4 @@ const fields = [
 	},
 ];
 
-const DemoDataViews2 = () => {
-	return (
-		<DataViews
-			data={ dataPlanets }
-			defaultLayouts={ {
-				table: {},
-			} }
-			fields={ fields }
-			onChangeView={ () => {} }
-			paginationInfo={ {
-				totalItems: 10,
-				totalPages: 1,
-			} }
-			view={ {
-				mediaField: 'image',
-				titleField: 'name.title',
-				descriptionField: 'name.description',
-				fields: [ 'categories' ],
-				filters: [],
-				layout: {
-					enableMoving: false,
-				},
-				page: 1,
-				perPage: 10,
-				search: '',
-				type: 'table',
-			} }
-		/>
-	);
-};
-
-export default DemoDataViews2;
+export default fields;

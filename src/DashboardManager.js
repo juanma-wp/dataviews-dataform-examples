@@ -8,9 +8,12 @@ import {
 import { __ } from '@wordpress/i18n';
 
 // Import dashboards
-import PhotosDashboard from './dashboards/PhotosDashboard';
-import DemoDataViews1 from './dashboards/DemoDataViews1';
-import DemoDataViews2 from './dashboards/DemoDataViews2';
+import PhotosDashboard from './dashboards/photos/DashboardPhotos';
+import DashboardDefault from './dashboards/planets/DashboardDefault';
+import DashboardMinimal from './dashboards/planets/DashboardMinimal';
+import DashboardFree from './dashboards/planets/DashboardFree';
+import DashboardGroupedByLayout from './dashboards/planets/DashboardGroupedByLayout';
+import DashboardInfiniteScroll from './dashboards/planets/DashboardInfiniteScroll';
 
 const dashboards = [
 	{
@@ -25,13 +28,31 @@ const dashboards = [
 		id: 'planets',
 		label: __( 'Planets Dashboard' ),
 		description: __( 'Solar system planets and celestial objects' ),
-		Component: DemoDataViews1,
+		Component: DashboardDefault,
 	},
 	{
-		id: 'demo2',
-		label: __( 'Demo Dashboard 2' ),
-		description: __( 'Additional demo dashboard' ),
-		Component: DemoDataViews2,
+		id: 'minimal',
+		label: __( 'Minimal Dashboard' ),
+		description: __( 'Minimal dashboard with restricted features' ),
+		Component: DashboardMinimal,
+	},
+	{
+		id: 'free',
+		label: __( 'Free Composition Dashboard' ),
+		description: __( 'Free composition view with planet overview' ),
+		Component: DashboardFree,
+	},
+	{
+		id: 'grouped',
+		label: __( 'Grouped By Layout' ),
+		description: __( 'Items grouped by type with badge fields' ),
+		Component: DashboardGroupedByLayout,
+	},
+	{
+		id: 'infinite',
+		label: __( 'Infinite Scroll' ),
+		description: __( 'Progressive loading with infinite scroll' ),
+		Component: DashboardInfiniteScroll,
 	},
 ];
 

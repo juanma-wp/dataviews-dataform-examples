@@ -1,26 +1,5 @@
-import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '../data/planets';
 import { __experimentalHStack as HStack, Icon } from '@wordpress/components';
 import { SVG, Path } from '@wordpress/primitives';
-import { useState, useMemo } from '@wordpress/element';
-
-console.log( 'dataPlanets', dataPlanets );
-// const primaryField = 'id';
-// const mediaField = 'image';
-
-// const defaultLayouts = {
-// 	table: {
-// 		layout: {
-// 			primaryField,
-// 		},
-// 	},
-// 	grid: {
-// 		layout: {
-// 			primaryField,
-// 			mediaField,
-// 		},
-// 	},
-// };
 
 const elementDemoDataViews1 = [
 	{
@@ -72,36 +51,11 @@ const elementDemoDataViews1 = [
 		value: 'Trans-Neptunian object',
 	},
 ];
-const actionsDemoDataViews1 = [
-	{
-		RenderModal: () => {},
-
-		icon: (
-			<SVG viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<Path
-					clipRule="evenodd"
-					d="M12 5.5A2.25 2.25 0 0 0 9.878 7h4.244A2.251 2.251 0 0 0 12 5.5ZM12 4a3.751 3.751 0 0 0-3.675 3H5v1.5h1.27l.818 8.997a2.75 2.75 0 0 0 2.739 2.501h4.347a2.75 2.75 0 0 0 2.738-2.5L17.73 8.5H19V7h-3.325A3.751 3.751 0 0 0 12 4Zm4.224 4.5H7.776l.806 8.861a1.25 1.25 0 0 0 1.245 1.137h4.347a1.25 1.25 0 0 0 1.245-1.137l.805-8.861Z"
-					fillRule="evenodd"
-				/>
-			</SVG>
-		),
-
-		id: 'delete',
-		isPrimary: true,
-		label: 'Delete item',
-		modalFocusOnMount: 'firstContentElement',
-		modalHeader: () => {},
-		supportsBulk: true,
-	},
-	{
-		callback: () => {},
-		id: 'secondary',
-		label: 'Secondary action',
-	},
-];
 
 const fields = [
 	{
+		id: 'image',
+		label: 'Image',
 		header: (
 			<HStack justify="start" spacing={ 1 }>
 				<Icon
@@ -118,67 +72,73 @@ const fields = [
 			</HStack>
 		),
 
-		id: 'image',
-		label: 'Image',
-		render: ( { item } ) => <img src={ item.image } alt={ item.title } />,
+		render: ( { item } ) => (
+			<img src={ item.image } alt={ item.name.title } />
+		),
 		type: 'media',
 	},
 	{
-		enableGlobalSearch: true,
-		enableHiding: true,
-		filterBy: {
-			operators: [ 'contains', 'notContains', 'startsWith' ],
-		},
 		id: 'name.title',
+		label: 'Title',
+		enableGlobalSearch: true,
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		isValid: {
 			required: true,
 		},
-		label: 'Title',
 		type: 'text',
 	},
 	{
 		id: 'date',
 		label: 'Date',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		type: 'date',
 	},
 	{
 		id: 'datetime',
 		label: 'Datetime',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		type: 'datetime',
 	},
 	{
+		id: 'type',
+		label: 'Type',
 		elements: elementDemoDataViews1,
 		enableHiding: false,
 		filterBy: {
 			operators: [ 'is', 'isNot' ],
 		},
-		id: 'type',
-		label: 'Type',
+		type: 'array',
 	},
-	/*
-				{
-					elements: [
-						{
-							label: 'True',
-							value: true,
-						},
-						{
-							label: 'False',
-							value: false,
-						},
-					],
-					id: 'isPlanet',
-					label: 'Is Planet',
-					setValue: () => {},
-					type: 'boolean',
-				},
-				{
-					enableSorting: true,
-					id: 'satellites',
-					label: 'Satellites',
-					type: 'integer',
-				},
-                */
+
+	{
+		id: 'isPlanet',
+		label: 'Is Planet',
+		elements: [
+			{
+				label: 'True',
+				value: true,
+			},
+			{
+				label: 'False',
+				value: false,
+			},
+		],
+		setValue: () => {},
+		type: 'boolean',
+	},
+	{
+		id: 'satellites',
+		enableSorting: true,
+		label: 'Satellites',
+		type: 'integer',
+	},
+
 	{
 		enableGlobalSearch: true,
 		enableSorting: false,
@@ -189,14 +149,16 @@ const fields = [
 		label: 'Description',
 		type: 'text',
 	},
-	/*
-				{
-					id: 'email',
-					label: 'Email',
-					type: 'email',
-				},
-                */
+
 	{
+		id: 'email',
+		label: 'Email',
+		type: 'email',
+	},
+
+	{
+		id: 'categories',
+		label: 'Categories',
 		elements: [
 			{
 				label: 'Solar system',
@@ -256,64 +218,8 @@ const fields = [
 				<span>Categories</span>
 			</HStack>
 		),
-
-		id: 'categories',
-		label: 'Categories',
 		type: 'array',
 	},
 ];
 
-const DemoDataViews1 = () => {
-	// "view" and "setView" definition
-	const [ view, setView ] = useState( {
-		fields: [ 'categories' ],
-		filters: [],
-		layout: {
-			styles: {
-				satellites: {
-					align: 'end',
-				},
-			},
-		},
-		descriptionField: 'name.description',
-		titleField: 'name.title',
-		mediaField: 'image',
-		page: 1,
-		perPage: 5,
-		search: '',
-		type: 'table',
-	} );
-
-	// "processedData" and "paginationInfo" definition
-	const { data: processedData, paginationInfo } = useMemo( () => {
-		return filterSortAndPaginate( dataPlanets, view, fields );
-	}, [ view ] );
-
-	console.log( 'view', view );
-	return (
-		<DataViews
-			actions={ actionsDemoDataViews1 }
-			config={ {
-				perPageSizes: [ 10, 25, 50, 100 ],
-			} }
-			defaultLayouts={ {
-				grid: {},
-				list: {},
-				table: {},
-			} }
-			fields={ fields }
-			/*
-			getItemId={ () => {} }
-			isItemClickable={ () => {} }
-            */
-			paginationInfo={ paginationInfo }
-			data={ processedData }
-			/* renderItemLink={ () => {} } */
-			view={ view }
-			onChangeView={ setView }
-			empty={ <p>{ view.search ? 'No planets found' : 'No planets' }</p> }
-		/>
-	);
-};
-
-export default DemoDataViews1;
+export default fields;
