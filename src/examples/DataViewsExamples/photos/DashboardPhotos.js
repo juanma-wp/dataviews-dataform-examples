@@ -2,10 +2,10 @@ import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
 import { useState, useMemo } from '@wordpress/element';
 import { Spinner, withNotices } from '@wordpress/components';
 
-import '../../style.scss';
+import '../../../style.scss';
 
 // source "data" definition
-import { dataPhotos } from '../../data/photos';
+import { dataPhotos } from './dataPhotos';
 import fields from './fieldsPhotos';
 import createActions from './actionsPhotos';
 

@@ -5,7 +5,7 @@ import {
 import { image, category, postAuthor } from '@wordpress/icons';
 import { __ } from '@wordpress/i18n';
 import { getTopicsElementsFormat } from './utils';
-import { dataPhotos } from '../../data/photos';
+import { dataPhotos } from './dataPhotos';
 
 // "fields" definition
 const fields = [

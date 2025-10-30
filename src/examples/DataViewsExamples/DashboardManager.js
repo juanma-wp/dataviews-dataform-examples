@@ -8,12 +8,12 @@ import {
 import { __ } from '@wordpress/i18n';
 
 // Import dashboards
-import PhotosDashboard from './dashboards/photos/DashboardPhotos';
-import DashboardDefault from './dashboards/planets/DashboardDefault';
-import DashboardMinimal from './dashboards/planets/DashboardMinimal';
-import DashboardFree from './dashboards/planets/DashboardFree';
-import DashboardGroupedByLayout from './dashboards/planets/DashboardGroupedByLayout';
-import DashboardInfiniteScroll from './dashboards/planets/DashboardInfiniteScroll';
+import PhotosDashboard from './photos/DashboardPhotos';
+import DashboardDefault from './planets/DashboardDefault';
+import DashboardMinimal from './planets/DashboardMinimal';
+import DashboardFree from './planets/DashboardFree';
+import DashboardGroupedByType from './planets/DashboardGroupedByType';
+import DashboardInfiniteScroll from './planets/DashboardInfiniteScroll';
 
 const dashboards = [
 	{
@@ -44,9 +44,9 @@ const dashboards = [
 	},
 	{
 		id: 'grouped',
-		label: __( 'Grouped By Layout' ),
+		label: __( 'Grouped By Type' ),
 		description: __( 'Items grouped by type with badge fields' ),
-		Component: DashboardGroupedByLayout,
+		Component: DashboardGroupedByType,
 	},
 	{
 		id: 'infinite',

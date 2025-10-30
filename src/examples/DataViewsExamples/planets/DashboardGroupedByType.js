@@ -1,7 +1,7 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data } from '../../data/planets';
+import { data } from '../../../data/dataPlanets';
 import { useState, useMemo } from '@wordpress/element';
-import fields from './fieldsFree';
+import fields from '../../../fields/fieldsFree';
 import actions from './actionsFree';
 
 const LAYOUT_GRID = 'grid';
@@ -12,7 +12,7 @@ const LAYOUT_TABLE = 'table';
  * Dashboard demonstrating the groupBy functionality
  * This allows items to be grouped by a specific field value (type)
  */
-const DashboardGroupedByLayout = () => {
+const DashboardGroupedByType = () => {
 	const [ view, setView ] = useState( {
 		type: LAYOUT_GRID,
 		search: '',
@@ -25,8 +25,8 @@ const DashboardGroupedByLayout = () => {
 		mediaField: 'image',
 		groupByField: 'type',
 		layout: {
-			badgeFields: [ 'satellites' ]
-		}
+			badgeFields: [ 'satellites' ],
+		},
 	} );
 
 	const { data: shownData, paginationInfo } = useMemo( () => {
@@ -45,10 +45,10 @@ const DashboardGroupedByLayout = () => {
 			defaultLayouts={ {
 				[ LAYOUT_GRID ]: {},
 				[ LAYOUT_LIST ]: {},
-				[ LAYOUT_TABLE ]: {}
+				[ LAYOUT_TABLE ]: {},
 			} }
 		/>
 	);
 };
 
-export default DashboardGroupedByLayout;
+export default DashboardGroupedByType;

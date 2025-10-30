@@ -1,9 +1,9 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '../../data/planets';
+import { data as dataPlanets } from '../../../data/dataPlanets';
 import { useState, useMemo, useCallback, useEffect } from '@wordpress/element';
 import { __experimentalText as Text } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import fields from './fieldsDefault';
+import fields from '../../../fields/fieldsPlanets';
 import actions from './actionsFree';
 
 const LAYOUT_GRID = 'grid';
@@ -22,19 +22,19 @@ const DashboardInfiniteScroll = () => {
 		perPage: 6, // Start with a small number to demonstrate pagination
 		filters: [],
 		fields: [ 'satellites' ],
-		titleField: 'title',
-		descriptionField: 'description',
+		titleField: 'name.title',
+		descriptionField: 'name.description',
 		mediaField: 'image',
 		infiniteScrollEnabled: true, // Enable infinite scroll by default
 	} );
 
 	const { data: shownData } = useMemo( () => {
 		// Map the data to ensure title/description fields are at root level
-		const mappedData = dataPlanets.map( item => ({
+		const mappedData = dataPlanets.map( ( item ) => ( {
 			...item,
 			title: item.name?.title || item.title || '',
-			description: item.name?.description || item.description || ''
-		}));
+			description: item.name?.description || item.description || '',
+		} ) );
 		return filterSortAndPaginate( mappedData, view, fields );
 	}, [ view ] );
 
@@ -84,7 +84,7 @@ const DashboardInfiniteScroll = () => {
 		view.perPage,
 		currentPage,
 		view.infiniteScrollEnabled,
-		shownData
+		shownData,
 	] );
 
 	const paginationInfo = {

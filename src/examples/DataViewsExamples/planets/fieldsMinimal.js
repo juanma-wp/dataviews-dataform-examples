@@ -1,11 +1,13 @@
 import { __experimentalHStack as HStack, Icon } from '@wordpress/components';
 import { SVG, Path } from '@wordpress/primitives';
 
-// Simplified fields for free composition dashboard
 const fields = [
 	{
 		id: 'image',
 		label: 'Image',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		header: (
 			<HStack justify="start" spacing={ 1 }>
 				<Icon
@@ -22,27 +24,140 @@ const fields = [
 			</HStack>
 		),
 		render: ( { item } ) => (
-			<img src={ item.image } alt={ item.name?.title || item.title } />
+			<img src={ item.image } alt={ item.name.title } />
 		),
 		type: 'media',
 	},
 	{
-		id: 'title',
+		id: 'name.title',
 		label: 'Title',
-		getValue: ( { item } ) => item.name?.title || item.title || '',
 		enableGlobalSearch: true,
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		isValid: {
+			required: true,
+		},
 		type: 'text',
 	},
 	{
-		id: 'description',
+		id: 'date',
+		label: 'Date',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		type: 'date',
+	},
+	{
+		id: 'datetime',
+		label: 'Datetime',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		type: 'datetime',
+	},
+	{
+		id: 'type',
+		label: 'Type',
+		elements: [
+			{
+				label: 'Satellite',
+				value: 'Satellite',
+			},
+			{
+				label: 'Ice giant',
+				value: 'Ice giant',
+			},
+			{
+				label: 'Terrestrial',
+				value: 'Terrestrial',
+			},
+			{
+				label: 'Gas giant',
+				value: 'Gas giant',
+			},
+			{
+				label: 'Dwarf planet',
+				value: 'Dwarf planet',
+			},
+			{
+				label: 'Asteroid',
+				value: 'Asteroid',
+			},
+			{
+				label: 'Comet',
+				value: 'Comet',
+			},
+			{
+				label: 'Kuiper belt object',
+				value: 'Kuiper belt object',
+			},
+			{
+				label: 'Protoplanet',
+				value: 'Protoplanet',
+			},
+			{
+				label: 'Planetesimal',
+				value: 'Planetesimal',
+			},
+			{
+				label: 'Minor planet',
+				value: 'Minor planet',
+			},
+			{
+				label: 'Trans-Neptunian object',
+				value: 'Trans-Neptunian object',
+			},
+		],
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+	},
+	{
+		id: 'isPlanet',
+		label: 'Is Planet',
+		elements: [
+			{
+				label: 'True',
+				value: true,
+			},
+			{
+				label: 'False',
+				value: false,
+			},
+		],
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		setValue: () => {},
+		type: 'boolean',
+	},
+	{
+		id: 'satellites',
+		label: 'Satellites',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		type: 'integer',
+	},
+	{
+		id: 'name.description',
 		label: 'Description',
-		getValue: ( { item } ) => item.name?.description || item.description || '',
 		enableGlobalSearch: true,
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		type: 'text',
 	},
 	{
-		id: 'categories',
-		label: 'Categories',
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
+		id: 'email',
+		label: 'Email',
+		type: 'email',
+	},
+	{
 		elements: [
 			{
 				label: 'Solar system',
@@ -82,6 +197,9 @@ const fields = [
 			},
 		],
 		enableGlobalSearch: true,
+		enableHiding: false,
+		enableSorting: false,
+		filterBy: false,
 		header: (
 			<HStack justify="start" spacing={ 1 }>
 				<Icon
@@ -101,40 +219,9 @@ const fields = [
 				<span>Categories</span>
 			</HStack>
 		),
+		id: 'categories',
+		label: 'Categories',
 		type: 'array',
-		filterBy: {
-			operators: [ 'isAny', 'isNone' ],
-		},
-	},
-	{
-		id: 'type',
-		label: 'Type',
-		elements: [
-			{
-				label: 'Satellite',
-				value: 'Satellite',
-			},
-			{
-				label: 'Ice giant',
-				value: 'Ice giant',
-			},
-			{
-				label: 'Terrestrial',
-				value: 'Terrestrial',
-			},
-			{
-				label: 'Gas giant',
-				value: 'Gas giant',
-			},
-			{
-				label: 'Dwarf planet',
-				value: 'Dwarf planet',
-			},
-		],
-		type: 'text',
-		filterBy: {
-			operators: [ 'is', 'isNot' ],
-		},
 	},
 ];
 
