@@ -1,6 +1,6 @@
 import { DataViews } from '@wordpress/dataviews';
-import { data as dataPlanets } from '@/data/dataPlanets';
-import fields from '@/fields/fieldsPlanetsMinimal';
+import { data as dataPlanets } from '../data/dataPlanets';
+import fields from '../fields/fieldsPlanetsMinimal';
 
 const DashboardMinimal = () => {
 	return (

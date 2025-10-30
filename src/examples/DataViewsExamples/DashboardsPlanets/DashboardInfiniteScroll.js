@@ -1,9 +1,9 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '@/data/dataPlanets';
+import { data as dataPlanets } from '../data/dataPlanets';
 import { useState, useMemo, useCallback, useEffect } from '@wordpress/element';
 import { __experimentalText as Text } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import fields from '@/fields/fieldsPlanets';
+import fields from '../fields/fieldsPlanets';
 import actions from './actionsFree';
 
 const LAYOUT_GRID = 'grid';

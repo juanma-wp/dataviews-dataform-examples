@@ -1,8 +1,8 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '@/data/dataPlanets';
+import { data as dataPlanets } from '../data/dataPlanets';
 import { SVG, Path } from '@wordpress/primitives';
 import { useState, useMemo } from '@wordpress/element';
-import fields from '@/fields/fieldsPlanets';
+import fields from '../fields/fieldsPlanets';
 
 const actions = [
 	{

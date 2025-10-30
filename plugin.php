@@ -43,16 +43,6 @@ function dataviews_dataform_examples_admin_menu() {
 		'dataviews_dataform_examples_main_page'
 	);
 
-	// Add DataViewsPicker submenu
-	add_submenu_page(
-		'dataviews-dataform-examples',
-		__( 'DataViewsPicker', 'dataviews-dataform-plugin' ),
-		__( 'DataViewsPicker', 'dataviews-dataform-plugin' ),
-		'manage_options',
-		'dataviews-picker',
-		'dataviews_dataform_examples_picker_page'
-	);
-
 	// Add DataForm submenu
 	add_submenu_page(
 		'dataviews-dataform-examples',
@@ -71,16 +61,6 @@ function dataviews_dataform_examples_main_page() {
 	printf(
 		'<h1>%s</h1><div id="dataviews-examples-root" data-page="dataviews"></div>',
 		esc_html__( 'DataViews Examples', 'dataviews-dataform-plugin' )
-	);
-}
-
-/**
- * Render the DataViewsPicker page
- */
-function dataviews_dataform_examples_picker_page() {
-	printf(
-		'<h1>%s</h1><div id="dataviews-examples-root" data-page="dataviews-picker"></div>',
-		esc_html__( 'DataViewsPicker Examples', 'dataviews-dataform-plugin' )
 	);
 }
 
@@ -105,7 +85,6 @@ function dataviews_dataform_examples_admin_enqueue_assets( $hook_suffix ) {
 	// Load on all our plugin pages
 	$allowed_pages = array(
 		'toplevel_page_dataviews-dataform-examples',
-		'dataviews-dataform-examples_page_dataviews-picker',
 		'dataviews-dataform-examples_page_dataform-examples',
 	);
 
