@@ -24131,9 +24131,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data */ "./src/examples/DataFormExamples/data.js");
+/* harmony import */ var _fields__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fields */ "./src/examples/DataFormExamples/fields.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
 /**
  * WordPress dependencies
  */
@@ -24141,115 +24143,110 @@ __webpack_require__.r(__webpack_exports__);
 // Note: @wordpress/dataviews is bundled in our build, not loaded as external
 
 
-console.log('DataForm', _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"]);
+// Import data and fields from external files
+
+
+
 /**
  * Basic DataForm Example
- * Demonstrates simple form with basic field types
+ * Demonstrates form with card layout and customer data from external files
  */
+
 const BasicFormExample = () => {
-  const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    title: 'Hello, World!',
-    order: 2,
-    author: 1,
-    status: 'draft',
-    reviewer: 'john',
-    email: 'hello@wordpress.org',
-    date: '2021-01-01T12:00:00',
-    sticky: false,
-    can_comment: false,
-    description: 'This is a sample description.'
-  });
-  const fields = [{
-    id: 'title',
-    label: 'Title',
-    type: 'text',
-    placeholder: 'Enter title'
-  }, {
-    id: 'order',
-    label: 'Order',
-    type: 'integer'
-  }, {
-    id: 'author',
-    label: 'Author',
-    type: 'integer',
-    elements: [{
-      value: 1,
-      label: 'Jane'
-    }, {
-      value: 2,
-      label: 'John'
-    }, {
-      value: 3,
-      label: 'Alice'
-    }, {
-      value: 4,
-      label: 'Bob'
-    }]
-  }, {
-    id: 'reviewer',
-    label: 'Reviewer',
-    type: 'text',
-    Edit: 'radio',
-    elements: [{
-      value: 'jane',
-      label: 'Jane'
-    }, {
-      value: 'john',
-      label: 'John'
-    }, {
-      value: 'alice',
-      label: 'Alice'
-    }, {
-      value: 'bob',
-      label: 'Bob'
-    }]
-  }, {
-    id: 'status',
-    label: 'Status',
-    type: 'text',
-    Edit: 'toggleGroup',
-    elements: [{
-      value: 'draft',
-      label: 'Draft'
-    }, {
-      value: 'published',
-      label: 'Published'
-    }, {
-      value: 'private',
-      label: 'Private'
-    }]
-  }, {
-    id: 'email',
-    label: 'Email',
-    type: 'email'
-  }, {
-    id: 'date',
-    label: 'Date',
-    type: 'datetime'
-  }, {
-    id: 'sticky',
-    label: 'Sticky',
-    type: 'boolean'
-  }, {
-    id: 'can_comment',
-    label: 'Allow comments',
-    type: 'boolean',
-    Edit: 'checkbox'
-  }, {
-    id: 'description',
-    label: 'Description',
-    type: 'text',
-    Edit: 'textarea'
-  }];
+  const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(_data__WEBPACK_IMPORTED_MODULE_1__.data);
   const form = {
     layout: {
-      type: 'regular'
+      type: 'card',
+      withHeader: true
     },
-    fields: ['title', 'order', 'author', 'status', 'reviewer', 'email', 'date', 'sticky', 'can_comment', 'description']
+    fields: [{
+      id: 'customerCard',
+      label: 'Customer',
+      description: 'Enter your contact details, plan type, and addresses to complete your customer information.',
+      layout: {
+        type: 'card',
+        isCollapsible: true,
+        summary: 'plan-summary'
+      }
+      // children: [
+      // 	{
+      // 		id: 'customerContact',
+      // 		label: 'Contact',
+      // 		layout: {
+      // 			type: 'panel',
+      // 			labelPosition: 'top',
+      // 		},
+      // 		children: [
+      // 			{
+      // 				id: 'name',
+      // 				layout: {
+      // 					type: 'regular',
+      // 					labelPosition: 'top',
+      // 				},
+      // 			},
+      // 			{
+      // 				id: 'phone',
+      // 				layout: {
+      // 					type: 'regular',
+      // 					labelPosition: 'top',
+      // 				},
+      // 			},
+      // 			{
+      // 				id: 'email',
+      // 				layout: {
+      // 					type: 'regular',
+      // 					labelPosition: 'top',
+      // 				},
+      // 			},
+      // 		],
+      // 	},
+      // 	{
+      // 		id: 'plan',
+      // 		layout: {
+      // 			type: 'panel',
+      // 			labelPosition: 'top',
+      // 		},
+      // 	},
+      // 	{
+      // 		id: 'shippingAddress',
+      // 		layout: {
+      // 			type: 'panel',
+      // 			labelPosition: 'top',
+      // 		},
+      // 	},
+      // 	{
+      // 		id: 'billingAddress',
+      // 		layout: {
+      // 			type: 'panel',
+      // 			labelPosition: 'top',
+      // 		},
+      // 	},
+      // 	'displayPayments',
+      // ],
+    }, {
+      id: 'payments',
+      layout: {
+        type: 'card',
+        withHeader: false
+      }
+    }, {
+      id: 'taxConfiguration',
+      label: 'Taxes',
+      layout: {
+        type: 'card',
+        isCollapsible: true,
+        isOpened: false,
+        summary: [{
+          id: 'dueDate',
+          visibility: 'always'
+        }]
+      },
+      children: ['vat', 'commission']
+    }]
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_4__["default"], {
     data: data,
-    fields: fields,
+    fields: _fields__WEBPACK_IMPORTED_MODULE_2__.fields,
     form: form,
     onChange: edits => setData(prev => ({
       ...prev,
@@ -26117,6 +26114,139 @@ const ValidationExample = () => {
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ValidationExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/data.js":
+/*!***********************************************!*\
+  !*** ./src/examples/DataFormExamples/data.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   data: () => (/* binding */ data)
+/* harmony export */ });
+const data = {
+  averageOrderValue: 715,
+  billingAddress: 'Danyka Romaguera, West Myrtiehaven, 80240-4282, BI',
+  commission: 5,
+  displayPayments: true,
+  dueDate: 'March 1st, 2028',
+  email: 'aromaguera@example.org',
+  hasVat: true,
+  name: 'Danyka Romaguera',
+  phone: '1-828-352-1250',
+  plan: 'Business',
+  shippingAddress: 'N/A',
+  totalOrders: 2,
+  totalRevenue: 1430,
+  vat: 10
+};
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/fields.js":
+/*!*************************************************!*\
+  !*** ./src/examples/DataFormExamples/fields.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   fields: () => (/* binding */ fields)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const fields = [{
+  id: 'name',
+  label: 'Customer Name',
+  type: 'text'
+}, {
+  id: 'phone',
+  label: 'Phone',
+  type: 'text'
+}, {
+  id: 'email',
+  label: 'Email',
+  type: 'email'
+}, {
+  Edit: 'toggleGroup',
+  elements: [{
+    label: 'Basic',
+    value: 'basic'
+  }, {
+    label: 'Business',
+    value: 'business'
+  }, {
+    label: 'VIP',
+    value: 'vip'
+  }],
+  id: 'plan',
+  label: 'Plan',
+  type: 'text'
+}, {
+  id: 'shippingAddress',
+  label: 'Shipping Address',
+  type: 'text'
+}, {
+  id: 'billingAddress',
+  label: 'Billing Address',
+  type: 'text'
+}, {
+  id: 'displayPayments',
+  label: 'Display Payments?',
+  type: 'boolean'
+}, {
+  id: 'payments',
+  isVisible: item => item.displayPayments,
+  label: 'Payments',
+  readOnly: true,
+  render: ({
+    item
+  }) => {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+      children: ["The customer has made a total of ", item.totalOrders, ' ', "orders, amounting to ", item.totalRevenue, " dollars. The average order value is ", item.averageOrderValue, ' ', "dollars."]
+    });
+  },
+  type: 'text'
+}, {
+  id: 'vat',
+  label: 'VAT',
+  type: 'integer'
+}, {
+  id: 'commission',
+  label: 'Commission',
+  type: 'integer'
+}, {
+  id: 'dueDate',
+  label: 'Due Date',
+  render: ({
+    item
+  }) => {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Badge, {
+      children: ["Due on: ", item.dueDate]
+    });
+  },
+  type: 'text'
+}, {
+  id: 'plan-summary',
+  readOnly: true,
+  render: ({
+    item
+  }) => {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Badge, {
+      children: item.plan
+    });
+  },
+  type: 'text'
+}];
 
 /***/ }),
 
