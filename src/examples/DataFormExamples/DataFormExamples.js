@@ -4,48 +4,68 @@ import {
 	__experimentalHStack as HStack,
 	SelectControl,
 	__experimentalText as Text,
-	Card,
-	CardBody,
 } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
-// Placeholder for DataForm examples
+// Import all example components
+import BasicFormExample from './BasicFormExample';
+import PanelLayoutExample from './PanelLayoutExample';
+import CardLayoutExample from './CardLayoutExample';
+import RowLayoutExample from './RowLayoutExample';
+import ValidationExample from './ValidationExample';
+import ConditionalFieldsExample from './ConditionalFieldsExample';
+import NestedDataExample from './NestedDataExample';
+import MixedLayoutExample from './MixedLayoutExample';
+
+// DataForm examples configuration
 const dataFormExamples = [
 	{
 		id: 'basic-form',
-		label: __( 'Basic DataForm' ),
-		description: __( 'Simple form with basic field types' ),
-		Component: () => (
-			<Card>
-				<CardBody>
-					<Text>{ __( 'Basic DataForm example will be implemented here.' ) }</Text>
-				</CardBody>
-			</Card>
-		),
+		label: __( 'Basic Form' ),
+		description: __( 'Simple form with basic field types and regular layout' ),
+		Component: BasicFormExample,
+	},
+	{
+		id: 'panel-layout',
+		label: __( 'Panel Layout' ),
+		description: __( 'Form with panel layout and grouped fields' ),
+		Component: PanelLayoutExample,
+	},
+	{
+		id: 'card-layout',
+		label: __( 'Card Layout' ),
+		description: __( 'Form with card layout, collapsible sections, and nested structure' ),
+		Component: CardLayoutExample,
+	},
+	{
+		id: 'row-layout',
+		label: __( 'Row Layout' ),
+		description: __( 'Form with row layout for horizontal field arrangement' ),
+		Component: RowLayoutExample,
+	},
+	{
+		id: 'mixed-layout',
+		label: __( 'Mixed Layouts' ),
+		description: __( 'Form combining multiple layout types (card, panel, row)' ),
+		Component: MixedLayoutExample,
 	},
 	{
 		id: 'validation-form',
-		label: __( 'Form with Validation' ),
-		description: __( 'DataForm with field validation rules' ),
-		Component: () => (
-			<Card>
-				<CardBody>
-					<Text>{ __( 'DataForm with validation example coming soon.' ) }</Text>
-				</CardBody>
-			</Card>
-		),
+		label: __( 'Form Validation' ),
+		description: __( 'Form with various validation rules (required, custom, async)' ),
+		Component: ValidationExample,
 	},
 	{
-		id: 'dynamic-form',
-		label: __( 'Dynamic DataForm' ),
-		description: __( 'DataForm with dynamic fields and conditional logic' ),
-		Component: () => (
-			<Card>
-				<CardBody>
-					<Text>{ __( 'Dynamic DataForm example coming soon.' ) }</Text>
-				</CardBody>
-			</Card>
-		),
+		id: 'conditional-fields',
+		label: __( 'Conditional Fields' ),
+		description: __( 'Form with fields that show/hide based on other field values' ),
+		Component: ConditionalFieldsExample,
+	},
+	{
+		id: 'nested-data',
+		label: __( 'Nested Data' ),
+		description: __( 'Form handling nested data structures and derived calculations' ),
+		Component: NestedDataExample,
 	},
 ];
 
