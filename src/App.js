@@ -1,6 +1,5 @@
 // Import page components
 import DashboardManager from '@/examples/DataViewsExamples/DashboardManager';
-import DataViewsPicker from '@/examples/DataViewsPickerExamples/DataViewsPicker';
 import DataFormExamples from '@/examples/DataFormExamples/DataFormExamples';
 
 const App = () => {
@@ -12,8 +11,6 @@ const App = () => {
 	switch ( currentPage ) {
 		case 'dataviews':
 			return <DashboardManager />;
-		case 'dataviews-picker':
-			return <DataViewsPicker />;
 		case 'dataform':
 			return <DataFormExamples />;
 		default:

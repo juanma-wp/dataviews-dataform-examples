@@ -8,12 +8,13 @@ import {
 import { __ } from '@wordpress/i18n';
 
 // Import dashboards
-import PhotosDashboard from './photos/DashboardPhotos';
-import DashboardDefault from './planets/DashboardDefault';
-import DashboardMinimal from './planets/DashboardMinimal';
-import DashboardFree from './planets/DashboardFree';
-import DashboardGroupedByType from './planets/DashboardGroupedByType';
-import DashboardInfiniteScroll from './planets/DashboardInfiniteScroll';
+import PhotosDashboard from './DashboardPhotos';
+import DashboardDefault from './DashboardsPlanets/DashboardDefault';
+import DashboardMinimal from './DashboardsPlanets/DashboardMinimal';
+import DashboardFree from './DashboardsPlanets/DashboardFree';
+import DashboardGroupedByType from './DashboardsPlanets/DashboardGroupedByType';
+import DashboardInfiniteScroll from './DashboardsPlanets/DashboardInfiniteScroll';
+import DataViewsPickerExample from './DashboardsPlanets/DataViewsPickerExample';
 
 const dashboards = [
 	{
@@ -53,6 +54,12 @@ const dashboards = [
 		label: __( 'Infinite Scroll' ),
 		description: __( 'Progressive loading with infinite scroll' ),
 		Component: DashboardInfiniteScroll,
+	},
+	{
+		id: 'dataviews-picker',
+		label: __( 'DataViews Picker' ),
+		description: __( 'DataViews Picker component example with planets data' ),
+		Component: DataViewsPickerExample,
 	},
 ];
 

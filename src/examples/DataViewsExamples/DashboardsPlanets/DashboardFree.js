@@ -1,5 +1,5 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data as dataPlanets } from '@/data/dataPlanets';
+import { data as dataPlanets } from '../data/dataPlanets';
 import {
 	useState,
 	useMemo,
@@ -16,7 +16,7 @@ import {
 	CardBody,
 } from '@wordpress/components';
 import { __, _n } from '@wordpress/i18n';
-import fields from '@/fields/fieldsPlanetsFree';
+import fields from '../fields/fieldsPlanetsFree';
 import actions from './actionsFree';
 
 /**
