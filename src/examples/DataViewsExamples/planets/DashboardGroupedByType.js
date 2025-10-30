@@ -1,7 +1,7 @@
 import { DataViews, filterSortAndPaginate } from '@wordpress/dataviews';
-import { data } from '../../../data/dataPlanets';
+import { data } from '@/data/dataPlanets';
 import { useState, useMemo } from '@wordpress/element';
-import fields from '../../../fields/fieldsFree';
+import fields from '@/fields/fieldsFree';
 import actions from './actionsFree';
 
 const LAYOUT_GRID = 'grid';

@@ -1,7 +1,7 @@
 // Import page components
-import DashboardManager from './examples/DataViewsExamples/DashboardManager';
-import DataViewsPicker from './examples/DataViewsPickerExamples/DataViewsPicker';
-import DataFormExamples from './examples/DataFormExamples/DataFormExamples';
+import DashboardManager from '@/examples/DataViewsExamples/DashboardManager';
+import DataViewsPicker from '@/examples/DataViewsPickerExamples/DataViewsPicker';
+import DataFormExamples from '@/examples/DataFormExamples/DataFormExamples';
 
 const App = () => {
 	// Get the root element to determine which page we're on

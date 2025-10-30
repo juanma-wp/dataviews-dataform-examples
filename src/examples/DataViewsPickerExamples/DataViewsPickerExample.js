@@ -2,8 +2,8 @@ import { useState, useMemo } from '@wordpress/element';
 import { DataViewsPicker, filterSortAndPaginate } from '@wordpress/dataviews';
 
 // Import centralized data and fields
-import { data as allPlanetsData } from '../../data/dataPlanets';
-import fieldsFromPlanets from '../../fields/fieldsPlanets';
+import { data as allPlanetsData } from '@/data/dataPlanets';
+import fieldsFromPlanets from '@/fields/fieldsPlanets';
 
 // Use a subset of data for the picker example (first 10 items)
 const data = allPlanetsData.slice(0, 10);
