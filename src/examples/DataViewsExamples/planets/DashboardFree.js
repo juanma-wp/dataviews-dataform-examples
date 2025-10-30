@@ -16,7 +16,7 @@ import {
 	CardBody,
 } from '@wordpress/components';
 import { __, _n } from '@wordpress/i18n';
-import fields from '@/fields/fieldsFree';
+import fields from '@/fields/fieldsPlanetsFree';
 import actions from './actionsFree';
 
 /**

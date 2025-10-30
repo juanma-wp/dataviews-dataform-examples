@@ -22134,726 +22134,10 @@ const App = () => {
 
 /***/ }),
 
-/***/ "./src/data/dataPlanets.js":
-/*!*********************************!*\
-  !*** ./src/data/dataPlanets.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   data: () => (/* binding */ data)
-/* harmony export */ });
-const data = [{
-  id: 1,
-  name: {
-    title: 'Moon',
-    description: "The Moon is Earth's only natural satellite, orbiting at an average distance of 384,400 kilometers with a synchronous rotation that leads to fixed lunar phases as seen from Earth. Its cratered surface and subtle glow define night skies, inspiring exploration missions and influencing tides and biological rhythms worldwide."
-  },
-  image: 'https://live.staticflickr.com/7398/9458193857_e1256123e3_z.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Earth', 'Moon'],
-  satellites: 0,
-  date: '2021-01-01',
-  datetime: '2021-01-01T14:30:00Z',
-  email: 'moon@example.com'
-}, {
-  id: 2,
-  name: {
-    title: 'Io',
-    description: 'Moon of Jupiter'
-  },
-  image: 'https://live.staticflickr.com/5482/9460973502_07e8ab81fe_z.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2019-01-02',
-  datetime: '2019-01-02T09:15:00Z',
-  email: 'io@example.com'
-}, {
-  id: 3,
-  name: {
-    title: 'Europa',
-    description: 'Moon of Jupiter'
-  },
-  image: 'https://live.staticflickr.com/65535/31499273012_baf5f38cc1_z.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2025-01-03',
-  datetime: '2025-01-03T16:45:30Z',
-  email: 'europa@example.com'
-}, {
-  id: 4,
-  name: {
-    title: 'Ganymede',
-    description: 'Largest moon of Jupiter'
-  },
-  image: 'https://live.staticflickr.com/7816/33436473218_a836235935_k.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2022-01-04',
-  datetime: '2022-01-04T12:30:00Z',
-  email: 'ganymede@example.com'
-}, {
-  id: 5,
-  name: {
-    title: 'Callisto',
-    description: 'Outermost Galilean moon of Jupiter'
-  },
-  image: 'https://live.staticflickr.com/804/27604150528_4512448a9c_c.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2021-01-05',
-  datetime: '2021-01-05T14:15:30Z',
-  email: 'callisto@example.com'
-}, {
-  id: 6,
-  name: {
-    title: 'Amalthea',
-    description: 'Small irregular moon of Jupiter'
-  },
-  image: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Amalthea.gif',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2020-01-06',
-  datetime: '2020-01-06T10:45:15Z',
-  email: 'amalthea@example.com'
-}, {
-  id: 7,
-  name: {
-    title: 'Himalia',
-    description: 'Largest irregular moon of Jupiter'
-  },
-  image: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Cassini-Huygens_Image_of_Himalia.png',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
-  satellites: 0,
-  date: '2019-01-07',
-  datetime: '2019-01-07T16:20:45Z',
-  email: 'himalia@example.com'
-}, {
-  id: 8,
-  name: {
-    title: 'Neptune',
-    description: 'Ice giant in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/65535/29523683990_000ff4720c_z.jpg',
-  type: 'Ice giant',
-  isPlanet: true,
-  categories: ['Ice giant', 'Planet', 'Solar system'],
-  satellites: 16,
-  date: '2020-01-01',
-  datetime: '2020-01-01T11:22:15Z',
-  email: 'neptune@example.com'
-}, {
-  id: 9,
-  name: {
-    title: 'Triton',
-    description: 'Largest moon of Neptune'
-  },
-  image: 'https://live.staticflickr.com/65535/50728384241_02c5126c30_h.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
-  satellites: 0,
-  date: '2021-02-01',
-  datetime: '2021-02-01T11:30:00Z',
-  email: 'triton@example.com'
-}, {
-  id: 10,
-  name: {
-    title: 'Nereid',
-    description: 'Irregular moon of Neptune'
-  },
-  image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Nereid-Voyager2.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
-  satellites: 0,
-  date: '2020-02-02',
-  datetime: '2020-02-02T15:45:30Z',
-  email: 'nereid@example.com'
-}, {
-  id: 11,
-  name: {
-    title: 'Proteus',
-    description: 'Second-largest moon of Neptune'
-  },
-  image: 'https://live.staticflickr.com/65535/50727825808_bf427e007b_c.jpg',
-  type: 'Satellite',
-  isPlanet: false,
-  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
-  satellites: 0,
-  date: '2019-02-03',
-  datetime: '2019-02-03T09:20:15Z',
-  email: 'proteus@example.com'
-}, {
-  id: 12,
-  name: {
-    title: 'Mercury',
-    description: 'Terrestrial planet in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/813/40199101735_e5e92ffd11_z.jpg',
-  type: 'Terrestrial',
-  isPlanet: true,
-  categories: ['Terrestrial', 'Planet', 'Solar system'],
-  satellites: 0,
-  date: '2020-01-02',
-  datetime: '2020-01-02T13:05:45Z',
-  email: 'mercury@example.com'
-}, {
-  id: 13,
-  name: {
-    title: 'Venus',
-    description: 'La planète Vénus'
-  },
-  image: 'https://live.staticflickr.com/8025/7544560662_900e717727_z.jpg',
-  type: 'Terrestrial',
-  isPlanet: true,
-  categories: ['Terrestrial', 'Planet', 'Solar system'],
-  satellites: 0,
-  date: '2020-01-02',
-  datetime: '2020-01-02T08:30:12Z',
-  email: 'venus@example.com'
-}, {
-  id: 14,
-  name: {
-    title: 'Earth',
-    description: 'Terrestrial planet in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/3762/9460163562_964fe6af07_z.jpg',
-  type: 'Terrestrial',
-  isPlanet: true,
-  categories: ['Terrestrial', 'Planet', 'Solar system', 'Earth'],
-  satellites: 1,
-  date: '2023-01-03',
-  datetime: '2023-01-03T18:15:30Z',
-  email: 'earth@example.com'
-}, {
-  id: 15,
-  name: {
-    title: 'Mars',
-    description: 'Terrestrial planet in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/8151/7651156426_e047f4d219_z.jpg',
-  type: 'Terrestrial',
-  isPlanet: true,
-  categories: ['Terrestrial', 'Planet', 'Solar system'],
-  satellites: 2,
-  date: '2020-01-01',
-  datetime: '2020-01-01T20:45:00Z',
-  email: 'mars@example.com'
-}, {
-  id: 16,
-  name: {
-    title: 'Jupiter',
-    description: 'Gas giant in the Solar system'
-  },
-  image: 'https://staging-jubilee.flickr.com/2853/9458010071_6e6fc41408_z.jpg',
-  type: 'Gas giant',
-  isPlanet: true,
-  categories: ['Solar system', 'Planet', 'Gas giant'],
-  satellites: 97,
-  date: '2017-01-01',
-  datetime: '2017-01-01T00:01:00Z',
-  email: 'jupiter@example.com'
-}, {
-  id: 17,
-  name: {
-    title: 'Saturn',
-    description: 'Gas giant in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/5524/9464658509_fc2d83dff5_z.jpg',
-  type: 'Gas giant',
-  isPlanet: true,
-  categories: ['Gas giant', 'Solar system', 'Planet'],
-  satellites: 274,
-  date: '2020-02-01',
-  datetime: '2020-02-01T00:02:00Z',
-  email: 'saturn@example.com'
-}, {
-  id: 18,
-  name: {
-    title: 'Uranus',
-    description: 'Ice giant in the Solar system'
-  },
-  image: 'https://live.staticflickr.com/65535/5553350875_3072df91e2_c.jpg',
-  type: 'Ice giant',
-  isPlanet: true,
-  categories: ['Planet', 'Ice giant', 'Solar system'],
-  satellites: 28,
-  date: '2020-03-01',
-  datetime: '2020-03-01T10:15:20Z',
-  email: 'uranus@example.com'
-}, {
-  id: 19,
-  name: {
-    title: 'Thessalonikopolymnianebuchodonossarinacharybdis',
-    description: 'Takes longer to say than to orbit.'
-  },
-  image: 'https://live.staticflickr.com/1357/935805705_119635028c_b.jpg',
-  type: 'Rogue planet',
-  isPlanet: true,
-  categories: ['Planet', 'Rogue planet'],
-  satellites: 0,
-  date: '2020-03-01',
-  datetime: '2020-03-01T10:15:20Z',
-  email: 'thessalonikopolymnianebuchodonossarinacharybdis@example.com'
-}];
-
-/***/ }),
-
-/***/ "./src/examples/DataFormExamples/DataFormExamples.js":
-/*!***********************************************************!*\
-  !*** ./src/examples/DataFormExamples/DataFormExamples.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-// Placeholder for DataForm examples
-
-const dataFormExamples = [{
-  id: 'basic-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Simple form with basic field types'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm example will be implemented here.')
-      })
-    })
-  })
-}, {
-  id: 'validation-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with Validation'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with field validation rules'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with validation example coming soon.')
-      })
-    })
-  })
-}, {
-  id: 'dynamic-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with dynamic fields and conditional logic'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm example coming soon.')
-      })
-    })
-  })
-}];
-const DataFormExamples = () => {
-  const [selectedExample, setSelectedExample] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dataFormExamples[0].id);
-  const currentExample = dataFormExamples.find(e => e.id === selectedExample);
-  const CurrentComponent = currentExample?.Component;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-    spacing: 5,
-    className: "dataform-manager",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-      spacing: 3,
-      className: "dataform-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
-        spacing: 4,
-        alignment: "left",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select DataForm Example'),
-          value: selectedExample,
-          options: [...dataFormExamples.map(e => ({
-            label: e.label,
-            value: e.id
-          }))],
-          onChange: setSelectedExample,
-          __nextHasNoMarginBottom: true
-        }), currentExample && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-          className: "example-description",
-          children: currentExample.description
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "dataform-content",
-      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CurrentComponent, {})
-    })]
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DataFormExamples);
-
-/***/ }),
-
-/***/ "./src/examples/DataViewsExamples/DashboardManager.js":
-/*!************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/DashboardManager.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _photos_DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./photos/DashboardPhotos */ "./src/examples/DataViewsExamples/photos/DashboardPhotos.js");
-/* harmony import */ var _planets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./planets/DashboardDefault */ "./src/examples/DataViewsExamples/planets/DashboardDefault.js");
-/* harmony import */ var _planets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./planets/DashboardMinimal */ "./src/examples/DataViewsExamples/planets/DashboardMinimal.js");
-/* harmony import */ var _planets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./planets/DashboardFree */ "./src/examples/DataViewsExamples/planets/DashboardFree.js");
-/* harmony import */ var _planets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./planets/DashboardGroupedByType */ "./src/examples/DataViewsExamples/planets/DashboardGroupedByType.js");
-/* harmony import */ var _planets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./planets/DashboardInfiniteScroll */ "./src/examples/DataViewsExamples/planets/DashboardInfiniteScroll.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__);
-
-
-
-
-// Import dashboards
-
-
-
-
-
-
-
-const dashboards = [{
-  id: 'photos',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Photos Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('View and manage photo collection with topics and authors'),
-  Component: _photos_DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__["default"]
-}, {
-  id: 'planets',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Planets Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Solar system planets and celestial objects'),
-  Component: _planets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__["default"]
-}, {
-  id: 'minimal',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal dashboard with restricted features'),
-  Component: _planets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__["default"]
-}, {
-  id: 'free',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Composition Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free composition view with planet overview'),
-  Component: _planets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__["default"]
-}, {
-  id: 'grouped',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Grouped By Type'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Items grouped by type with badge fields'),
-  Component: _planets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__["default"]
-}, {
-  id: 'infinite',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Infinite Scroll'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Progressive loading with infinite scroll'),
-  Component: _planets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__["default"]
-}];
-const DashboardManager = () => {
-  const [selectedDashboard, setSelectedDashboard] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dashboards[0].id);
-  const currentDashboard = dashboards.find(d => d.id === selectedDashboard);
-  const CurrentComponent = currentDashboard?.Component;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-    spacing: 5,
-    className: "dashboard-manager",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-      spacing: 3,
-      className: "dashboard-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
-        spacing: 4,
-        alignment: "left",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select Dashboard'),
-          value: selectedDashboard,
-          options: [{
-            label: dashboards[0].label,
-            value: dashboards[0].id
-          }, {
-            label: '──────────',
-            value: 'separator',
-            disabled: true
-          }, ...dashboards.slice(1).map(d => ({
-            label: d.label,
-            value: d.id
-          }))],
-          onChange: value => {
-            if (value !== 'separator') {
-              setSelectedDashboard(value);
-            }
-          },
-          __nextHasNoMarginBottom: true
-        }), currentDashboard && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-          className: "dashboard-description",
-          children: currentDashboard.description
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
-      className: "dashboard-content",
-      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(CurrentComponent, {})
-    })]
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DashboardManager);
-
-/***/ }),
-
-/***/ "./src/examples/DataViewsExamples/photos/DashboardPhotos.js":
-/*!******************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/photos/DashboardPhotos.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/utils/filter-sort-and-paginate.js");
-/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataviews/index.js");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/style.scss */ "./src/style.scss");
-/* harmony import */ var _dataPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dataPhotos */ "./src/examples/DataViewsExamples/photos/dataPhotos.js");
-/* harmony import */ var _fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fieldsPhotos */ "./src/examples/DataViewsExamples/photos/fieldsPhotos.js");
-/* harmony import */ var _actionsPhotos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./actionsPhotos */ "./src/examples/DataViewsExamples/photos/actionsPhotos.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-// source "data" definition
-
-
-
-
-// "defaultLayouts" definition
-
-const primaryField = 'id';
-const mediaField = 'img_src';
-const defaultLayouts = {
-  table: {
-    layout: {
-      primaryField
-    }
-  },
-  grid: {
-    layout: {
-      primaryField,
-      mediaField
-    }
-  }
-};
-const App = (0,_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.withNotices)(({
-  noticeOperations,
-  noticeUI
-}) => {
-  const {
-    createNotice
-  } = noticeOperations;
-  const [isUploadingItems, setIsUploadingItems] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
-
-  // "actions" definition
-  const actions = (0,_actionsPhotos__WEBPACK_IMPORTED_MODULE_5__["default"])(setIsUploadingItems, createNotice);
-
-  // "view" and "setView" definition
-  const [view, setView] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
-    type: 'table',
-    perPage: 10,
-    layout: defaultLayouts.table.layout,
-    titleField: 'id',
-    descriptionField: 'alt_description',
-    mediaField: 'img_src',
-    fields: [
-    // 'img_src',
-    // 'id',
-    // 'alt_description',
-    'author', 'topics', 'width', 'height']
-  });
-
-  // "processedData" and "paginationInfo" definition
-  const {
-    data: processedData,
-    paginationInfo
-  } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
-    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_7__["default"])(_dataPhotos__WEBPACK_IMPORTED_MODULE_3__.dataPhotos, view, _fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  }, [view]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [!!isUploadingItems.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Spinner, {}), noticeUI, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__["default"], {
-      data: processedData,
-      fields: _fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__["default"],
-      view: view,
-      onChangeView: setView,
-      defaultLayouts: defaultLayouts,
-      actions: actions,
-      paginationInfo: paginationInfo,
-      config: {
-        perPageSizes: [10, 25, 50, 100]
-      }
-    })]
-  });
-});
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
-
-/***/ }),
-
-/***/ "./src/examples/DataViewsExamples/photos/actionsPhotos.js":
-/*!****************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/photos/actionsPhotos.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/api-fetch */ "@wordpress/api-fetch");
-/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
-
-// "actions" definition
-
-const createActions = (setIsUploadingItems, createNotice) => {
-  const onSuccessMediaUpload = oImageUploaded => {
-    const title = oImageUploaded.title.rendered;
-    setIsUploadingItems(prevIsUploadingItems => prevIsUploadingItems.filter(slugLoading => slugLoading !== title));
-    createNotice({
-      status: 'success',
-      // translators: %s is the image title
-      content: `${title}.jpg ` + (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('succesfully uploaded to Media Library'),
-      isDismissible: true
-    });
-  };
-  const onErrorMediaUpload = error => {
-    setIsUploadingItems([]);
-    console.log(error);
-    createNotice({
-      status: 'error',
-      content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('An error occurred!'),
-      isDismissible: true
-    });
-  };
-  return [{
-    id: 'upload-media',
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Upload Media'),
-    isPrimary: true,
-    icon: 'upload',
-    supportsBulk: true,
-    callback: images => {
-      window.scrollTo(0, 0);
-      images.forEach(async image => {
-        setIsUploadingItems(prevIsUploadingItems => [...prevIsUploadingItems, image.slug]);
-
-        // 1- Download the image and convert it to a blob
-        const responseRequestImage = await fetch(image.urls.raw);
-        const blobImage = await responseRequestImage.blob();
-
-        // 2- Create FormData with the image blob
-        const formDataWithImage = new FormData();
-        formDataWithImage.append('file', blobImage, `${image.slug}.jpg`);
-
-        // 3- Send the request to the WP REST API with apiFetch
-        await _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3___default()({
-          path: '/wp/v2/media',
-          method: 'POST',
-          body: formDataWithImage
-        }).then(onSuccessMediaUpload).catch(onErrorMediaUpload);
-      });
-    }
-  }, {
-    id: 'see-original',
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('See Original'),
-    modalHeader: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('See Original Image', 'action label'),
-    RenderModal: ({
-      items: [item],
-      closeModal
-    }) => {
-      const [size, setSize] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)('raw');
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-        spacing: "5",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-          children: `Select the size you want to open for "${item.slug}"`
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
-          justify: "left",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-            __nextHasNoMarginBottom: true,
-            label: "Size",
-            value: size,
-            options: Object.keys(item.urls).filter(url => url !== 'small_s3').map(url => ({
-              label: url,
-              value: url
-            })),
-            onChange: setSize
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
-          justify: "right",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
-            __next40pxDefaultSize: true,
-            variant: "primary",
-            onClick: () => {
-              closeModal();
-              window.open(item.urls[size], '_blank');
-            },
-            children: "Open image from original location"
-          })
-        })]
-      });
-    }
-  }];
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createActions);
-
-/***/ }),
-
-/***/ "./src/examples/DataViewsExamples/photos/dataPhotos.js":
-/*!*************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/photos/dataPhotos.js ***!
-  \*************************************************************/
+/***/ "./src/data/dataPhotos.js":
+/*!********************************!*\
+  !*** ./src/data/dataPhotos.js ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24370,10 +23654,291 @@ const TOPICS = [{
 
 /***/ }),
 
-/***/ "./src/examples/DataViewsExamples/photos/fieldsPhotos.js":
-/*!***************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/photos/fieldsPhotos.js ***!
-  \***************************************************************/
+/***/ "./src/data/dataPlanets.js":
+/*!*********************************!*\
+  !*** ./src/data/dataPlanets.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   data: () => (/* binding */ data)
+/* harmony export */ });
+const data = [{
+  id: 1,
+  name: {
+    title: 'Moon',
+    description: "The Moon is Earth's only natural satellite, orbiting at an average distance of 384,400 kilometers with a synchronous rotation that leads to fixed lunar phases as seen from Earth. Its cratered surface and subtle glow define night skies, inspiring exploration missions and influencing tides and biological rhythms worldwide."
+  },
+  image: 'https://live.staticflickr.com/7398/9458193857_e1256123e3_z.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Earth', 'Moon'],
+  satellites: 0,
+  date: '2021-01-01',
+  datetime: '2021-01-01T14:30:00Z',
+  email: 'moon@example.com'
+}, {
+  id: 2,
+  name: {
+    title: 'Io',
+    description: 'Moon of Jupiter'
+  },
+  image: 'https://live.staticflickr.com/5482/9460973502_07e8ab81fe_z.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2019-01-02',
+  datetime: '2019-01-02T09:15:00Z',
+  email: 'io@example.com'
+}, {
+  id: 3,
+  name: {
+    title: 'Europa',
+    description: 'Moon of Jupiter'
+  },
+  image: 'https://live.staticflickr.com/65535/31499273012_baf5f38cc1_z.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2025-01-03',
+  datetime: '2025-01-03T16:45:30Z',
+  email: 'europa@example.com'
+}, {
+  id: 4,
+  name: {
+    title: 'Ganymede',
+    description: 'Largest moon of Jupiter'
+  },
+  image: 'https://live.staticflickr.com/7816/33436473218_a836235935_k.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2022-01-04',
+  datetime: '2022-01-04T12:30:00Z',
+  email: 'ganymede@example.com'
+}, {
+  id: 5,
+  name: {
+    title: 'Callisto',
+    description: 'Outermost Galilean moon of Jupiter'
+  },
+  image: 'https://live.staticflickr.com/804/27604150528_4512448a9c_c.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2021-01-05',
+  datetime: '2021-01-05T14:15:30Z',
+  email: 'callisto@example.com'
+}, {
+  id: 6,
+  name: {
+    title: 'Amalthea',
+    description: 'Small irregular moon of Jupiter'
+  },
+  image: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Amalthea.gif',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2020-01-06',
+  datetime: '2020-01-06T10:45:15Z',
+  email: 'amalthea@example.com'
+}, {
+  id: 7,
+  name: {
+    title: 'Himalia',
+    description: 'Largest irregular moon of Jupiter'
+  },
+  image: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Cassini-Huygens_Image_of_Himalia.png',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Jupiter', 'Moon'],
+  satellites: 0,
+  date: '2019-01-07',
+  datetime: '2019-01-07T16:20:45Z',
+  email: 'himalia@example.com'
+}, {
+  id: 8,
+  name: {
+    title: 'Neptune',
+    description: 'Ice giant in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/65535/29523683990_000ff4720c_z.jpg',
+  type: 'Ice giant',
+  isPlanet: true,
+  categories: ['Ice giant', 'Planet', 'Solar system'],
+  satellites: 16,
+  date: '2020-01-01',
+  datetime: '2020-01-01T11:22:15Z',
+  email: 'neptune@example.com'
+}, {
+  id: 9,
+  name: {
+    title: 'Triton',
+    description: 'Largest moon of Neptune'
+  },
+  image: 'https://live.staticflickr.com/65535/50728384241_02c5126c30_h.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
+  satellites: 0,
+  date: '2021-02-01',
+  datetime: '2021-02-01T11:30:00Z',
+  email: 'triton@example.com'
+}, {
+  id: 10,
+  name: {
+    title: 'Nereid',
+    description: 'Irregular moon of Neptune'
+  },
+  image: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Nereid-Voyager2.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
+  satellites: 0,
+  date: '2020-02-02',
+  datetime: '2020-02-02T15:45:30Z',
+  email: 'nereid@example.com'
+}, {
+  id: 11,
+  name: {
+    title: 'Proteus',
+    description: 'Second-largest moon of Neptune'
+  },
+  image: 'https://live.staticflickr.com/65535/50727825808_bf427e007b_c.jpg',
+  type: 'Satellite',
+  isPlanet: false,
+  categories: ['Solar system', 'Satellite', 'Neptune', 'Moon'],
+  satellites: 0,
+  date: '2019-02-03',
+  datetime: '2019-02-03T09:20:15Z',
+  email: 'proteus@example.com'
+}, {
+  id: 12,
+  name: {
+    title: 'Mercury',
+    description: 'Terrestrial planet in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/813/40199101735_e5e92ffd11_z.jpg',
+  type: 'Terrestrial',
+  isPlanet: true,
+  categories: ['Terrestrial', 'Planet', 'Solar system'],
+  satellites: 0,
+  date: '2020-01-02',
+  datetime: '2020-01-02T13:05:45Z',
+  email: 'mercury@example.com'
+}, {
+  id: 13,
+  name: {
+    title: 'Venus',
+    description: 'La planète Vénus'
+  },
+  image: 'https://live.staticflickr.com/8025/7544560662_900e717727_z.jpg',
+  type: 'Terrestrial',
+  isPlanet: true,
+  categories: ['Terrestrial', 'Planet', 'Solar system'],
+  satellites: 0,
+  date: '2020-01-02',
+  datetime: '2020-01-02T08:30:12Z',
+  email: 'venus@example.com'
+}, {
+  id: 14,
+  name: {
+    title: 'Earth',
+    description: 'Terrestrial planet in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/3762/9460163562_964fe6af07_z.jpg',
+  type: 'Terrestrial',
+  isPlanet: true,
+  categories: ['Terrestrial', 'Planet', 'Solar system', 'Earth'],
+  satellites: 1,
+  date: '2023-01-03',
+  datetime: '2023-01-03T18:15:30Z',
+  email: 'earth@example.com'
+}, {
+  id: 15,
+  name: {
+    title: 'Mars',
+    description: 'Terrestrial planet in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/8151/7651156426_e047f4d219_z.jpg',
+  type: 'Terrestrial',
+  isPlanet: true,
+  categories: ['Terrestrial', 'Planet', 'Solar system'],
+  satellites: 2,
+  date: '2020-01-01',
+  datetime: '2020-01-01T20:45:00Z',
+  email: 'mars@example.com'
+}, {
+  id: 16,
+  name: {
+    title: 'Jupiter',
+    description: 'Gas giant in the Solar system'
+  },
+  image: 'https://staging-jubilee.flickr.com/2853/9458010071_6e6fc41408_z.jpg',
+  type: 'Gas giant',
+  isPlanet: true,
+  categories: ['Solar system', 'Planet', 'Gas giant'],
+  satellites: 97,
+  date: '2017-01-01',
+  datetime: '2017-01-01T00:01:00Z',
+  email: 'jupiter@example.com'
+}, {
+  id: 17,
+  name: {
+    title: 'Saturn',
+    description: 'Gas giant in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/5524/9464658509_fc2d83dff5_z.jpg',
+  type: 'Gas giant',
+  isPlanet: true,
+  categories: ['Gas giant', 'Solar system', 'Planet'],
+  satellites: 274,
+  date: '2020-02-01',
+  datetime: '2020-02-01T00:02:00Z',
+  email: 'saturn@example.com'
+}, {
+  id: 18,
+  name: {
+    title: 'Uranus',
+    description: 'Ice giant in the Solar system'
+  },
+  image: 'https://live.staticflickr.com/65535/5553350875_3072df91e2_c.jpg',
+  type: 'Ice giant',
+  isPlanet: true,
+  categories: ['Planet', 'Ice giant', 'Solar system'],
+  satellites: 28,
+  date: '2020-03-01',
+  datetime: '2020-03-01T10:15:20Z',
+  email: 'uranus@example.com'
+}, {
+  id: 19,
+  name: {
+    title: 'Thessalonikopolymnianebuchodonossarinacharybdis',
+    description: 'Takes longer to say than to orbit.'
+  },
+  image: 'https://live.staticflickr.com/1357/935805705_119635028c_b.jpg',
+  type: 'Rogue planet',
+  isPlanet: true,
+  categories: ['Planet', 'Rogue planet'],
+  satellites: 0,
+  date: '2020-03-01',
+  datetime: '2020-03-01T10:15:20Z',
+  email: 'thessalonikopolymnianebuchodonossarinacharybdis@example.com'
+}];
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/DataFormExamples.js":
+/*!***********************************************************!*\
+  !*** ./src/examples/DataFormExamples/DataFormExamples.js ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24381,15 +23946,329 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/image.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/post-author.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/category.js");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils */ "./src/examples/DataViewsExamples/photos/utils.js");
-/* harmony import */ var _dataPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dataPhotos */ "./src/examples/DataViewsExamples/photos/dataPhotos.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+// Placeholder for DataForm examples
+
+const dataFormExamples = [{
+  id: 'basic-form',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Simple form with basic field types'),
+  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm example will be implemented here.')
+      })
+    })
+  })
+}, {
+  id: 'validation-form',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with Validation'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with field validation rules'),
+  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with validation example coming soon.')
+      })
+    })
+  })
+}, {
+  id: 'dynamic-form',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with dynamic fields and conditional logic'),
+  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm example coming soon.')
+      })
+    })
+  })
+}];
+const DataFormExamples = () => {
+  const [selectedExample, setSelectedExample] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dataFormExamples[0].id);
+  const currentExample = dataFormExamples.find(e => e.id === selectedExample);
+  const CurrentComponent = currentExample?.Component;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+    spacing: 5,
+    className: "dataform-manager",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+      spacing: 3,
+      className: "dataform-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+        spacing: 4,
+        alignment: "left",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select DataForm Example'),
+          value: selectedExample,
+          options: [...dataFormExamples.map(e => ({
+            label: e.label,
+            value: e.id
+          }))],
+          onChange: setSelectedExample,
+          __nextHasNoMarginBottom: true
+        }), currentExample && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+          className: "example-description",
+          children: currentExample.description
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "dataform-content",
+      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CurrentComponent, {})
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DataFormExamples);
+
+/***/ }),
+
+/***/ "./src/examples/DataViewsExamples/DashboardManager.js":
+/*!************************************************************!*\
+  !*** ./src/examples/DataViewsExamples/DashboardManager.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _photos_DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./photos/DashboardPhotos */ "./src/examples/DataViewsExamples/photos/DashboardPhotos.js");
+/* harmony import */ var _planets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./planets/DashboardDefault */ "./src/examples/DataViewsExamples/planets/DashboardDefault.js");
+/* harmony import */ var _planets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./planets/DashboardMinimal */ "./src/examples/DataViewsExamples/planets/DashboardMinimal.js");
+/* harmony import */ var _planets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./planets/DashboardFree */ "./src/examples/DataViewsExamples/planets/DashboardFree.js");
+/* harmony import */ var _planets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./planets/DashboardGroupedByType */ "./src/examples/DataViewsExamples/planets/DashboardGroupedByType.js");
+/* harmony import */ var _planets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./planets/DashboardInfiniteScroll */ "./src/examples/DataViewsExamples/planets/DashboardInfiniteScroll.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+// Import dashboards
+
+
+
+
+
+
+
+const dashboards = [{
+  id: 'photos',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Photos Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('View and manage photo collection with topics and authors'),
+  Component: _photos_DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__["default"]
+}, {
+  id: 'planets',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Planets Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Solar system planets and celestial objects'),
+  Component: _planets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__["default"]
+}, {
+  id: 'minimal',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal dashboard with restricted features'),
+  Component: _planets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__["default"]
+}, {
+  id: 'free',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Composition Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free composition view with planet overview'),
+  Component: _planets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__["default"]
+}, {
+  id: 'grouped',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Grouped By Type'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Items grouped by type with badge fields'),
+  Component: _planets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__["default"]
+}, {
+  id: 'infinite',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Infinite Scroll'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Progressive loading with infinite scroll'),
+  Component: _planets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__["default"]
+}];
+const DashboardManager = () => {
+  const [selectedDashboard, setSelectedDashboard] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dashboards[0].id);
+  const currentDashboard = dashboards.find(d => d.id === selectedDashboard);
+  const CurrentComponent = currentDashboard?.Component;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+    spacing: 5,
+    className: "dashboard-manager",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+      spacing: 3,
+      className: "dashboard-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+        spacing: 4,
+        alignment: "left",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select Dashboard'),
+          value: selectedDashboard,
+          options: [{
+            label: dashboards[0].label,
+            value: dashboards[0].id
+          }, {
+            label: '──────────',
+            value: 'separator',
+            disabled: true
+          }, ...dashboards.slice(1).map(d => ({
+            label: d.label,
+            value: d.id
+          }))],
+          onChange: value => {
+            if (value !== 'separator') {
+              setSelectedDashboard(value);
+            }
+          },
+          __nextHasNoMarginBottom: true
+        }), currentDashboard && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+          className: "dashboard-description",
+          children: currentDashboard.description
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+      className: "dashboard-content",
+      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(CurrentComponent, {})
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DashboardManager);
+
+/***/ }),
+
+/***/ "./src/examples/DataViewsExamples/photos/DashboardPhotos.js":
+/*!******************************************************************!*\
+  !*** ./src/examples/DataViewsExamples/photos/DashboardPhotos.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/utils/filter-sort-and-paginate.js");
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataviews/index.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/style.scss */ "./src/style.scss");
+/* harmony import */ var _data_dataPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/data/dataPhotos */ "./src/data/dataPhotos.js");
+/* harmony import */ var _fields_fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/fields/fieldsPhotos */ "./src/fields/fieldsPhotos.js");
+/* harmony import */ var _actionsPhotos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./actionsPhotos */ "./src/examples/DataViewsExamples/photos/actionsPhotos.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+// source "data" definition
+
+
+
+
+// "defaultLayouts" definition
+
+const primaryField = 'id';
+const mediaField = 'img_src';
+const defaultLayouts = {
+  table: {
+    layout: {
+      primaryField
+    }
+  },
+  grid: {
+    layout: {
+      primaryField,
+      mediaField
+    }
+  }
+};
+const App = (0,_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.withNotices)(({
+  noticeOperations,
+  noticeUI
+}) => {
+  const {
+    createNotice
+  } = noticeOperations;
+  const [isUploadingItems, setIsUploadingItems] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
+
+  // "actions" definition
+  const actions = (0,_actionsPhotos__WEBPACK_IMPORTED_MODULE_5__["default"])(setIsUploadingItems, createNotice);
+
+  // "view" and "setView" definition
+  const [view, setView] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    type: 'table',
+    perPage: 10,
+    layout: defaultLayouts.table.layout,
+    titleField: 'id',
+    descriptionField: 'alt_description',
+    mediaField: 'img_src',
+    fields: [
+    // 'img_src',
+    // 'id',
+    // 'alt_description',
+    'author', 'topics', 'width', 'height']
+  });
+
+  // "processedData" and "paginationInfo" definition
+  const {
+    data: processedData,
+    paginationInfo
+  } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_7__["default"])(_data_dataPhotos__WEBPACK_IMPORTED_MODULE_3__.dataPhotos, view, _fields_fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  }, [view]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [!!isUploadingItems.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Spinner, {}), noticeUI, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      data: processedData,
+      fields: _fields_fieldsPhotos__WEBPACK_IMPORTED_MODULE_4__["default"],
+      view: view,
+      onChangeView: setView,
+      defaultLayouts: defaultLayouts,
+      actions: actions,
+      paginationInfo: paginationInfo,
+      config: {
+        perPageSizes: [10, 25, 50, 100]
+      }
+    })]
+  });
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./src/examples/DataViewsExamples/photos/actionsPhotos.js":
+/*!****************************************************************!*\
+  !*** ./src/examples/DataViewsExamples/photos/actionsPhotos.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/api-fetch */ "@wordpress/api-fetch");
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -24397,152 +24276,97 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// "actions" definition
 
-// "fields" definition
-
-const fields = [{
-  id: 'img_src',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image'),
-  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
-    spacing: 1,
-    justify: "start",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
-      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image')
-    })]
-  }),
-  type: 'media',
-  render: ({
-    item
-  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-    alt: item.alt_description,
-    src: item.urls.thumb
-  }),
-  enableSorting: false
-}, {
-  id: 'id',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Item'),
-  type: 'text',
-  enableGlobalSearch: true,
-  filterBy: false
-}, {
-  id: 'author',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author'),
-  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
-    spacing: 1,
-    justify: "start",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
-      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author')
-    })]
-  }),
-  type: 'text',
-  getValue: ({
-    item
-  }) => `${item.user.first_name} ${item.user.last_name}`,
-  render: ({
-    item
-  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
-    target: "_blank",
-    href: item.user.url,
-    rel: "noreferrer",
-    children: [item.user.first_name, " ", item.user.last_name]
-  }),
-  enableGlobalSearch: true,
-  filterBy: false
-}, {
-  id: 'alt_description',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description'),
-  enableGlobalSearch: true
-}, {
-  id: 'topics',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Topics'),
-  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
-    spacing: 1,
-    justify: "start",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
-      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__["default"]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Topics')
-    })]
-  }),
-  type: 'array',
-  elements: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.getTopicsElementsFormat)(_dataPhotos__WEBPACK_IMPORTED_MODULE_3__.dataPhotos),
-  render: ({
-    item
-  }) => {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "topic_photos",
-      children: item.topics.map(topic => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
-        className: "topic_photo_item",
-        children: topic.toUpperCase()
-      }, topic))
+const createActions = (setIsUploadingItems, createNotice) => {
+  const onSuccessMediaUpload = oImageUploaded => {
+    const title = oImageUploaded.title.rendered;
+    setIsUploadingItems(prevIsUploadingItems => prevIsUploadingItems.filter(slugLoading => slugLoading !== title));
+    createNotice({
+      status: 'success',
+      // translators: %s is the image title
+      content: `${title}.jpg ` + (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('succesfully uploaded to Media Library'),
+      isDismissible: true
     });
-  },
-  filterBy: {
-    //operators: [ 'is', 'isNot' ],
-    operators: ['isAny', 'isNone', 'isAll', 'isNotAll']
-  },
-  enableSorting: false
-}, {
-  id: 'width',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Width'),
-  type: 'integer',
-  getValue: ({
-    item
-  }) => parseInt(item.width),
-  enableSorting: true,
-  filterBy: false
-}, {
-  id: 'height',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Height'),
-  type: 'integer',
-  getValue: ({
-    item
-  }) => parseInt(item.height),
-  enableSorting: true,
-  filterBy: false
-}];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fields);
+  };
+  const onErrorMediaUpload = error => {
+    setIsUploadingItems([]);
+    console.log(error);
+    createNotice({
+      status: 'error',
+      content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('An error occurred!'),
+      isDismissible: true
+    });
+  };
+  return [{
+    id: 'upload-media',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Upload Media'),
+    isPrimary: true,
+    icon: 'upload',
+    supportsBulk: true,
+    callback: images => {
+      window.scrollTo(0, 0);
+      images.forEach(async image => {
+        setIsUploadingItems(prevIsUploadingItems => [...prevIsUploadingItems, image.slug]);
 
-/***/ }),
+        // 1- Download the image and convert it to a blob
+        const responseRequestImage = await fetch(image.urls.raw);
+        const blobImage = await responseRequestImage.blob();
 
-/***/ "./src/examples/DataViewsExamples/photos/utils.js":
-/*!********************************************************!*\
-  !*** ./src/examples/DataViewsExamples/photos/utils.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+        // 2- Create FormData with the image blob
+        const formDataWithImage = new FormData();
+        formDataWithImage.append('file', blobImage, `${image.slug}.jpg`);
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   getTopicsElementsFormat: () => (/* binding */ getTopicsElementsFormat)
-/* harmony export */ });
-/**
- * Retrieves the unique topics from an array of photos
- * and returns them in the format expected
- * by the "elements" property ("field" prop) of the Dataviews component.
- *
- * @param {Array} photos - The array of photos.
- * @return {Array} - An array of objects containing the label and value of each topic.
- * @example
- *  Call - getTopics([{ topics: ["nature", "water"] }, { topics: ["nature", "mountain"] }]);
- *  Returns - [{ label: "Nature", value: "nature" }, { label: "Water", value: "water" }, { label: "Mountain", value: "mountain" }]
- * @link https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dataviews/#fields-elements
- */
-const getTopicsElementsFormat = photos => {
-  const topics = photos.reduce((acc, photo) => {
-    return acc.concat(photo.topics);
-  }, []);
-  return [...new Set(topics)].map(topic => {
-    return {
-      label: topic.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-      value: topic
-    };
-  });
+        // 3- Send the request to the WP REST API with apiFetch
+        await _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_3___default()({
+          path: '/wp/v2/media',
+          method: 'POST',
+          body: formDataWithImage
+        }).then(onSuccessMediaUpload).catch(onErrorMediaUpload);
+      });
+    }
+  }, {
+    id: 'see-original',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('See Original'),
+    modalHeader: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('See Original Image', 'action label'),
+    RenderModal: ({
+      items: [item],
+      closeModal
+    }) => {
+      const [size, setSize] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)('raw');
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+        spacing: "5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+          children: `Select the size you want to open for "${item.slug}"`
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+          justify: "left",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+            __nextHasNoMarginBottom: true,
+            label: "Size",
+            value: size,
+            options: Object.keys(item.urls).filter(url => url !== 'small_s3').map(url => ({
+              label: url,
+              value: url
+            })),
+            onChange: setSize
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+          justify: "right",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+            __next40pxDefaultSize: true,
+            variant: "primary",
+            onClick: () => {
+              closeModal();
+              window.open(item.urls[size], '_blank');
+            },
+            children: "Open image from original location"
+          })
+        })]
+      });
+    }
+  }];
 };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createActions);
 
 /***/ }),
 
@@ -24667,7 +24491,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/fields/fieldsFree */ "./src/fields/fieldsFree.js");
+/* harmony import */ var _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/fields/fieldsPlanetsFree */ "./src/fields/fieldsPlanetsFree.js");
 /* harmony import */ var _actionsFree__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./actionsFree */ "./src/examples/DataViewsExamples/planets/actionsFree.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
@@ -24782,7 +24606,7 @@ const DashboardFree = () => {
     data: processedData,
     paginationInfo
   } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
-    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__["default"])(_data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__.data, view, _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_4__["default"]);
+    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_8__["default"])(_data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__.data, view, _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_4__["default"]);
   }, [view]);
 
   // Filter planets from the processed data
@@ -24794,7 +24618,7 @@ const DashboardFree = () => {
       paginationInfo: paginationInfo,
       data: processedData,
       view: view,
-      fields: _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_4__["default"],
+      fields: _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_4__["default"],
       actions: _actionsFree__WEBPACK_IMPORTED_MODULE_5__["default"],
       onChangeView: setView,
       defaultLayouts: {
@@ -24843,7 +24667,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/data/dataPlanets */ "./src/data/dataPlanets.js");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/fields/fieldsFree */ "./src/fields/fieldsFree.js");
+/* harmony import */ var _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/fields/fieldsPlanetsFree */ "./src/fields/fieldsPlanetsFree.js");
 /* harmony import */ var _actionsFree__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actionsFree */ "./src/examples/DataViewsExamples/planets/actionsFree.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
@@ -24881,14 +24705,14 @@ const DashboardGroupedByType = () => {
     data: shownData,
     paginationInfo
   } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
-    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_5__["default"])(_data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__.data, view, _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    return (0,_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_5__["default"])(_data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__.data, view, _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_2__["default"]);
   }, [view]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_6__["default"], {
     getItemId: item => item.id.toString(),
     paginationInfo: paginationInfo,
     data: shownData,
     view: view,
-    fields: _fields_fieldsFree__WEBPACK_IMPORTED_MODULE_2__["default"],
+    fields: _fields_fieldsPlanetsFree__WEBPACK_IMPORTED_MODULE_2__["default"],
     onChangeView: setView,
     actions: _actionsFree__WEBPACK_IMPORTED_MODULE_3__["default"],
     defaultLayouts: {
@@ -25058,7 +24882,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataviews/index.js");
 /* harmony import */ var _data_dataPlanets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/data/dataPlanets */ "./src/data/dataPlanets.js");
-/* harmony import */ var _fields_fieldsMinimal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/fields/fieldsMinimal */ "./src/fields/fieldsMinimal.js");
+/* harmony import */ var _fields_fieldsPlanetsMinimal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/fields/fieldsPlanetsMinimal */ "./src/fields/fieldsPlanetsMinimal.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -25071,7 +24895,7 @@ const DashboardMinimal = () => {
     defaultLayouts: {
       table: {}
     },
-    fields: _fields_fieldsMinimal__WEBPACK_IMPORTED_MODULE_1__["default"],
+    fields: _fields_fieldsPlanetsMinimal__WEBPACK_IMPORTED_MODULE_1__["default"],
     onChangeView: () => {},
     paginationInfo: {
       totalItems: 10,
@@ -25352,10 +25176,350 @@ const DataViewsPickerExample = () => {
 
 /***/ }),
 
-/***/ "./src/fields/fieldsFree.js":
-/*!**********************************!*\
-  !*** ./src/fields/fieldsFree.js ***!
-  \**********************************/
+/***/ "./src/fields/fieldsPhotos.js":
+/*!************************************!*\
+  !*** ./src/fields/fieldsPhotos.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/image.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/post-author.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/category.js");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils_photosUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/utils/photosUtils */ "./src/utils/photosUtils.js");
+/* harmony import */ var _data_dataPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/data/dataPhotos */ "./src/data/dataPhotos.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+// "fields" definition
+
+const fields = [{
+  id: 'img_src',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image'),
+  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
+    spacing: 1,
+    justify: "start",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image')
+    })]
+  }),
+  type: 'media',
+  render: ({
+    item
+  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+    alt: item.alt_description,
+    src: item.urls.thumb
+  }),
+  enableSorting: false
+}, {
+  id: 'id',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Item'),
+  type: 'text',
+  enableGlobalSearch: true,
+  filterBy: false
+}, {
+  id: 'author',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author'),
+  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
+    spacing: 1,
+    justify: "start",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author')
+    })]
+  }),
+  type: 'text',
+  getValue: ({
+    item
+  }) => `${item.user.first_name} ${item.user.last_name}`,
+  render: ({
+    item
+  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("a", {
+    target: "_blank",
+    href: item.user.url,
+    rel: "noreferrer",
+    children: [item.user.first_name, " ", item.user.last_name]
+  }),
+  enableGlobalSearch: true,
+  filterBy: false
+}, {
+  id: 'alt_description',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description'),
+  enableGlobalSearch: true
+}, {
+  id: 'topics',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Topics'),
+  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
+    spacing: 1,
+    justify: "start",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__["default"]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+      children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Topics')
+    })]
+  }),
+  type: 'array',
+  elements: (0,_utils_photosUtils__WEBPACK_IMPORTED_MODULE_2__.getTopicsElementsFormat)(_data_dataPhotos__WEBPACK_IMPORTED_MODULE_3__.dataPhotos),
+  render: ({
+    item
+  }) => {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "topic_photos",
+      children: item.topics.map(topic => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+        className: "topic_photo_item",
+        children: topic.toUpperCase()
+      }, topic))
+    });
+  },
+  filterBy: {
+    //operators: [ 'is', 'isNot' ],
+    operators: ['isAny', 'isNone', 'isAll', 'isNotAll']
+  },
+  enableSorting: false
+}, {
+  id: 'width',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Width'),
+  type: 'integer',
+  getValue: ({
+    item
+  }) => parseInt(item.width),
+  enableSorting: true,
+  filterBy: false
+}, {
+  id: 'height',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Height'),
+  type: 'integer',
+  getValue: ({
+    item
+  }) => parseInt(item.height),
+  enableSorting: true,
+  filterBy: false
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fields);
+
+/***/ }),
+
+/***/ "./src/fields/fieldsPlanets.js":
+/*!*************************************!*\
+  !*** ./src/fields/fieldsPlanets.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/primitives */ "@wordpress/primitives");
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const elementDemoDataViews1 = [{
+  label: 'Satellite',
+  value: 'Satellite'
+}, {
+  label: 'Ice giant',
+  value: 'Ice giant'
+}, {
+  label: 'Terrestrial',
+  value: 'Terrestrial'
+}, {
+  label: 'Gas giant',
+  value: 'Gas giant'
+}, {
+  label: 'Dwarf planet',
+  value: 'Dwarf planet'
+}, {
+  label: 'Asteroid',
+  value: 'Asteroid'
+}, {
+  label: 'Comet',
+  value: 'Comet'
+}, {
+  label: 'Kuiper belt object',
+  value: 'Kuiper belt object'
+}, {
+  label: 'Protoplanet',
+  value: 'Protoplanet'
+}, {
+  label: 'Planetesimal',
+  value: 'Planetesimal'
+}, {
+  label: 'Minor planet',
+  value: 'Minor planet'
+}, {
+  label: 'Trans-Neptunian object',
+  value: 'Trans-Neptunian object'
+}];
+const fields = [{
+  id: 'image',
+  label: 'Image',
+  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
+    justify: "start",
+    spacing: 1,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.SVG, {
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.Path, {
+          d: "M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM5 4.5h14c.3 0 .5.2.5.5v8.4l-3-2.9c-.3-.3-.8-.3-1 0L11.9 14 9 12c-.3-.2-.6-.2-.8 0l-3.6 2.6V5c-.1-.3.1-.5.4-.5zm14 15H5c-.3 0-.5-.2-.5-.5v-2.4l4.1-3 3 1.9c.3.2.7.2.9-.1L16 12l3.5 3.4V19c0 .3-.2.5-.5.5z"
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: "Image"
+    })]
+  }),
+  render: ({
+    item
+  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+    src: item.image,
+    alt: item.name.title
+  }),
+  type: 'media'
+}, {
+  id: 'name.title',
+  label: 'Title',
+  enableGlobalSearch: true,
+  enableHiding: false,
+  enableSorting: false,
+  filterBy: false,
+  isValid: {
+    required: true
+  },
+  type: 'text'
+}, {
+  id: 'date',
+  label: 'Date',
+  enableHiding: false,
+  enableSorting: false,
+  filterBy: false,
+  type: 'date'
+}, {
+  id: 'datetime',
+  label: 'Datetime',
+  enableHiding: false,
+  enableSorting: false,
+  filterBy: false,
+  type: 'datetime'
+}, {
+  id: 'type',
+  label: 'Type',
+  elements: elementDemoDataViews1,
+  enableHiding: false,
+  filterBy: {
+    operators: ['is', 'isNot']
+  },
+  type: 'array'
+}, {
+  id: 'isPlanet',
+  label: 'Is Planet',
+  elements: [{
+    label: 'True',
+    value: true
+  }, {
+    label: 'False',
+    value: false
+  }],
+  setValue: () => {},
+  type: 'boolean'
+}, {
+  id: 'satellites',
+  enableSorting: true,
+  label: 'Satellites',
+  type: 'integer'
+}, {
+  enableGlobalSearch: true,
+  enableSorting: false,
+  filterBy: {
+    operators: ['contains', 'notContains', 'startsWith']
+  },
+  id: 'name.description',
+  label: 'Description',
+  type: 'text'
+}, {
+  id: 'email',
+  label: 'Email',
+  type: 'email'
+}, {
+  id: 'categories',
+  label: 'Categories',
+  elements: [{
+    label: 'Solar system',
+    value: 'Solar system'
+  }, {
+    label: 'Satellite',
+    value: 'Satellite'
+  }, {
+    label: 'Moon',
+    value: 'Moon'
+  }, {
+    label: 'Earth',
+    value: 'Earth'
+  }, {
+    label: 'Jupiter',
+    value: 'Jupiter'
+  }, {
+    label: 'Planet',
+    value: 'Planet'
+  }, {
+    label: 'Ice giant',
+    value: 'Ice giant'
+  }, {
+    label: 'Terrestrial',
+    value: 'Terrestrial'
+  }, {
+    label: 'Gas giant',
+    value: 'Gas giant'
+  }],
+  enableGlobalSearch: true,
+  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
+    justify: "start",
+    spacing: 1,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.SVG, {
+        viewBox: "0 0 24 24",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.Path, {
+          clipRule: "evenodd",
+          d: "M6 5.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5V6a.5.5 0 01.5-.5zM4 6a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm11-.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5V6a.5.5 0 01.5-.5zM13 6a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2h-3a2 2 0 01-2-2V6zm5 8.5h-3a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5zM15 13a2 2 0 00-2 2v3a2 2 0 002 2h3a2 2 0 002-2v-3a2 2 0 00-2-2h-3zm-9 1.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zM4 15a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2v-3z",
+          fillRule: "evenodd"
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: "Categories"
+    })]
+  }),
+  type: 'array'
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fields);
+
+/***/ }),
+
+/***/ "./src/fields/fieldsPlanetsFree.js":
+/*!*****************************************!*\
+  !*** ./src/fields/fieldsPlanetsFree.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25496,10 +25660,10 @@ const fields = [{
 
 /***/ }),
 
-/***/ "./src/fields/fieldsMinimal.js":
-/*!*************************************!*\
-  !*** ./src/fields/fieldsMinimal.js ***!
-  \*************************************/
+/***/ "./src/fields/fieldsPlanetsMinimal.js":
+/*!********************************************!*\
+  !*** ./src/fields/fieldsPlanetsMinimal.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25707,207 +25871,6 @@ const fields = [{
 
 /***/ }),
 
-/***/ "./src/fields/fieldsPlanets.js":
-/*!*************************************!*\
-  !*** ./src/fields/fieldsPlanets.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/primitives */ "@wordpress/primitives");
-/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-const elementDemoDataViews1 = [{
-  label: 'Satellite',
-  value: 'Satellite'
-}, {
-  label: 'Ice giant',
-  value: 'Ice giant'
-}, {
-  label: 'Terrestrial',
-  value: 'Terrestrial'
-}, {
-  label: 'Gas giant',
-  value: 'Gas giant'
-}, {
-  label: 'Dwarf planet',
-  value: 'Dwarf planet'
-}, {
-  label: 'Asteroid',
-  value: 'Asteroid'
-}, {
-  label: 'Comet',
-  value: 'Comet'
-}, {
-  label: 'Kuiper belt object',
-  value: 'Kuiper belt object'
-}, {
-  label: 'Protoplanet',
-  value: 'Protoplanet'
-}, {
-  label: 'Planetesimal',
-  value: 'Planetesimal'
-}, {
-  label: 'Minor planet',
-  value: 'Minor planet'
-}, {
-  label: 'Trans-Neptunian object',
-  value: 'Trans-Neptunian object'
-}];
-const fields = [{
-  id: 'image',
-  label: 'Image',
-  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
-    justify: "start",
-    spacing: 1,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
-      icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.SVG, {
-        viewBox: "0 0 24 24",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.Path, {
-          d: "M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM5 4.5h14c.3 0 .5.2.5.5v8.4l-3-2.9c-.3-.3-.8-.3-1 0L11.9 14 9 12c-.3-.2-.6-.2-.8 0l-3.6 2.6V5c-.1-.3.1-.5.4-.5zm14 15H5c-.3 0-.5-.2-.5-.5v-2.4l4.1-3 3 1.9c.3.2.7.2.9-.1L16 12l3.5 3.4V19c0 .3-.2.5-.5.5z"
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-      children: "Image"
-    })]
-  }),
-  render: ({
-    item
-  }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-    src: item.image,
-    alt: item.name.title
-  }),
-  type: 'media'
-}, {
-  id: 'name.title',
-  label: 'Title',
-  enableGlobalSearch: true,
-  enableHiding: false,
-  enableSorting: false,
-  filterBy: false,
-  isValid: {
-    required: true
-  },
-  type: 'text'
-}, {
-  id: 'date',
-  label: 'Date',
-  enableHiding: false,
-  enableSorting: false,
-  filterBy: false,
-  type: 'date'
-}, {
-  id: 'datetime',
-  label: 'Datetime',
-  enableHiding: false,
-  enableSorting: false,
-  filterBy: false,
-  type: 'datetime'
-}, {
-  id: 'type',
-  label: 'Type',
-  elements: elementDemoDataViews1,
-  enableHiding: false,
-  filterBy: {
-    operators: ['is', 'isNot']
-  },
-  type: 'array'
-}, {
-  id: 'isPlanet',
-  label: 'Is Planet',
-  elements: [{
-    label: 'True',
-    value: true
-  }, {
-    label: 'False',
-    value: false
-  }],
-  setValue: () => {},
-  type: 'boolean'
-}, {
-  id: 'satellites',
-  enableSorting: true,
-  label: 'Satellites',
-  type: 'integer'
-}, {
-  enableGlobalSearch: true,
-  enableSorting: false,
-  filterBy: {
-    operators: ['contains', 'notContains', 'startsWith']
-  },
-  id: 'name.description',
-  label: 'Description',
-  type: 'text'
-}, {
-  id: 'email',
-  label: 'Email',
-  type: 'email'
-}, {
-  id: 'categories',
-  label: 'Categories',
-  elements: [{
-    label: 'Solar system',
-    value: 'Solar system'
-  }, {
-    label: 'Satellite',
-    value: 'Satellite'
-  }, {
-    label: 'Moon',
-    value: 'Moon'
-  }, {
-    label: 'Earth',
-    value: 'Earth'
-  }, {
-    label: 'Jupiter',
-    value: 'Jupiter'
-  }, {
-    label: 'Planet',
-    value: 'Planet'
-  }, {
-    label: 'Ice giant',
-    value: 'Ice giant'
-  }, {
-    label: 'Terrestrial',
-    value: 'Terrestrial'
-  }, {
-    label: 'Gas giant',
-    value: 'Gas giant'
-  }],
-  enableGlobalSearch: true,
-  header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.__experimentalHStack, {
-    justify: "start",
-    spacing: 1,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
-      icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.SVG, {
-        viewBox: "0 0 24 24",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__.Path, {
-          clipRule: "evenodd",
-          d: "M6 5.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5V6a.5.5 0 01.5-.5zM4 6a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm11-.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-3a.5.5 0 01-.5-.5V6a.5.5 0 01.5-.5zM13 6a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2h-3a2 2 0 01-2-2V6zm5 8.5h-3a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5zM15 13a2 2 0 00-2 2v3a2 2 0 002 2h3a2 2 0 002-2v-3a2 2 0 00-2-2h-3zm-9 1.5h3a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zM4 15a2 2 0 012-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2v-3z",
-          fillRule: "evenodd"
-        })
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-      children: "Categories"
-    })]
-  }),
-  type: 'array'
-}];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fields);
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -25947,6 +25910,43 @@ _wordpress_dom_ready__WEBPACK_IMPORTED_MODULE_0___default()(() => {
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/utils/photosUtils.js":
+/*!**********************************!*\
+  !*** ./src/utils/photosUtils.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getTopicsElementsFormat: () => (/* binding */ getTopicsElementsFormat)
+/* harmony export */ });
+/**
+ * Retrieves the unique topics from an array of photos
+ * and returns them in the format expected
+ * by the "elements" property ("field" prop) of the Dataviews component.
+ *
+ * @param {Array} photos - The array of photos.
+ * @return {Array} - An array of objects containing the label and value of each topic.
+ * @example
+ *  Call - getTopics([{ topics: ["nature", "water"] }, { topics: ["nature", "mountain"] }]);
+ *  Returns - [{ label: "Nature", value: "nature" }, { label: "Water", value: "water" }, { label: "Mountain", value: "mountain" }]
+ * @link https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dataviews/#fields-elements
+ */
+const getTopicsElementsFormat = photos => {
+  const topics = photos.reduce((acc, photo) => {
+    return acc.concat(photo.topics);
+  }, []);
+  return [...new Set(topics)].map(topic => {
+    return {
+      label: topic.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+      value: topic
+    };
+  });
+};
 
 /***/ }),
 

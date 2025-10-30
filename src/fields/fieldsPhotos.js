@@ -1,11 +1,8 @@
-import {
-	__experimentalHStack as HStack,
-	Icon,
-} from '@wordpress/components';
+import { __experimentalHStack as HStack, Icon } from '@wordpress/components';
 import { image, category, postAuthor } from '@wordpress/icons';
 import { __ } from '@wordpress/i18n';
-import { getTopicsElementsFormat } from './utils';
-import { dataPhotos } from './dataPhotos';
+import { getTopicsElementsFormat } from '@/utils/photosUtils';
+import { dataPhotos } from '@/data/dataPhotos';
 
 // "fields" definition
 const fields = [

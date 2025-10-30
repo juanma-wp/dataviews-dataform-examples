@@ -5,8 +5,8 @@ import { Spinner, withNotices } from '@wordpress/components';
 import '@/style.scss';
 
 // source "data" definition
-import { dataPhotos } from './dataPhotos';
-import fields from './fieldsPhotos';
+import { dataPhotos } from '@/data/dataPhotos';
+import fields from '@/fields/fieldsPhotos';
 import createActions from './actionsPhotos';
 
 // "defaultLayouts" definition
