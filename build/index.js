@@ -5893,6 +5893,94 @@ var Combobox = (0,_chunks_VOQWLFSQ_js__WEBPACK_IMPORTED_MODULE_2__.forwardRef)(f
 
 /***/ }),
 
+/***/ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DataFormProvider: () => (/* binding */ DataFormProvider),
+/* harmony export */   "default": () => (/* binding */ dataform_context_default)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const DataFormContext = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createContext)({
+  fields: []
+});
+DataFormContext.displayName = "DataFormContext";
+function DataFormProvider({
+  fields,
+  children
+}) {
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DataFormContext.Provider, { value: { fields }, children });
+}
+var dataform_context_default = DataFormContext;
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DataForm)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _dataform_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _utils_normalize_fields__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/normalize-fields */ "./node_modules/@wordpress/dataviews/build-module/utils/normalize-fields.js");
+/* harmony import */ var _dataform_layouts_data_form_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../dataform-layouts/data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+
+
+
+
+
+function DataForm({
+  data,
+  form,
+  fields,
+  onChange,
+  validity
+}) {
+  const normalizedFields = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useMemo)(
+    () => (0,_utils_normalize_fields__WEBPACK_IMPORTED_MODULE_2__["default"])(fields),
+    [fields]
+  );
+  if (!form.fields) {
+    return null;
+  }
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_dataform_context__WEBPACK_IMPORTED_MODULE_3__.DataFormProvider, { fields: normalizedFields, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _dataform_layouts_data_form_layout__WEBPACK_IMPORTED_MODULE_4__.DataFormLayout,
+    {
+      data,
+      form,
+      onChange,
+      validity
+    }
+  ) });
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/@wordpress/dataviews/build-module/components/dataviews-bulk-actions/index.js":
 /*!***************************************************************************************************!*\
   !*** ./node_modules/@wordpress/dataviews/build-module/components/dataviews-bulk-actions/index.js ***!
@@ -12345,6 +12433,1349 @@ function ValidatedNumber({
 
 /***/ }),
 
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/card/index.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/card/index.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FormCardField),
+/* harmony export */   useCollapsibleCard: () => (/* binding */ useCollapsibleCard)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/chevron-up.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/chevron-down.js");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! .. */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/index.js");
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _data_form_layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+/* harmony import */ var _get_summary_fields__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../get-summary-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/get-summary-fields.js");
+
+
+
+
+
+
+
+
+
+
+function useCollapsibleCard(initialIsOpen = true) {
+  const [isOpen, setIsOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useState)(initialIsOpen);
+  const toggle = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useCallback)(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
+  const CollapsibleCardHeader = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useCallback)(
+    ({
+      children,
+      ...props
+    }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(
+      _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardHeader,
+      {
+        ...props,
+        onClick: toggle,
+        style: {
+          cursor: "pointer",
+          ...props.style
+        },
+        children: [
+          /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+            "div",
+            {
+              style: {
+                width: "100%",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center"
+              },
+              children
+            }
+          ),
+          /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+            _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button,
+            {
+              __next40pxDefaultSize: true,
+              variant: "tertiary",
+              icon: isOpen ? _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__["default"] : _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
+              "aria-expanded": isOpen,
+              "aria-label": isOpen ? "Collapse" : "Expand"
+            }
+          )
+        ]
+      }
+    ),
+    [toggle, isOpen]
+  );
+  return { isOpen, CollapsibleCardHeader };
+}
+function isSummaryFieldVisible(summaryField, summaryConfig, isOpen) {
+  if (!summaryConfig || Array.isArray(summaryConfig) && summaryConfig.length === 0) {
+    return false;
+  }
+  const summaryConfigArray = Array.isArray(summaryConfig) ? summaryConfig : [summaryConfig];
+  const fieldConfig = summaryConfigArray.find((config) => {
+    if (typeof config === "string") {
+      return config === summaryField.id;
+    }
+    if (typeof config === "object" && "id" in config) {
+      return config.id === summaryField.id;
+    }
+    return false;
+  });
+  if (!fieldConfig) {
+    return false;
+  }
+  if (typeof fieldConfig === "string") {
+    return true;
+  }
+  if (typeof fieldConfig === "object" && "visibility" in fieldConfig) {
+    return fieldConfig.visibility === "always" || fieldConfig.visibility === "when-collapsed" && !isOpen;
+  }
+  return true;
+}
+function FormCardField({
+  data,
+  field,
+  onChange,
+  hideLabelFromVision,
+  validity
+}) {
+  const { fields } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_5__["default"]);
+  const layout = (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__.normalizeLayout)({
+    ...field.layout,
+    type: "card"
+  });
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useMemo)(
+    () => ({
+      layout: _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__.DEFAULT_LAYOUT,
+      fields: (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_7__.isCombinedField)(field) ? field.children : []
+    }),
+    [field]
+  );
+  const { isOpen, CollapsibleCardHeader } = useCollapsibleCard(
+    layout.isOpened
+  );
+  const summaryFields = (0,_get_summary_fields__WEBPACK_IMPORTED_MODULE_8__.getSummaryFields)(layout.summary, fields);
+  const visibleSummaryFields = summaryFields.filter(
+    (summaryField) => isSummaryFieldVisible(summaryField, layout.summary, isOpen)
+  );
+  if ((0,_is_combined_field__WEBPACK_IMPORTED_MODULE_7__.isCombinedField)(field)) {
+    const withHeader2 = !!field.label && layout.withHeader;
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, { className: "dataforms-layouts-card__field", children: [
+      withHeader2 && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(CollapsibleCardHeader, { className: "dataforms-layouts-card__field-header", children: [
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { className: "dataforms-layouts-card__field-header-label", children: field.label }),
+        visibleSummaryFields.length > 0 && layout.withHeader && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-card__field-summary", children: visibleSummaryFields.map(
+          (summaryField) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+            summaryField.render,
+            {
+              item: data,
+              field: summaryField
+            },
+            summaryField.id
+          )
+        ) })
+      ] }),
+      (isOpen || !withHeader2) && // If it doesn't have a header, keep it open.
+      // Otherwise, the card will not be visible.
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, { className: "dataforms-layouts-card__field-control", children: [
+        field.description && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-card__field-description", children: field.description }),
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+          _data_form_layout__WEBPACK_IMPORTED_MODULE_9__.DataFormLayout,
+          {
+            data,
+            form,
+            onChange,
+            validity: validity?.children
+          }
+        )
+      ] })
+    ] });
+  }
+  const fieldDefinition = fields.find(
+    (fieldDef) => fieldDef.id === field.id
+  );
+  if (!fieldDefinition || !fieldDefinition.Edit) {
+    return null;
+  }
+  const RegularLayout = (0,___WEBPACK_IMPORTED_MODULE_10__.getFormFieldLayout)("regular")?.component;
+  if (!RegularLayout) {
+    return null;
+  }
+  const withHeader = !!fieldDefinition.label && layout.withHeader;
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, { className: "dataforms-layouts-card__field", children: [
+    withHeader && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(CollapsibleCardHeader, { className: "dataforms-layouts-card__field-header", children: [
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", { className: "dataforms-layouts-card__field-header-label", children: fieldDefinition.label }),
+      visibleSummaryFields.length > 0 && layout.withHeader && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-card__field-summary", children: visibleSummaryFields.map((summaryField) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        summaryField.render,
+        {
+          item: data,
+          field: summaryField
+        },
+        summaryField.id
+      )) })
+    ] }),
+    (isOpen || !withHeader) && // If it doesn't have a header, keep it open.
+    // Otherwise, the card will not be visible.
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, { className: "dataforms-layouts-card__field-control", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      RegularLayout,
+      {
+        data,
+        field,
+        onChange,
+        hideLabelFromVision: hideLabelFromVision || withHeader,
+        validity
+      }
+    ) })
+  ] });
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DataFormLayout: () => (/* binding */ DataFormLayout)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/index.js");
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+
+
+
+
+
+
+
+const DEFAULT_WRAPPER = ({ children }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, { className: "dataforms-layouts__wrapper", spacing: 4, children });
+function DataFormLayout({
+  data,
+  form,
+  onChange,
+  validity,
+  children,
+  as
+}) {
+  const { fields: fieldDefinitions } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  function getFieldDefinition(field) {
+    const fieldId = typeof field === "string" ? field : field.id;
+    return fieldDefinitions.find(
+      (fieldDefinition) => fieldDefinition.id === fieldId
+    );
+  }
+  const normalizedFormFields = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useMemo)(
+    () => (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_4__["default"])(form),
+    [form]
+  );
+  const normalizedFormLayout = (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_4__.normalizeLayout)(form.layout);
+  const Wrapper = as ?? (0,_index__WEBPACK_IMPORTED_MODULE_5__.getFormFieldLayout)(normalizedFormLayout.type)?.wrapper ?? DEFAULT_WRAPPER;
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Wrapper, { layout: normalizedFormLayout, children: normalizedFormFields.map((formField) => {
+    const FieldLayout = (0,_index__WEBPACK_IMPORTED_MODULE_5__.getFormFieldLayout)(formField.layout.type)?.component;
+    if (!FieldLayout) {
+      return null;
+    }
+    const fieldDefinition = !(0,_is_combined_field__WEBPACK_IMPORTED_MODULE_6__.isCombinedField)(formField) ? getFieldDefinition(formField) : void 0;
+    if (fieldDefinition && fieldDefinition.isVisible && !fieldDefinition.isVisible(data)) {
+      return null;
+    }
+    if (children) {
+      return children(
+        FieldLayout,
+        formField,
+        validity?.[formField.id]
+      );
+    }
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      FieldLayout,
+      {
+        data,
+        field: formField,
+        onChange,
+        validity: validity?.[formField.id]
+      },
+      formField.id
+    );
+  }) });
+}
+
+//# sourceMappingURL=data-form-layout.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/get-summary-fields.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/get-summary-fields.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getSummaryFields: () => (/* binding */ getSummaryFields)
+/* harmony export */ });
+function extractSummaryIds(summary) {
+  if (Array.isArray(summary)) {
+    return summary.map(
+      (item) => typeof item === "string" ? item : item.id
+    );
+  }
+  return [];
+}
+const getSummaryFields = (summaryField, fields) => {
+  if (Array.isArray(summaryField) && summaryField.length > 0) {
+    const summaryIds = extractSummaryIds(summaryField);
+    return summaryIds.map(
+      (summaryId) => fields.find((_field) => _field.id === summaryId)
+    ).filter((_field) => _field !== void 0);
+  }
+  return [];
+};
+
+//# sourceMappingURL=get-summary-fields.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/index.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/index.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getFormFieldLayout: () => (/* binding */ getFormFieldLayout)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _regular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./regular */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/regular/index.js");
+/* harmony import */ var _panel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./panel */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/index.js");
+/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./card */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/card/index.js");
+/* harmony import */ var _row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./row */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/row/index.js");
+
+
+
+
+
+
+const FORM_FIELD_LAYOUTS = [
+  {
+    type: "regular",
+    component: _regular__WEBPACK_IMPORTED_MODULE_2__["default"],
+    wrapper: ({
+      children,
+      layout
+    }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack,
+      {
+        className: "dataforms-layouts__wrapper",
+        spacing: layout?.spacing ?? 4,
+        children
+      }
+    )
+  },
+  {
+    type: "panel",
+    component: _panel__WEBPACK_IMPORTED_MODULE_3__["default"],
+    wrapper: ({ children }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, { className: "dataforms-layouts__wrapper", spacing: 2, children })
+  },
+  {
+    type: "card",
+    component: _card__WEBPACK_IMPORTED_MODULE_4__["default"],
+    wrapper: ({
+      children,
+      layout
+    }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack,
+      {
+        className: "dataforms-layouts__wrapper",
+        spacing: layout?.spacing ?? 6,
+        children
+      }
+    )
+  },
+  {
+    type: "row",
+    component: _row__WEBPACK_IMPORTED_MODULE_5__["default"],
+    wrapper: ({
+      children,
+      layout
+    }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, { className: "dataforms-layouts__wrapper", spacing: 4, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-row__field", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack,
+      {
+        spacing: 4,
+        alignment: layout.alignment,
+        children
+      }
+    ) }) })
+  }
+];
+function getFormFieldLayout(type) {
+  return FORM_FIELD_LAYOUTS.find((layout) => layout.type === type);
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   isCombinedField: () => (/* binding */ isCombinedField)
+/* harmony export */ });
+function isCombinedField(field) {
+  return field.children !== void 0;
+}
+
+//# sourceMappingURL=is-combined-field.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DEFAULT_LAYOUT: () => (/* binding */ DEFAULT_LAYOUT),
+/* harmony export */   "default": () => (/* binding */ normalizeFormFields),
+/* harmony export */   normalizeLayout: () => (/* binding */ normalizeLayout)
+/* harmony export */ });
+const DEFAULT_LAYOUT = {
+  type: "regular",
+  labelPosition: "top"
+};
+const normalizeCardSummaryField = (sum) => {
+  if (typeof sum === "string") {
+    return [{ id: sum, visibility: "when-collapsed" }];
+  }
+  return sum.map((item) => {
+    if (typeof item === "string") {
+      return { id: item, visibility: "when-collapsed" };
+    }
+    return { id: item.id, visibility: item.visibility };
+  });
+};
+function normalizeLayout(layout) {
+  let normalizedLayout = DEFAULT_LAYOUT;
+  if (layout?.type === "regular") {
+    normalizedLayout = {
+      type: "regular",
+      labelPosition: layout?.labelPosition ?? "top"
+    };
+  } else if (layout?.type === "panel") {
+    const summary = layout.summary ?? [];
+    const normalizedSummary = Array.isArray(summary) ? summary : [summary];
+    normalizedLayout = {
+      type: "panel",
+      labelPosition: layout?.labelPosition ?? "side",
+      openAs: layout?.openAs ?? "dropdown",
+      summary: normalizedSummary
+    };
+  } else if (layout?.type === "card") {
+    if (layout.withHeader === false) {
+      normalizedLayout = {
+        type: "card",
+        withHeader: false,
+        isOpened: true,
+        summary: []
+      };
+    } else {
+      const summary = layout.summary ?? [];
+      normalizedLayout = {
+        type: "card",
+        withHeader: true,
+        isOpened: typeof layout.isOpened === "boolean" ? layout.isOpened : true,
+        summary: normalizeCardSummaryField(summary)
+      };
+    }
+  } else if (layout?.type === "row") {
+    normalizedLayout = {
+      type: "row",
+      alignment: layout?.alignment ?? "center",
+      styles: layout?.styles ?? {}
+    };
+  }
+  return normalizedLayout;
+}
+function normalizeFormFields(form) {
+  const formLayout = normalizeLayout(form?.layout);
+  return (form.fields ?? []).map((field) => {
+    if (typeof field === "string") {
+      return {
+        id: field,
+        layout: formLayout
+      };
+    }
+    const fieldLayout = field.layout ? normalizeLayout(field.layout) : formLayout;
+    return {
+      ...field,
+      layout: fieldLayout
+    };
+  });
+}
+
+//# sourceMappingURL=normalize-form-fields.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/dropdown.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/dropdown.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ dropdown_default)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/close-small.js");
+/* harmony import */ var _data_form_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+/* harmony import */ var _summary_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./summary-button */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/summary-button.js");
+
+
+
+
+
+
+
+
+
+function DropdownHeader({
+  title,
+  onClose
+}) {
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack,
+    {
+      className: "dataforms-layouts-panel__dropdown-header",
+      spacing: 4,
+      children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, { alignment: "center", children: [
+        title && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHeading, { level: 2, size: 13, children: title }),
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalSpacer, {}),
+        onClose && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+          _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button,
+          {
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Close"),
+            icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
+            onClick: onClose,
+            size: "small"
+          }
+        )
+      ] })
+    }
+  );
+}
+function PanelDropdown({
+  data,
+  field,
+  onChange,
+  validity,
+  labelPosition = "side",
+  summaryFields,
+  fieldDefinition,
+  popoverAnchor
+}) {
+  const fieldLabel = (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_5__.isCombinedField)(field) ? field.label : fieldDefinition?.label;
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useMemo)(
+    () => ({
+      layout: _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__.DEFAULT_LAYOUT,
+      fields: (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_5__.isCombinedField)(field) ? field.children : (
+        // If not explicit children return the field id itself.
+        [{ id: field.id }]
+      )
+    }),
+    [field]
+  );
+  const formValidity = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+    if (validity === void 0) {
+      return void 0;
+    }
+    if ((0,_is_combined_field__WEBPACK_IMPORTED_MODULE_5__.isCombinedField)(field)) {
+      return validity?.children;
+    }
+    return { [field.id]: validity };
+  }, [validity, field]);
+  const popoverProps = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useMemo)(
+    () => ({
+      // Anchor the popover to the middle of the entire row so that it doesn't
+      // move around when the label changes.
+      anchor: popoverAnchor,
+      placement: "left-start",
+      offset: 36,
+      shift: true
+    }),
+    [popoverAnchor]
+  );
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Dropdown,
+    {
+      contentClassName: "dataforms-layouts-panel__field-dropdown",
+      popoverProps,
+      focusOnMount: true,
+      toggleProps: {
+        size: "compact",
+        variant: "tertiary",
+        tooltipPosition: "middle left"
+      },
+      renderToggle: ({ isOpen, onToggle }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        _summary_button__WEBPACK_IMPORTED_MODULE_7__["default"],
+        {
+          summaryFields,
+          data,
+          labelPosition,
+          fieldLabel,
+          disabled: fieldDefinition.readOnly === true,
+          onClick: onToggle,
+          "aria-expanded": isOpen
+        }
+      ),
+      renderContent: ({ onClose }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: [
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DropdownHeader, { title: fieldLabel, onClose }),
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+          _data_form_layout__WEBPACK_IMPORTED_MODULE_8__.DataFormLayout,
+          {
+            data,
+            form,
+            onChange,
+            validity: formValidity,
+            children: (FieldLayout, childField, childFieldValidity) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+              FieldLayout,
+              {
+                data,
+                field: childField,
+                onChange,
+                hideLabelFromVision: (form?.fields ?? []).length < 2,
+                validity: childFieldValidity
+              },
+              childField.id
+            )
+          }
+        )
+      ] })
+    }
+  );
+}
+var dropdown_default = PanelDropdown;
+
+//# sourceMappingURL=dropdown.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/index.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/index.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FormPanelField)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dropdown */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/dropdown.js");
+/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modal */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/modal.js");
+/* harmony import */ var _get_summary_fields__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../get-summary-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/get-summary-fields.js");
+
+
+
+
+
+
+
+
+
+
+const getFieldDefinition = (field, fields) => {
+  const fieldDefinition = fields.find((_field) => _field.id === field.id);
+  if (!fieldDefinition) {
+    return fields.find((_field) => {
+      if ((0,_is_combined_field__WEBPACK_IMPORTED_MODULE_4__.isCombinedField)(field)) {
+        const simpleChildren = field.children.filter(
+          (child) => typeof child === "string" || !(0,_is_combined_field__WEBPACK_IMPORTED_MODULE_4__.isCombinedField)(child)
+        );
+        if (simpleChildren.length === 0) {
+          return false;
+        }
+        const firstChildFieldId = typeof simpleChildren[0] === "string" ? simpleChildren[0] : simpleChildren[0].id;
+        return _field.id === firstChildFieldId;
+      }
+      return _field.id === field.id;
+    });
+  }
+  return fieldDefinition;
+};
+const getFieldDefinitionAndSummaryFields = (layout, field, fields) => {
+  const summaryFields = (0,_get_summary_fields__WEBPACK_IMPORTED_MODULE_5__.getSummaryFields)(layout.summary, fields);
+  const fieldDefinition = getFieldDefinition(field, fields);
+  if (summaryFields.length === 0) {
+    return {
+      summaryFields: fieldDefinition ? [fieldDefinition] : [],
+      fieldDefinition
+    };
+  }
+  return {
+    summaryFields,
+    fieldDefinition
+  };
+};
+function FormPanelField({
+  data,
+  field,
+  onChange,
+  validity
+}) {
+  const { fields } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  const layout = (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_7__.normalizeLayout)({
+    ...field.layout,
+    type: "panel"
+  });
+  const [popoverAnchor, setPopoverAnchor] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useState)(
+    null
+  );
+  const { fieldDefinition, summaryFields } = getFieldDefinitionAndSummaryFields(layout, field, fields);
+  if (!fieldDefinition) {
+    return null;
+  }
+  const labelPosition = layout.labelPosition;
+  const labelClassName = (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(
+    "dataforms-layouts-panel__field-label",
+    `dataforms-layouts-panel__field-label--label-position-${labelPosition}`
+  );
+  const fieldLabel = (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_4__.isCombinedField)(field) ? field.label : fieldDefinition?.label;
+  const renderedControl = layout.openAs === "modal" ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _modal__WEBPACK_IMPORTED_MODULE_8__["default"],
+    {
+      data,
+      field,
+      onChange,
+      labelPosition,
+      summaryFields,
+      fieldDefinition
+    }
+  ) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _dropdown__WEBPACK_IMPORTED_MODULE_9__["default"],
+    {
+      data,
+      field,
+      onChange,
+      validity,
+      labelPosition,
+      summaryFields,
+      fieldDefinition,
+      popoverAnchor
+    }
+  );
+  if (labelPosition === "top") {
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalVStack, { className: "dataforms-layouts-panel__field", spacing: 0, children: [
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        "div",
+        {
+          className: labelClassName,
+          style: { paddingBottom: 0 },
+          children: fieldLabel
+        }
+      ),
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-panel__field-control", children: renderedControl })
+    ] });
+  }
+  if (labelPosition === "none") {
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-panel__field", children: renderedControl });
+  }
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(
+    _wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalHStack,
+    {
+      ref: setPopoverAnchor,
+      className: "dataforms-layouts-panel__field",
+      children: [
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: labelClassName, children: fieldLabel }),
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-panel__field-control", children: renderedControl })
+      ]
+    }
+  );
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/modal.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/modal.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ modal_default)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! deepmerge */ "./node_modules/deepmerge/dist/cjs.js");
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(deepmerge__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _data_form_layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+/* harmony import */ var _summary_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./summary-button */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/summary-button.js");
+/* harmony import */ var _hooks_use_form_validity__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../hooks/use-form-validity */ "./node_modules/@wordpress/dataviews/build-module/hooks/use-form-validity.js");
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+
+
+
+
+
+
+
+
+
+
+
+function ModalContent({
+  data,
+  field,
+  onChange,
+  fieldLabel,
+  onClose
+}) {
+  const { fields } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_5__["default"]);
+  const [changes, setChanges] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)({});
+  const modalData = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useMemo)(() => {
+    return deepmerge__WEBPACK_IMPORTED_MODULE_1___default()(data, changes);
+  }, [data, changes]);
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useMemo)(
+    () => ({
+      layout: _normalize_form_fields__WEBPACK_IMPORTED_MODULE_6__.DEFAULT_LAYOUT,
+      fields: (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_7__.isCombinedField)(field) ? field.children : (
+        // If not explicit children return the field id itself.
+        [{ id: field.id }]
+      )
+    }),
+    [field]
+  );
+  const { validity } = (0,_hooks_use_form_validity__WEBPACK_IMPORTED_MODULE_8__["default"])(
+    modalData,
+    fields,
+    form
+  );
+  const onApply = () => {
+    onChange(changes);
+    onClose();
+  };
+  const handleOnChange = (newValue) => {
+    setChanges((prev) => deepmerge__WEBPACK_IMPORTED_MODULE_1___default()(prev, newValue));
+  };
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(
+    _wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Modal,
+    {
+      className: "dataforms-layouts-panel__modal",
+      onRequestClose: onClose,
+      isFullScreen: false,
+      title: fieldLabel,
+      size: "medium",
+      children: [
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+          _data_form_layout__WEBPACK_IMPORTED_MODULE_9__.DataFormLayout,
+          {
+            data: modalData,
+            form,
+            onChange: handleOnChange,
+            validity,
+            children: (FieldLayout, childField, childFieldValidity) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+              FieldLayout,
+              {
+                data: modalData,
+                field: childField,
+                onChange: handleOnChange,
+                hideLabelFromVision: (form?.fields ?? []).length < 2,
+                validity: childFieldValidity
+              },
+              childField.id
+            )
+          }
+        ),
+        /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(
+          _wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalHStack,
+          {
+            className: "dataforms-layouts-panel__modal-footer",
+            spacing: 3,
+            children: [
+              /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.__experimentalSpacer, {}),
+              /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+                _wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button,
+                {
+                  variant: "tertiary",
+                  onClick: onClose,
+                  __next40pxDefaultSize: true,
+                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Cancel")
+                }
+              ),
+              /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+                _wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button,
+                {
+                  variant: "primary",
+                  onClick: onApply,
+                  __next40pxDefaultSize: true,
+                  children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Apply")
+                }
+              )
+            ]
+          }
+        )
+      ]
+    }
+  );
+}
+function PanelModal({
+  data,
+  field,
+  onChange,
+  labelPosition,
+  summaryFields,
+  fieldDefinition
+}) {
+  const [isOpen, setIsOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
+  const fieldLabel = (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_7__.isCombinedField)(field) ? field.label : fieldDefinition?.label;
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: [
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      _summary_button__WEBPACK_IMPORTED_MODULE_10__["default"],
+      {
+        summaryFields,
+        data,
+        labelPosition,
+        fieldLabel,
+        disabled: fieldDefinition.readOnly === true,
+        onClick: () => setIsOpen(true),
+        "aria-expanded": isOpen
+      }
+    ),
+    isOpen && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      ModalContent,
+      {
+        data,
+        field,
+        onChange,
+        fieldLabel: fieldLabel ?? "",
+        onClose: () => setIsOpen(false)
+      }
+    )
+  ] });
+}
+var modal_default = PanelModal;
+
+//# sourceMappingURL=modal.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/summary-button.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/panel/summary-button.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ summary_button_default)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function SummaryButton({
+  summaryFields,
+  data,
+  labelPosition,
+  fieldLabel,
+  disabled,
+  onClick,
+  "aria-expanded": ariaExpanded
+}) {
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    _wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button,
+    {
+      className: "dataforms-layouts-panel__summary-button",
+      size: "compact",
+      variant: ["none", "top"].includes(labelPosition) ? "link" : "tertiary",
+      "aria-expanded": ariaExpanded,
+      "aria-label": (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.sprintf)(
+        // translators: %s: Field name.
+        (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__._x)("Edit %s", "field"),
+        fieldLabel || ""
+      ),
+      onClick,
+      disabled,
+      accessibleWhenDisabled: true,
+      style: summaryFields.length > 1 ? {
+        minHeight: "auto",
+        height: "auto",
+        alignItems: "flex-start"
+      } : void 0,
+      children: summaryFields.length > 1 ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        "div",
+        {
+          style: {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            width: "100%",
+            gap: "2px"
+          },
+          children: summaryFields.map((summaryField) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+            "div",
+            {
+              style: { width: "100%" },
+              children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+                summaryField.render,
+                {
+                  item: data,
+                  field: summaryField
+                }
+              )
+            },
+            summaryField.id
+          ))
+        }
+      ) : summaryFields.map((summaryField) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        summaryField.render,
+        {
+          item: data,
+          field: summaryField
+        },
+        summaryField.id
+      ))
+    }
+  );
+}
+var summary_button_default = SummaryButton;
+
+//# sourceMappingURL=summary-button.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/regular/index.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/regular/index.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FormRegularField)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _data_form_layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+
+
+
+
+
+
+
+
+function Header({ title }) {
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalVStack, { className: "dataforms-layouts-regular__header", spacing: 4, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalHStack, { alignment: "center", children: [
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalHeading, { level: 2, size: 13, children: title }),
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalSpacer, {})
+  ] }) });
+}
+function FormRegularField({
+  data,
+  field,
+  onChange,
+  hideLabelFromVision,
+  validity
+}) {
+  const { fields } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_4__["default"]);
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useMemo)(
+    () => ({
+      layout: _normalize_form_fields__WEBPACK_IMPORTED_MODULE_5__.DEFAULT_LAYOUT,
+      fields: (0,_is_combined_field__WEBPACK_IMPORTED_MODULE_6__.isCombinedField)(field) ? field.children : []
+    }),
+    [field]
+  );
+  if ((0,_is_combined_field__WEBPACK_IMPORTED_MODULE_6__.isCombinedField)(field)) {
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: [
+      !hideLabelFromVision && field.label && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Header, { title: field.label }),
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        _data_form_layout__WEBPACK_IMPORTED_MODULE_7__.DataFormLayout,
+        {
+          data,
+          form,
+          onChange,
+          validity: validity?.children
+        }
+      )
+    ] });
+  }
+  const layout = (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_5__.normalizeLayout)({
+    ...field.layout,
+    type: "regular"
+  });
+  const labelPosition = layout.labelPosition;
+  const fieldDefinition = fields.find(
+    (fieldDef) => fieldDef.id === field.id
+  );
+  if (!fieldDefinition || !fieldDefinition.Edit) {
+    return null;
+  }
+  if (labelPosition === "side") {
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.__experimentalHStack, { className: "dataforms-layouts-regular__field", children: [
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        "div",
+        {
+          className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(
+            "dataforms-layouts-regular__field-label",
+            `dataforms-layouts-regular__field-label--label-position-${labelPosition}`
+          ),
+          children: fieldDefinition.label
+        }
+      ),
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-regular__field-control", children: fieldDefinition.readOnly === true ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        fieldDefinition.render,
+        {
+          item: data,
+          field: fieldDefinition
+        }
+      ) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        fieldDefinition.Edit,
+        {
+          data,
+          field: fieldDefinition,
+          onChange,
+          hideLabelFromVision: true,
+          validity
+        },
+        fieldDefinition.id
+      ) })
+    ] });
+  }
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-regular__field", children: fieldDefinition.readOnly === true ? /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: [
+    !hideLabelFromVision && labelPosition !== "none" && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.BaseControl.VisualLabel, { children: fieldDefinition.label }),
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+      fieldDefinition.render,
+      {
+        item: data,
+        field: fieldDefinition
+      }
+    )
+  ] }) }) : /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    fieldDefinition.Edit,
+    {
+      data,
+      field: fieldDefinition,
+      onChange,
+      hideLabelFromVision: labelPosition === "none" ? true : hideLabelFromVision,
+      validity
+    }
+  ) });
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/row/index.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/dataform-layouts/row/index.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FormRowField)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_dataform_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/dataform-context */ "./node_modules/@wordpress/dataviews/build-module/components/dataform-context/index.js");
+/* harmony import */ var _data_form_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data-form-layout */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/data-form-layout.js");
+/* harmony import */ var _is_combined_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../is-combined-field */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/is-combined-field.js");
+/* harmony import */ var _normalize_form_fields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! .. */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/index.js");
+
+
+
+
+
+
+
+
+function Header({ title }) {
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, { className: "dataforms-layouts-row__header", spacing: 4, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, { alignment: "center", children: [
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHeading, { level: 2, size: 13, children: title }),
+    /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalSpacer, {})
+  ] }) });
+}
+const EMPTY_WRAPPER = ({ children }) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children });
+function FormRowField({
+  data,
+  field,
+  onChange,
+  hideLabelFromVision,
+  validity
+}) {
+  const { fields } = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.useContext)(_components_dataform_context__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  const layout = (0,_normalize_form_fields__WEBPACK_IMPORTED_MODULE_4__.normalizeLayout)({
+    ...field.layout,
+    type: "row"
+  });
+  if ((0,_is_combined_field__WEBPACK_IMPORTED_MODULE_5__.isCombinedField)(field)) {
+    const form = {
+      fields: field.children.map((child) => {
+        if (typeof child === "string") {
+          return { id: child };
+        }
+        return child;
+      })
+    };
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", { className: "dataforms-layouts-row__field", children: [
+      !hideLabelFromVision && field.label && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Header, { title: field.label }),
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, { alignment: layout.alignment, spacing: 4, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+        _data_form_layout__WEBPACK_IMPORTED_MODULE_6__.DataFormLayout,
+        {
+          data,
+          form,
+          onChange,
+          validity: validity?.children,
+          as: EMPTY_WRAPPER,
+          children: (FieldLayout, childField, childFieldValidity) => /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+            "div",
+            {
+              className: "dataforms-layouts-row__field-control",
+              style: layout.styles[childField.id],
+              children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+                FieldLayout,
+                {
+                  data,
+                  field: childField,
+                  onChange,
+                  hideLabelFromVision,
+                  validity: childFieldValidity
+                }
+              )
+            },
+            childField.id
+          )
+        }
+      ) })
+    ] });
+  }
+  const fieldDefinition = fields.find((f) => f.id === field.id);
+  if (!fieldDefinition || !fieldDefinition.Edit) {
+    return null;
+  }
+  const RegularLayout = (0,___WEBPACK_IMPORTED_MODULE_7__.getFormFieldLayout)("regular")?.component;
+  if (!RegularLayout) {
+    return null;
+  }
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", { className: "dataforms-layouts-row__field-control", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(
+    RegularLayout,
+    {
+      data,
+      field: fieldDefinition,
+      onChange,
+      validity
+    }
+  ) }) });
+}
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/@wordpress/dataviews/build-module/dataviews-layouts/grid/index.js":
 /*!****************************************************************************************!*\
   !*** ./node_modules/@wordpress/dataviews/build-module/dataviews-layouts/grid/index.js ***!
@@ -15975,6 +17406,419 @@ function useElements({
 }
 
 //# sourceMappingURL=use-elements.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@wordpress/dataviews/build-module/hooks/use-form-validity.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@wordpress/dataviews/build-module/hooks/use-form-validity.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ use_form_validity_default),
+/* harmony export */   useFormValidity: () => (/* binding */ useFormValidity)
+/* harmony export */ });
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! deepmerge */ "./node_modules/deepmerge/dist/cjs.js");
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(deepmerge__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils_normalize_fields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/normalize-fields */ "./node_modules/@wordpress/dataviews/build-module/utils/normalize-fields.js");
+/* harmony import */ var _dataform_layouts_normalize_form_fields__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../dataform-layouts/normalize-form-fields */ "./node_modules/@wordpress/dataviews/build-module/dataform-layouts/normalize-form-fields.js");
+
+
+
+
+
+const isEmptyNullOrUndefined = (value) => [void 0, "", null].includes(value);
+const isArrayOrElementsEmptyNullOrUndefined = (value) => {
+  return !Array.isArray(value) || value.length === 0 || value.every((element) => isEmptyNullOrUndefined(element));
+};
+function isInvalidForRequired(fieldType, value) {
+  if (fieldType === void 0 && isEmptyNullOrUndefined(value) || fieldType === "text" && isEmptyNullOrUndefined(value) || fieldType === "email" && isEmptyNullOrUndefined(value) || fieldType === "url" && isEmptyNullOrUndefined(value) || fieldType === "telephone" && isEmptyNullOrUndefined(value) || fieldType === "password" && isEmptyNullOrUndefined(value) || fieldType === "integer" && isEmptyNullOrUndefined(value) || fieldType === "number" && isEmptyNullOrUndefined(value) || fieldType === "array" && isArrayOrElementsEmptyNullOrUndefined(value) || fieldType === "boolean" && value !== true) {
+    return true;
+  }
+  return false;
+}
+function isFormValid(formValidity) {
+  if (!formValidity) {
+    return true;
+  }
+  return Object.values(formValidity).every((fieldValidation) => {
+    return Object.entries(fieldValidation).every(
+      ([key, validation]) => {
+        if (key === "children" && validation && typeof validation === "object") {
+          return isFormValid(validation);
+        }
+        return validation.type === "valid";
+      }
+    );
+  });
+}
+function updateFieldValidity(setFormValidity, parentFieldId, fieldId, newValidity) {
+  if (parentFieldId) {
+    setFormValidity((prev) => ({
+      ...prev,
+      [parentFieldId]: {
+        ...prev?.[parentFieldId],
+        children: {
+          ...prev?.[parentFieldId]?.children,
+          [fieldId]: {
+            ...newValidity
+          }
+        }
+      }
+    }));
+  } else {
+    setFormValidity((prev) => ({
+      ...prev,
+      [fieldId]: {
+        ...newValidity
+      }
+    }));
+  }
+}
+function getFieldsToValidate(fields, form) {
+  const formFields = (0,_dataform_layouts_normalize_form_fields__WEBPACK_IMPORTED_MODULE_3__["default"])(form);
+  if (formFields.length === 0) {
+    return { fields: [], fieldToParent: /* @__PURE__ */ new Map() };
+  }
+  const fieldToParent = /* @__PURE__ */ new Map();
+  const fieldIdsToValidate = [];
+  formFields.forEach((formField) => {
+    if (!!formField.children) {
+      formField.children.forEach((child) => {
+        const childId = typeof child === "string" ? child : child.id;
+        fieldIdsToValidate.push(childId);
+        fieldToParent.set(childId, formField.id);
+      });
+    } else {
+      fieldIdsToValidate.push(formField.id);
+    }
+  });
+  return {
+    fields: (0,_utils_normalize_fields__WEBPACK_IMPORTED_MODULE_4__["default"])(
+      fields.filter(
+        (field) => fieldIdsToValidate.includes(field.id)
+      )
+    ),
+    fieldToParent
+  };
+}
+function useFormValidity(item, fields, form) {
+  const [formValidity, setFormValidity] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)();
+  const previousValidatedValuesRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)({});
+  const customValidationCounterRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)({});
+  const elementsValidationCounterRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)(
+    {}
+  );
+  const validate = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useCallback)(() => {
+    const { fields: fieldsToValidate, fieldToParent } = getFieldsToValidate(
+      fields,
+      form
+    );
+    if (fieldsToValidate.length === 0) {
+      setFormValidity(void 0);
+      return;
+    }
+    fieldsToValidate.forEach((field) => {
+      const value = field.getValue({ item });
+      if (previousValidatedValuesRef.current.hasOwnProperty(field.id) && value === previousValidatedValuesRef.current[field.id]) {
+        return;
+      }
+      previousValidatedValuesRef.current[field.id] = value;
+      const parentFieldId = fieldToParent.get(field.id);
+      if (field.isValid.required && isInvalidForRequired(field.type, value)) {
+        updateFieldValidity(setFormValidity, parentFieldId, field.id, {
+          required: { type: "invalid" }
+        });
+        return;
+      }
+      if (field.isValid.elements && field.hasElements && !field.getElements && Array.isArray(field.elements)) {
+        const validValues = field.elements.map((el) => el.value);
+        if (field.type !== "array" && !validValues.includes(value)) {
+          updateFieldValidity(
+            setFormValidity,
+            parentFieldId,
+            field.id,
+            {
+              elements: {
+                type: "invalid",
+                message: "Value must be one of the elements."
+              }
+            }
+          );
+          return;
+        }
+        if (field.type === "array" && !Array.isArray(value)) {
+          updateFieldValidity(
+            setFormValidity,
+            parentFieldId,
+            field.id,
+            {
+              elements: {
+                type: "invalid",
+                message: "Value must be an array."
+              }
+            }
+          );
+          return;
+        }
+        if (field.type === "array" && value.some((v) => !validValues.includes(v))) {
+          updateFieldValidity(
+            setFormValidity,
+            parentFieldId,
+            field.id,
+            {
+              elements: {
+                type: "invalid",
+                message: "Value must be one of the elements."
+              }
+            }
+          );
+          return;
+        }
+      }
+      if (field.isValid.elements && field.hasElements && typeof field.getElements === "function") {
+        const currentToken = (elementsValidationCounterRef.current[field.id] || 0) + 1;
+        elementsValidationCounterRef.current[field.id] = currentToken;
+        updateFieldValidity(setFormValidity, parentFieldId, field.id, {
+          elements: {
+            type: "validating",
+            message: "Validating..."
+          }
+        });
+        field.getElements().then((result) => {
+          if (elementsValidationCounterRef.current[field.id] !== currentToken) {
+            return;
+          }
+          if (!Array.isArray(result)) {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                elements: {
+                  type: "invalid",
+                  message: "Could not validate elements."
+                }
+              }
+            );
+            return;
+          }
+          const validValues = result.map((el) => el.value);
+          if (field.type !== "array" && !validValues.includes(value)) {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                elements: {
+                  type: "invalid",
+                  message: "Value must be one of the elements."
+                }
+              }
+            );
+            return;
+          }
+          if (field.type === "array" && !Array.isArray(value)) {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                elements: {
+                  type: "invalid",
+                  message: "Value must be an array."
+                }
+              }
+            );
+            return;
+          }
+          if (field.type === "array" && value.some(
+            (v) => !validValues.includes(v)
+          )) {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                elements: {
+                  type: "invalid",
+                  message: "Value must be one of the elements."
+                }
+              }
+            );
+          }
+        }).catch((error) => {
+          if (elementsValidationCounterRef.current[field.id] !== currentToken) {
+            return;
+          }
+          updateFieldValidity(
+            setFormValidity,
+            parentFieldId,
+            field.id,
+            {
+              elements: {
+                type: "invalid",
+                message: error.message
+              }
+            }
+          );
+        });
+      }
+      let customError;
+      try {
+        customError = field.isValid?.custom?.(
+          deepmerge__WEBPACK_IMPORTED_MODULE_0___default()(
+            item,
+            field.setValue({
+              item,
+              value
+            })
+          ),
+          field
+        );
+      } catch (error) {
+        let errorMessage;
+        if (error instanceof Error) {
+          errorMessage = error.message;
+        } else {
+          errorMessage = String(error) || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Unknown error when running custom validation.");
+        }
+        updateFieldValidity(setFormValidity, parentFieldId, field.id, {
+          custom: {
+            type: "invalid",
+            message: errorMessage
+          }
+        });
+      }
+      if (typeof customError === "string") {
+        updateFieldValidity(setFormValidity, parentFieldId, field.id, {
+          custom: {
+            type: "invalid",
+            message: customError
+          }
+        });
+        return;
+      }
+      if (customError instanceof Promise) {
+        const currentToken = (customValidationCounterRef.current[field.id] || 0) + 1;
+        customValidationCounterRef.current[field.id] = currentToken;
+        updateFieldValidity(setFormValidity, parentFieldId, field.id, {
+          custom: {
+            type: "validating",
+            message: "Validating..."
+          }
+        });
+        customError.then((result) => {
+          if (customValidationCounterRef.current[field.id] !== currentToken) {
+            return;
+          }
+          if (result === null) {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                custom: {
+                  type: "valid",
+                  message: "Valid"
+                }
+              }
+            );
+            return;
+          }
+          if (typeof result === "string") {
+            updateFieldValidity(
+              setFormValidity,
+              parentFieldId,
+              field.id,
+              {
+                custom: {
+                  type: "invalid",
+                  message: result
+                }
+              }
+            );
+          }
+        }).catch((error) => {
+          if (customValidationCounterRef.current[field.id] !== currentToken) {
+            return;
+          }
+          updateFieldValidity(
+            setFormValidity,
+            parentFieldId,
+            field.id,
+            {
+              custom: {
+                type: "invalid",
+                message: error.message
+              }
+            }
+          );
+        });
+        return;
+      }
+      setFormValidity((prev) => {
+        if (!prev) {
+          return prev;
+        }
+        if (parentFieldId) {
+          const parentField = prev[parentFieldId];
+          if (!parentField?.children) {
+            return prev;
+          }
+          const { [field.id]: removed2, ...restChildren } = parentField.children;
+          if (Object.keys(restChildren).length === 0) {
+            const { children, ...restParent } = parentField;
+            if (Object.keys(restParent).length === 0) {
+              const {
+                [parentFieldId]: removedParent,
+                ...restFields
+              } = prev;
+              return Object.keys(restFields).length === 0 ? void 0 : restFields;
+            }
+            return {
+              ...prev,
+              [parentFieldId]: restParent
+            };
+          }
+          return {
+            ...prev,
+            [parentFieldId]: {
+              ...parentField,
+              children: restChildren
+            }
+          };
+        }
+        if (!prev[field.id]) {
+          return prev;
+        }
+        const { [field.id]: removed, ...rest } = prev;
+        if (Object.keys(rest).length === 0) {
+          return void 0;
+        }
+        return rest;
+      });
+    });
+  }, [item, fields, form]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    validate();
+  }, [validate]);
+  return {
+    validity: formValidity,
+    isValid: isFormValid(formValidity)
+  };
+}
+var use_form_validity_default = useFormValidity;
+
+//# sourceMappingURL=use-form-validity.js.map
 
 
 /***/ }),
@@ -21396,6 +23240,150 @@ function toDate(argument, context) {
 
 /***/ }),
 
+/***/ "./node_modules/deepmerge/dist/cjs.js":
+/*!********************************************!*\
+  !*** ./node_modules/deepmerge/dist/cjs.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+var isMergeableObject = function isMergeableObject(value) {
+	return isNonNullObject(value)
+		&& !isSpecial(value)
+};
+
+function isNonNullObject(value) {
+	return !!value && typeof value === 'object'
+}
+
+function isSpecial(value) {
+	var stringValue = Object.prototype.toString.call(value);
+
+	return stringValue === '[object RegExp]'
+		|| stringValue === '[object Date]'
+		|| isReactElement(value)
+}
+
+// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
+var canUseSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for('react.element') : 0xeac7;
+
+function isReactElement(value) {
+	return value.$$typeof === REACT_ELEMENT_TYPE
+}
+
+function emptyTarget(val) {
+	return Array.isArray(val) ? [] : {}
+}
+
+function cloneUnlessOtherwiseSpecified(value, options) {
+	return (options.clone !== false && options.isMergeableObject(value))
+		? deepmerge(emptyTarget(value), value, options)
+		: value
+}
+
+function defaultArrayMerge(target, source, options) {
+	return target.concat(source).map(function(element) {
+		return cloneUnlessOtherwiseSpecified(element, options)
+	})
+}
+
+function getMergeFunction(key, options) {
+	if (!options.customMerge) {
+		return deepmerge
+	}
+	var customMerge = options.customMerge(key);
+	return typeof customMerge === 'function' ? customMerge : deepmerge
+}
+
+function getEnumerableOwnPropertySymbols(target) {
+	return Object.getOwnPropertySymbols
+		? Object.getOwnPropertySymbols(target).filter(function(symbol) {
+			return Object.propertyIsEnumerable.call(target, symbol)
+		})
+		: []
+}
+
+function getKeys(target) {
+	return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target))
+}
+
+function propertyIsOnObject(object, property) {
+	try {
+		return property in object
+	} catch(_) {
+		return false
+	}
+}
+
+// Protects from prototype poisoning and unexpected merging up the prototype chain.
+function propertyIsUnsafe(target, key) {
+	return propertyIsOnObject(target, key) // Properties are safe to merge if they don't exist in the target yet,
+		&& !(Object.hasOwnProperty.call(target, key) // unsafe if they exist up the prototype chain,
+			&& Object.propertyIsEnumerable.call(target, key)) // and also unsafe if they're nonenumerable.
+}
+
+function mergeObject(target, source, options) {
+	var destination = {};
+	if (options.isMergeableObject(target)) {
+		getKeys(target).forEach(function(key) {
+			destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
+		});
+	}
+	getKeys(source).forEach(function(key) {
+		if (propertyIsUnsafe(target, key)) {
+			return
+		}
+
+		if (propertyIsOnObject(target, key) && options.isMergeableObject(source[key])) {
+			destination[key] = getMergeFunction(key, options)(target[key], source[key], options);
+		} else {
+			destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
+		}
+	});
+	return destination
+}
+
+function deepmerge(target, source, options) {
+	options = options || {};
+	options.arrayMerge = options.arrayMerge || defaultArrayMerge;
+	options.isMergeableObject = options.isMergeableObject || isMergeableObject;
+	// cloneUnlessOtherwiseSpecified is added to `options` so that custom arrayMerge()
+	// implementations can use it. The caller may not replace it.
+	options.cloneUnlessOtherwiseSpecified = cloneUnlessOtherwiseSpecified;
+
+	var sourceIsArray = Array.isArray(source);
+	var targetIsArray = Array.isArray(target);
+	var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
+
+	if (!sourceAndTargetTypesMatch) {
+		return cloneUnlessOtherwiseSpecified(source, options)
+	} else if (sourceIsArray) {
+		return options.arrayMerge(target, source, options)
+	} else {
+		return mergeObject(target, source, options)
+	}
+}
+
+deepmerge.all = function deepmergeAll(array, options) {
+	if (!Array.isArray(array)) {
+		throw new Error('first argument should be an array')
+	}
+
+	return array.reduce(function(prev, next) {
+		return deepmerge(prev, next, options)
+	}, {})
+};
+
+var deepmerge_1 = deepmerge;
+
+module.exports = deepmerge_1;
+
+
+/***/ }),
+
 /***/ "./node_modules/fast-deep-equal/es6/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/fast-deep-equal/es6/index.js ***!
@@ -22103,8 +24091,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _examples_DataViewsExamples_DashboardManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/examples/DataViewsExamples/DashboardManager */ "./src/examples/DataViewsExamples/DashboardManager.js");
-/* harmony import */ var _examples_DataFormExamples_DataFormExamples__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/examples/DataFormExamples/DataFormExamples */ "./src/examples/DataFormExamples/DataFormExamples.js");
+/* harmony import */ var _examples_DataViewsExamples__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/examples/DataViewsExamples */ "./src/examples/DataViewsExamples/index.js");
+/* harmony import */ var _examples_DataFormExamples__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/examples/DataFormExamples */ "./src/examples/DataFormExamples/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
 // Import page components
@@ -22119,20 +24107,20 @@ const App = () => {
   // Render the appropriate component based on the current page
   switch (currentPage) {
     case 'dataviews':
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataViewsExamples_DashboardManager__WEBPACK_IMPORTED_MODULE_0__["default"], {});
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataViewsExamples__WEBPACK_IMPORTED_MODULE_0__["default"], {});
     case 'dataform':
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataFormExamples_DataFormExamples__WEBPACK_IMPORTED_MODULE_1__["default"], {});
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataFormExamples__WEBPACK_IMPORTED_MODULE_1__["default"], {});
     default:
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataViewsExamples_DashboardManager__WEBPACK_IMPORTED_MODULE_0__["default"], {});
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_examples_DataViewsExamples__WEBPACK_IMPORTED_MODULE_0__["default"], {});
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 /***/ }),
 
-/***/ "./src/examples/DataFormExamples/DataFormExamples.js":
+/***/ "./src/examples/DataFormExamples/BasicFormExample.js":
 /*!***********************************************************!*\
-  !*** ./src/examples/DataFormExamples/DataFormExamples.js ***!
+  !*** ./src/examples/DataFormExamples/BasicFormExample.js ***!
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -22143,93 +24131,1999 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
 
 
-
-
-// Placeholder for DataForm examples
-
-const dataFormExamples = [{
-  id: 'basic-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Simple form with basic field types'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic DataForm example will be implemented here.')
-      })
-    })
-  })
-}, {
-  id: 'validation-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with Validation'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with field validation rules'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with validation example coming soon.')
-      })
-    })
-  })
-}, {
-  id: 'dynamic-form',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataForm with dynamic fields and conditional logic'),
-  Component: () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Card, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.CardBody, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Dynamic DataForm example coming soon.')
-      })
-    })
-  })
-}];
-const DataFormExamples = () => {
-  const [selectedExample, setSelectedExample] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dataFormExamples[0].id);
-  const currentExample = dataFormExamples.find(e => e.id === selectedExample);
-  const CurrentComponent = currentExample?.Component;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-    spacing: 5,
-    className: "dataform-manager",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
-      spacing: 3,
-      className: "dataform-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
-        spacing: 4,
-        alignment: "left",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select DataForm Example'),
-          value: selectedExample,
-          options: [...dataFormExamples.map(e => ({
-            label: e.label,
-            value: e.id
-          }))],
-          onChange: setSelectedExample,
-          __nextHasNoMarginBottom: true
-        }), currentExample && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-          className: "example-description",
-          children: currentExample.description
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-      className: "dataform-content",
-      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CurrentComponent, {})
-    })]
+console.log('DataForm', _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"]);
+/**
+ * Basic DataForm Example
+ * Demonstrates simple form with basic field types
+ */
+const BasicFormExample = () => {
+  const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    title: 'Hello, World!',
+    order: 2,
+    author: 1,
+    status: 'draft',
+    reviewer: 'john',
+    email: 'hello@wordpress.org',
+    date: '2021-01-01T12:00:00',
+    sticky: false,
+    can_comment: false,
+    description: 'This is a sample description.'
+  });
+  const fields = [{
+    id: 'title',
+    label: 'Title',
+    type: 'text',
+    placeholder: 'Enter title'
+  }, {
+    id: 'order',
+    label: 'Order',
+    type: 'integer'
+  }, {
+    id: 'author',
+    label: 'Author',
+    type: 'integer',
+    elements: [{
+      value: 1,
+      label: 'Jane'
+    }, {
+      value: 2,
+      label: 'John'
+    }, {
+      value: 3,
+      label: 'Alice'
+    }, {
+      value: 4,
+      label: 'Bob'
+    }]
+  }, {
+    id: 'reviewer',
+    label: 'Reviewer',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'jane',
+      label: 'Jane'
+    }, {
+      value: 'john',
+      label: 'John'
+    }, {
+      value: 'alice',
+      label: 'Alice'
+    }, {
+      value: 'bob',
+      label: 'Bob'
+    }]
+  }, {
+    id: 'status',
+    label: 'Status',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'draft',
+      label: 'Draft'
+    }, {
+      value: 'published',
+      label: 'Published'
+    }, {
+      value: 'private',
+      label: 'Private'
+    }]
+  }, {
+    id: 'email',
+    label: 'Email',
+    type: 'email'
+  }, {
+    id: 'date',
+    label: 'Date',
+    type: 'datetime'
+  }, {
+    id: 'sticky',
+    label: 'Sticky',
+    type: 'boolean'
+  }, {
+    id: 'can_comment',
+    label: 'Allow comments',
+    type: 'boolean',
+    Edit: 'checkbox'
+  }, {
+    id: 'description',
+    label: 'Description',
+    type: 'text',
+    Edit: 'textarea'
+  }];
+  const form = {
+    layout: {
+      type: 'regular'
+    },
+    fields: ['title', 'order', 'author', 'status', 'reviewer', 'email', 'date', 'sticky', 'can_comment', 'description']
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    data: data,
+    fields: fields,
+    form: form,
+    onChange: edits => setData(prev => ({
+      ...prev,
+      ...edits
+    }))
   });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DataFormExamples);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BasicFormExample);
 
 /***/ }),
 
-/***/ "./src/examples/DataViewsExamples/DashboardManager.js":
+/***/ "./src/examples/DataFormExamples/CardLayoutExample.js":
 /*!************************************************************!*\
-  !*** ./src/examples/DataViewsExamples/DashboardManager.js ***!
+  !*** ./src/examples/DataFormExamples/CardLayoutExample.js ***!
   \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+
+/**
+ * Card Layout Example
+ * Demonstrates DataForm with card layout and nested sections
+ */
+
+const CardLayoutExample = () => {
+  const [customer, setCustomer] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    name: 'Danyka Romaguera',
+    email: 'aromaguera@example.org',
+    phone: '1-828-352-1250',
+    plan: 'Business',
+    shippingAddress: 'N/A',
+    billingAddress: 'Danyka Romaguera, West Myrtiehaven, 80240-4282, BI',
+    displayPayments: true,
+    totalOrders: 2,
+    totalRevenue: 1430,
+    averageOrderValue: 715,
+    hasVat: true,
+    vat: 10,
+    commission: 5,
+    dueDate: 'March 1st, 2028'
+  });
+  const customerFields = [{
+    id: 'name',
+    label: 'Customer Name',
+    type: 'text'
+  }, {
+    id: 'phone',
+    label: 'Phone',
+    type: 'text'
+  }, {
+    id: 'email',
+    label: 'Email',
+    type: 'email'
+  }, {
+    id: 'plan',
+    label: 'Plan',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'basic',
+      label: 'Basic'
+    }, {
+      value: 'business',
+      label: 'Business'
+    }, {
+      value: 'vip',
+      label: 'VIP'
+    }]
+  }, {
+    id: 'shippingAddress',
+    label: 'Shipping Address',
+    type: 'text'
+  }, {
+    id: 'billingAddress',
+    label: 'Billing Address',
+    type: 'text'
+  }, {
+    id: 'displayPayments',
+    label: 'Display Payments?',
+    type: 'boolean'
+  }, {
+    id: 'payments',
+    label: 'Payments',
+    type: 'text',
+    readOnly: true,
+    isVisible: item => item.displayPayments,
+    render: ({
+      item
+    }) => {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+        children: ["The customer has made a total of ", item.totalOrders, ' ', "orders, amounting to ", item.totalRevenue, " dollars. The average order value is ", item.averageOrderValue, ' ', "dollars."]
+      });
+    }
+  }, {
+    id: 'vat',
+    label: 'VAT',
+    type: 'integer'
+  }, {
+    id: 'commission',
+    label: 'Commission',
+    type: 'integer'
+  }, {
+    id: 'dueDate',
+    label: 'Due Date',
+    type: 'text',
+    render: ({
+      item
+    }) => {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Badge, {
+        children: ["Due on: ", item.dueDate]
+      });
+    }
+  }, {
+    id: 'plan-summary',
+    type: 'text',
+    readOnly: true,
+    render: ({
+      item
+    }) => {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Badge, {
+        children: item.plan
+      });
+    }
+  }];
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => ({
+    layout: {
+      type: 'card',
+      withHeader: true
+    },
+    fields: [{
+      id: 'customerCard',
+      layout: {
+        type: 'card',
+        summary: 'plan-summary',
+        isCollapsible: true
+      },
+      label: 'Customer',
+      description: 'Enter your contact details, plan type, and addresses to complete your customer information.',
+      children: [{
+        id: 'customerContact',
+        label: 'Contact',
+        layout: {
+          type: 'panel',
+          labelPosition: 'top'
+        },
+        children: [{
+          id: 'name',
+          layout: {
+            type: 'regular',
+            labelPosition: 'top'
+          }
+        }, {
+          id: 'phone',
+          layout: {
+            type: 'regular',
+            labelPosition: 'top'
+          }
+        }, {
+          id: 'email',
+          layout: {
+            type: 'regular',
+            labelPosition: 'top'
+          }
+        }]
+      }, {
+        id: 'plan',
+        layout: {
+          type: 'panel',
+          labelPosition: 'top'
+        }
+      }, {
+        id: 'shippingAddress',
+        layout: {
+          type: 'panel',
+          labelPosition: 'top'
+        }
+      }, {
+        id: 'billingAddress',
+        layout: {
+          type: 'panel',
+          labelPosition: 'top'
+        }
+      }, 'displayPayments']
+    }, {
+      id: 'payments',
+      layout: {
+        type: 'card',
+        withHeader: false
+      }
+    }, {
+      id: 'taxConfiguration',
+      label: 'Taxes',
+      layout: {
+        type: 'card',
+        isOpened: false,
+        summary: [{
+          id: 'dueDate',
+          visibility: 'always'
+        }],
+        isCollapsible: true
+      },
+      children: ['vat', 'commission']
+    }]
+  }), []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    data: customer,
+    fields: customerFields,
+    form: form,
+    onChange: edits => setCustomer(prev => ({
+      ...prev,
+      ...edits
+    }))
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CardLayoutExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/ConditionalFieldsExample.js":
+/*!*******************************************************************!*\
+  !*** ./src/examples/DataFormExamples/ConditionalFieldsExample.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+/**
+ * Conditional Fields Example
+ * Demonstrates DataForm with fields that show/hide based on other field values
+ */
+
+const ConditionalFieldsExample = () => {
+  const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    name: '',
+    email: '',
+    isActive: true,
+    homepageDisplay: 'latest',
+    staticHomepage: '',
+    showAdvanced: false,
+    advancedOption1: '',
+    advancedOption2: '',
+    userType: 'basic',
+    companyName: '',
+    taxId: '',
+    subscriptionType: 'free',
+    paymentMethod: '',
+    billingFrequency: ''
+  });
+  const fields = [{
+    id: 'isActive',
+    label: 'Is module active?',
+    type: 'boolean',
+    description: 'Enable or disable the module'
+  }, {
+    id: 'name',
+    label: 'Name',
+    type: 'text',
+    isVisible: post => post.isActive === true,
+    placeholder: 'Enter your name'
+  }, {
+    id: 'email',
+    label: 'Email',
+    type: 'email',
+    isVisible: post => post.isActive === true,
+    placeholder: 'Enter your email'
+  }, {
+    id: 'homepageDisplay',
+    label: 'Homepage display',
+    elements: [{
+      value: 'latest',
+      label: 'Latest posts'
+    }, {
+      value: 'static',
+      label: 'Static page'
+    }, {
+      value: 'custom',
+      label: 'Custom content'
+    }]
+  }, {
+    id: 'staticHomepage',
+    label: 'Static homepage',
+    elements: [{
+      value: 'welcome',
+      label: 'Welcome to my website'
+    }, {
+      value: 'about',
+      label: 'About'
+    }, {
+      value: 'services',
+      label: 'Services'
+    }, {
+      value: 'contact',
+      label: 'Contact'
+    }],
+    isVisible: post => post.homepageDisplay === 'static'
+  }, {
+    id: 'showAdvanced',
+    label: 'Show advanced options',
+    type: 'boolean',
+    Edit: 'toggle'
+  }, {
+    id: 'advancedOption1',
+    label: 'Advanced Option 1',
+    type: 'text',
+    isVisible: post => post.showAdvanced === true,
+    placeholder: 'Configure advanced option 1'
+  }, {
+    id: 'advancedOption2',
+    label: 'Advanced Option 2',
+    type: 'text',
+    Edit: 'textarea',
+    isVisible: post => post.showAdvanced === true,
+    placeholder: 'Configure advanced option 2'
+  }, {
+    id: 'userType',
+    label: 'User Type',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'basic',
+      label: 'Individual'
+    }, {
+      value: 'business',
+      label: 'Business'
+    }]
+  }, {
+    id: 'companyName',
+    label: 'Company Name',
+    type: 'text',
+    isVisible: post => post.userType === 'business',
+    placeholder: 'Enter company name'
+  }, {
+    id: 'taxId',
+    label: 'Tax ID',
+    type: 'text',
+    isVisible: post => post.userType === 'business',
+    placeholder: 'Enter tax ID'
+  }, {
+    id: 'subscriptionType',
+    label: 'Subscription Type',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'free',
+      label: 'Free'
+    }, {
+      value: 'basic',
+      label: 'Basic'
+    }, {
+      value: 'pro',
+      label: 'Pro'
+    }, {
+      value: 'enterprise',
+      label: 'Enterprise'
+    }]
+  }, {
+    id: 'paymentMethod',
+    label: 'Payment Method',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'card',
+      label: 'Credit Card'
+    }, {
+      value: 'paypal',
+      label: 'PayPal'
+    }, {
+      value: 'invoice',
+      label: 'Invoice'
+    }],
+    isVisible: post => post.subscriptionType !== 'free'
+  }, {
+    id: 'billingFrequency',
+    label: 'Billing Frequency',
+    type: 'text',
+    elements: [{
+      value: 'monthly',
+      label: 'Monthly'
+    }, {
+      value: 'yearly',
+      label: 'Yearly (Save 20%)'
+    }],
+    isVisible: post => post.subscriptionType !== 'free'
+  }];
+  const form = {
+    layout: {
+      type: 'card'
+    },
+    fields: [{
+      id: 'moduleSettings',
+      label: 'Module Settings',
+      children: ['isActive', 'name', 'email']
+    }, {
+      id: 'homepageSettings',
+      label: 'Homepage Configuration',
+      children: ['homepageDisplay', 'staticHomepage']
+    }, {
+      id: 'advancedSettings',
+      label: 'Advanced Settings',
+      children: ['showAdvanced', 'advancedOption1', 'advancedOption2']
+    }, {
+      id: 'userInfo',
+      label: 'User Information',
+      children: ['userType', 'companyName', 'taxId']
+    }, {
+      id: 'subscription',
+      label: 'Subscription & Payment',
+      children: ['subscriptionType', 'paymentMethod', 'billingFrequency']
+    }]
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    data: data,
+    fields: fields,
+    form: form,
+    onChange: edits => setData(prev => ({
+      ...prev,
+      ...edits
+    }))
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ConditionalFieldsExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/MixedLayoutExample.js":
+/*!*************************************************************!*\
+  !*** ./src/examples/DataFormExamples/MixedLayoutExample.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+/**
+ * Mixed Layout Example
+ * Demonstrates DataForm with mixed layout types (card, panel, row)
+ */
+
+const MixedLayoutExample = () => {
+  const [post, setPost] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    title: 'Hello, World!',
+    order: 2,
+    author: 1,
+    status: 'draft',
+    reviewer: 'john',
+    date: '2021-01-01T12:00:00',
+    birthdate: '1950-02-23T12:00:00',
+    filesize: 1024,
+    dimensions: '1920x1080',
+    category: 'technology',
+    tags: ['web', 'design'],
+    featured: true,
+    visibility: 'public',
+    commentStatus: 'open',
+    pingStatus: true
+  });
+  const fields = [{
+    id: 'title',
+    label: 'Title',
+    type: 'text',
+    placeholder: 'Enter post title'
+  }, {
+    id: 'order',
+    label: 'Order',
+    type: 'integer'
+  }, {
+    id: 'author',
+    label: 'Author',
+    type: 'integer',
+    elements: [{
+      value: 1,
+      label: 'Jane'
+    }, {
+      value: 2,
+      label: 'John'
+    }, {
+      value: 3,
+      label: 'Alice'
+    }, {
+      value: 4,
+      label: 'Bob'
+    }]
+  }, {
+    id: 'status',
+    label: 'Status',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'draft',
+      label: 'Draft'
+    }, {
+      value: 'published',
+      label: 'Published'
+    }, {
+      value: 'private',
+      label: 'Private'
+    }]
+  }, {
+    id: 'reviewer',
+    label: 'Reviewer',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'jane',
+      label: 'Jane'
+    }, {
+      value: 'john',
+      label: 'John'
+    }, {
+      value: 'alice',
+      label: 'Alice'
+    }, {
+      value: 'bob',
+      label: 'Bob'
+    }]
+  }, {
+    id: 'date',
+    label: 'Publish Date',
+    type: 'datetime'
+  }, {
+    id: 'birthdate',
+    label: 'Creation Date',
+    type: 'datetime',
+    elements: [{
+      value: '',
+      label: 'Select a date'
+    }, {
+      value: '1970-02-23T12:00:00',
+      label: 'Template 1'
+    }, {
+      value: '1950-02-23T12:00:00',
+      label: 'Template 2'
+    }]
+  }, {
+    id: 'filesize',
+    label: 'File Size (KB)',
+    type: 'integer',
+    readOnly: true
+  }, {
+    id: 'dimensions',
+    label: 'Dimensions',
+    type: 'text',
+    readOnly: true
+  }, {
+    id: 'category',
+    label: 'Category',
+    type: 'text',
+    elements: [{
+      value: 'technology',
+      label: 'Technology'
+    }, {
+      value: 'design',
+      label: 'Design'
+    }, {
+      value: 'business',
+      label: 'Business'
+    }, {
+      value: 'lifestyle',
+      label: 'Lifestyle'
+    }]
+  }, {
+    id: 'tags',
+    label: 'Tags',
+    type: 'array',
+    elements: [{
+      value: 'web',
+      label: 'Web'
+    }, {
+      value: 'design',
+      label: 'Design'
+    }, {
+      value: 'development',
+      label: 'Development'
+    }, {
+      value: 'wordpress',
+      label: 'WordPress'
+    }, {
+      value: 'javascript',
+      label: 'JavaScript'
+    }]
+  }, {
+    id: 'featured',
+    label: 'Featured Post',
+    type: 'boolean'
+  }, {
+    id: 'visibility',
+    label: 'Visibility',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'public',
+      label: 'Public'
+    }, {
+      value: 'password',
+      label: 'Password Protected'
+    }, {
+      value: 'private',
+      label: 'Private'
+    }]
+  }, {
+    id: 'commentStatus',
+    label: 'Comments',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'open',
+      label: 'Open'
+    }, {
+      value: 'closed',
+      label: 'Closed'
+    }]
+  }, {
+    id: 'pingStatus',
+    label: 'Allow Pingbacks',
+    type: 'boolean',
+    Edit: 'toggle'
+  }];
+  const form = {
+    layout: {
+      type: 'card'
+    },
+    fields: [
+    // Row layout for title and status
+    {
+      id: 'title-and-status',
+      children: [{
+        id: 'title',
+        layout: {
+          type: 'panel',
+          labelPosition: 'top'
+        }
+      }, 'status'],
+      layout: {
+        type: 'row',
+        alignment: 'center'
+      }
+    },
+    // Card layout for metadata
+    {
+      id: 'metadata',
+      label: 'Post Metadata',
+      layout: {
+        type: 'card',
+        isCollapsible: true
+      },
+      children: [{
+        id: 'order',
+        layout: {
+          type: 'panel'
+        }
+      }, 'category', 'tags', 'featured']
+    },
+    // Panel layout for author and dates
+    {
+      id: 'authorDateCard',
+      label: 'Author & Dates',
+      layout: {
+        type: 'panel',
+        openAs: 'dropdown'
+      },
+      children: ['author', 'reviewer', 'date', 'birthdate']
+    },
+    // Row layout for file info
+    {
+      id: 'fileInfo',
+      label: 'File Information',
+      layout: {
+        type: 'row'
+      },
+      children: ['filesize', 'dimensions']
+    },
+    // Card with nested panels for discussion settings
+    {
+      id: 'discussionSettings',
+      label: 'Discussion Settings',
+      layout: {
+        type: 'card',
+        isCollapsible: true,
+        isOpened: false
+      },
+      children: [{
+        id: 'visibilitySettings',
+        label: 'Visibility',
+        layout: {
+          type: 'panel'
+        },
+        children: ['visibility']
+      }, {
+        id: 'commentSettings',
+        label: 'Comments & Pingbacks',
+        layout: {
+          type: 'row',
+          alignment: 'start'
+        },
+        children: ['commentStatus', 'pingStatus']
+      }]
+    }]
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    data: post,
+    fields: fields,
+    form: form,
+    onChange: edits => setPost(prev => ({
+      ...prev,
+      ...edits
+    }))
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MixedLayoutExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/NestedDataExample.js":
+/*!************************************************************!*\
+  !*** ./src/examples/DataFormExamples/NestedDataExample.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! deepmerge */ "./node_modules/deepmerge/dist/cjs.js");
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(deepmerge__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+
+/**
+ * Nested Data Example
+ * Demonstrates DataForm handling nested data structures and derived data
+ */
+
+const NestedDataExample = () => {
+  const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    user: {
+      profile: {
+        name: 'John Doe',
+        email: 'john@example.com',
+        avatar: 'https://example.com/avatar.jpg'
+      },
+      preferences: {
+        notifications: true,
+        theme: 'dark',
+        language: 'en'
+      },
+      address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        zip: '10001'
+      }
+    },
+    revenue: {
+      total: 30,
+      units: 10,
+      pricePerUnit: 3,
+      tax: 0.08,
+      subtotal: 30,
+      grandTotal: 32.4
+    },
+    settings: {
+      general: {
+        siteName: 'My Website',
+        tagline: 'Just another WordPress site'
+      },
+      seo: {
+        metaTitle: 'Welcome to My Website',
+        metaDescription: 'This is the best website ever'
+      }
+    }
+  });
+  const nestedFields = [
+  // User profile fields
+  {
+    id: 'user.profile.name',
+    label: 'User Name',
+    type: 'text'
+  }, {
+    id: 'user.profile.email',
+    label: 'User Email',
+    type: 'email'
+  }, {
+    id: 'user.profile.avatar',
+    label: 'Avatar URL',
+    type: 'url'
+  },
+  // User preferences with custom getValue/setValue
+  {
+    id: 'user.preferences.notifications',
+    label: 'Notifications',
+    type: 'boolean',
+    Edit: 'radio',
+    elements: [{
+      label: 'Enabled',
+      value: 'enabled'
+    }, {
+      label: 'Disabled',
+      value: 'disabled'
+    }],
+    getValue: ({
+      item
+    }) => item.user.preferences.notifications === true ? 'enabled' : 'disabled',
+    setValue: ({
+      value
+    }) => ({
+      user: {
+        preferences: {
+          notifications: value === 'enabled'
+        }
+      }
+    })
+  }, {
+    id: 'user.preferences.theme',
+    label: 'Theme',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'light',
+      label: 'Light'
+    }, {
+      value: 'dark',
+      label: 'Dark'
+    }, {
+      value: 'auto',
+      label: 'Auto'
+    }]
+  }, {
+    id: 'user.preferences.language',
+    label: 'Language',
+    type: 'text',
+    elements: [{
+      value: 'en',
+      label: 'English'
+    }, {
+      value: 'es',
+      label: 'Spanish'
+    }, {
+      value: 'fr',
+      label: 'French'
+    }, {
+      value: 'de',
+      label: 'German'
+    }]
+  },
+  // Address fields
+  {
+    id: 'user.address.street',
+    label: 'Street Address',
+    type: 'text'
+  }, {
+    id: 'user.address.city',
+    label: 'City',
+    type: 'text'
+  }, {
+    id: 'user.address.state',
+    label: 'State',
+    type: 'text'
+  }, {
+    id: 'user.address.zip',
+    label: 'ZIP Code',
+    type: 'text'
+  },
+  // Revenue fields with derived calculations
+  {
+    id: 'revenue.total',
+    label: 'Subtotal',
+    type: 'integer',
+    readOnly: true
+  }, {
+    id: 'revenue.pricePerUnit',
+    label: 'Price Per Unit',
+    type: 'integer',
+    setValue: ({
+      item,
+      value
+    }) => {
+      const newTotal = value * item.revenue.units;
+      const taxAmount = newTotal * item.revenue.tax;
+      return {
+        revenue: {
+          total: newTotal,
+          pricePerUnit: value,
+          subtotal: newTotal,
+          grandTotal: newTotal + taxAmount
+        }
+      };
+    }
+  }, {
+    id: 'revenue.units',
+    label: 'Units',
+    type: 'integer',
+    setValue: ({
+      item,
+      value
+    }) => {
+      const newTotal = item.revenue.pricePerUnit * value;
+      const taxAmount = newTotal * item.revenue.tax;
+      return {
+        revenue: {
+          total: newTotal,
+          units: value,
+          subtotal: newTotal,
+          grandTotal: newTotal + taxAmount
+        }
+      };
+    }
+  }, {
+    id: 'revenue.tax',
+    label: 'Tax Rate',
+    type: 'number',
+    setValue: ({
+      item,
+      value
+    }) => {
+      const taxAmount = item.revenue.total * value;
+      return {
+        revenue: {
+          tax: value,
+          grandTotal: item.revenue.total + taxAmount
+        }
+      };
+    }
+  }, {
+    id: 'revenue.grandTotal',
+    label: 'Grand Total (with tax)',
+    type: 'number',
+    readOnly: true
+  },
+  // Settings fields
+  {
+    id: 'settings.general.siteName',
+    label: 'Site Name',
+    type: 'text'
+  }, {
+    id: 'settings.general.tagline',
+    label: 'Tagline',
+    type: 'text',
+    Edit: 'textarea'
+  }, {
+    id: 'settings.seo.metaTitle',
+    label: 'Meta Title',
+    type: 'text'
+  }, {
+    id: 'settings.seo.metaDescription',
+    label: 'Meta Description',
+    type: 'text',
+    Edit: {
+      control: 'textarea',
+      rows: 3
+    }
+  }];
+  const handleChange = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useCallback)(edits => {
+    // Deep merge to properly handle nested updates
+    setData(prev => deepmerge__WEBPACK_IMPORTED_MODULE_1___default()(prev, edits));
+  }, []);
+  const form = {
+    layout: {
+      type: 'panel',
+      labelPosition: 'top'
+    },
+    fields: [{
+      id: 'userProfile',
+      label: 'User Profile',
+      children: ['user.profile.name', 'user.profile.email', 'user.profile.avatar']
+    }, {
+      id: 'userPreferences',
+      label: 'User Preferences',
+      children: ['user.preferences.notifications', 'user.preferences.theme', 'user.preferences.language']
+    }, {
+      id: 'address',
+      label: 'Address Information',
+      children: ['user.address.street', 'user.address.city', 'user.address.state', 'user.address.zip']
+    }, {
+      id: 'revenue',
+      label: 'Revenue Calculation',
+      children: ['revenue.pricePerUnit', 'revenue.units', 'revenue.total', 'revenue.tax', 'revenue.grandTotal']
+    }, {
+      id: 'generalSettings',
+      label: 'General Settings',
+      children: ['settings.general.siteName', 'settings.general.tagline']
+    }, {
+      id: 'seoSettings',
+      label: 'SEO Settings',
+      children: ['settings.seo.metaTitle', 'settings.seo.metaDescription']
+    }]
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      data: data,
+      fields: nestedFields,
+      form: form,
+      onChange: handleChange
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      style: {
+        marginTop: '20px',
+        padding: '10px',
+        background: '#f0f0f0'
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h4", {
+        children: "Current Data Structure:"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("pre", {
+        style: {
+          fontSize: '12px'
+        },
+        children: JSON.stringify(data, null, 2)
+      })]
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NestedDataExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/PanelLayoutExample.js":
+/*!*************************************************************!*\
+  !*** ./src/examples/DataFormExamples/PanelLayoutExample.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+/**
+ * Panel Layout Example
+ * Demonstrates DataForm with panel layout and grouped fields
+ */
+
+const PanelLayoutExample = () => {
+  const [post, setPost] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    title: 'Hello, World!',
+    order: 2,
+    author: 1,
+    status: 'draft',
+    password: '',
+    reviewer: 'john',
+    date: '2021-01-01T12:00:00',
+    filesize: 1024,
+    dimensions: '1920x1080',
+    tags: ['photography', 'travel'],
+    address1: '123 Main St',
+    address2: 'Apt 4B',
+    city: 'New York',
+    comment_status: 'open',
+    ping_status: true,
+    origin: 'New York (JFK)',
+    destination: 'Los Angeles (LAX)',
+    flight_status: 'on-time',
+    gate: 'A12',
+    seat: '14F'
+  });
+  const fields = [{
+    id: 'title',
+    label: 'Title',
+    type: 'text'
+  }, {
+    id: 'order',
+    label: 'Order',
+    type: 'integer'
+  }, {
+    id: 'author',
+    label: 'Author',
+    type: 'integer',
+    elements: [{
+      value: 1,
+      label: 'Jane'
+    }, {
+      value: 2,
+      label: 'John'
+    }, {
+      value: 3,
+      label: 'Alice'
+    }, {
+      value: 4,
+      label: 'Bob'
+    }]
+  }, {
+    id: 'status',
+    label: 'Status',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'draft',
+      label: 'Draft'
+    }, {
+      value: 'published',
+      label: 'Published'
+    }, {
+      value: 'private',
+      label: 'Private'
+    }]
+  }, {
+    id: 'password',
+    label: 'Password',
+    type: 'text',
+    isVisible: item => item.status !== 'private'
+  }, {
+    id: 'reviewer',
+    label: 'Reviewer',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'jane',
+      label: 'Jane'
+    }, {
+      value: 'john',
+      label: 'John'
+    }, {
+      value: 'alice',
+      label: 'Alice'
+    }, {
+      value: 'bob',
+      label: 'Bob'
+    }]
+  }, {
+    id: 'date',
+    label: 'Date',
+    type: 'datetime'
+  }, {
+    id: 'filesize',
+    label: 'File Size',
+    type: 'integer',
+    readOnly: true
+  }, {
+    id: 'dimensions',
+    label: 'Dimensions',
+    type: 'text',
+    readOnly: true
+  }, {
+    id: 'tags',
+    label: 'Tags',
+    type: 'array',
+    placeholder: 'Enter comma-separated tags',
+    elements: [{
+      value: 'astronomy',
+      label: 'Astronomy'
+    }, {
+      value: 'book-review',
+      label: 'Book review'
+    }, {
+      value: 'event',
+      label: 'Event'
+    }, {
+      value: 'photography',
+      label: 'Photography'
+    }, {
+      value: 'travel',
+      label: 'Travel'
+    }]
+  }, {
+    id: 'address1',
+    label: 'Address 1',
+    type: 'text'
+  }, {
+    id: 'address2',
+    label: 'Address 2',
+    type: 'text'
+  }, {
+    id: 'city',
+    label: 'City',
+    type: 'text'
+  }, {
+    id: 'comment_status',
+    label: 'Comment Status',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'open',
+      label: 'Allow comments'
+    }, {
+      value: 'closed',
+      label: 'Comments closed'
+    }]
+  }, {
+    id: 'ping_status',
+    label: 'Allow Pings/Trackbacks',
+    type: 'boolean'
+  }, {
+    id: 'origin',
+    label: 'Origin',
+    type: 'text'
+  }, {
+    id: 'destination',
+    label: 'Destination',
+    type: 'text'
+  }, {
+    id: 'flight_status',
+    label: 'Flight Status',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'on-time',
+      label: 'On Time'
+    }, {
+      value: 'delayed',
+      label: 'Delayed'
+    }, {
+      value: 'cancelled',
+      label: 'Cancelled'
+    }]
+  }, {
+    id: 'gate',
+    label: 'Gate',
+    type: 'text'
+  }, {
+    id: 'seat',
+    label: 'Seat',
+    type: 'text'
+  }];
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+    return {
+      layout: {
+        type: 'panel'
+      },
+      fields: ['title', {
+        id: 'status',
+        label: 'Status & Visibility',
+        children: ['status', 'password']
+      }, 'order', 'author', 'filesize', 'dimensions', 'tags', {
+        id: 'discussion',
+        label: 'Discussion',
+        children: ['comment_status', 'ping_status']
+      }, {
+        id: 'address',
+        label: 'Address',
+        children: ['address1', 'address2', 'city']
+      }, {
+        id: 'flight_info',
+        label: 'Flight Information',
+        children: ['origin', 'destination', 'flight_status', 'gate'],
+        layout: {
+          type: 'panel',
+          summary: ['origin', 'destination', 'flight_status']
+        }
+      }, {
+        id: 'passenger_details',
+        label: 'Passenger Details',
+        children: ['author', 'seat'],
+        layout: {
+          type: 'panel',
+          summary: ['author', 'seat']
+        }
+      }]
+    };
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    data: post,
+    fields: fields,
+    form: form,
+    onChange: edits => setPost(prev => ({
+      ...prev,
+      ...edits
+    }))
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PanelLayoutExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/RowLayoutExample.js":
+/*!***********************************************************!*\
+  !*** ./src/examples/DataFormExamples/RowLayoutExample.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+/**
+ * Row Layout Example
+ * Demonstrates DataForm with row layout for horizontal field arrangement
+ */
+
+const RowLayoutExample = () => {
+  const [customer, setCustomer] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    name: 'Danyka Romaguera',
+    email: 'aromaguera@example.org',
+    phone: '1-828-352-1250',
+    plan: 'Business',
+    renewal: 'monthly',
+    shippingAddress: 'N/A',
+    shippingCity: 'N/A',
+    shippingPostalCode: 'N/A',
+    shippingCountry: 'N/A',
+    billingAddress: 'Danyka Romaguera, West Myrtiehaven',
+    billingCity: 'West Myrtiehaven',
+    billingPostalCode: '80240-4282',
+    vat: 10,
+    commission: 5,
+    hasDiscount: true,
+    cost: 100,
+    quantity: 5,
+    total: 500
+  });
+  const customerFields = [{
+    id: 'name',
+    label: 'Customer Name',
+    type: 'text'
+  }, {
+    id: 'phone',
+    label: 'Phone',
+    type: 'text'
+  }, {
+    id: 'email',
+    label: 'Email',
+    type: 'email'
+  }, {
+    id: 'shippingAddress',
+    label: 'Shipping Address',
+    type: 'text'
+  }, {
+    id: 'shippingCity',
+    label: 'Shipping City',
+    type: 'text'
+  }, {
+    id: 'shippingPostalCode',
+    label: 'Shipping Postal Code',
+    type: 'text'
+  }, {
+    id: 'shippingCountry',
+    label: 'Shipping Country',
+    type: 'text'
+  }, {
+    id: 'billingAddress',
+    label: 'Billing Address',
+    type: 'text'
+  }, {
+    id: 'billingCity',
+    label: 'Billing City',
+    type: 'text'
+  }, {
+    id: 'billingPostalCode',
+    label: 'Billing Postal Code',
+    type: 'text'
+  }, {
+    id: 'vat',
+    label: 'VAT (%)',
+    type: 'integer'
+  }, {
+    id: 'commission',
+    label: 'Commission (%)',
+    type: 'integer'
+  }, {
+    id: 'hasDiscount',
+    label: 'Has Discount?',
+    type: 'boolean'
+  }, {
+    id: 'plan',
+    label: 'Plan',
+    type: 'text',
+    Edit: 'toggleGroup',
+    elements: [{
+      value: 'basic',
+      label: 'Basic'
+    }, {
+      value: 'business',
+      label: 'Business'
+    }, {
+      value: 'vip',
+      label: 'VIP'
+    }]
+  }, {
+    id: 'renewal',
+    label: 'Renewal',
+    type: 'text',
+    Edit: 'radio',
+    elements: [{
+      value: 'weekly',
+      label: 'Weekly'
+    }, {
+      value: 'monthly',
+      label: 'Monthly'
+    }, {
+      value: 'yearly',
+      label: 'Yearly'
+    }]
+  }, {
+    id: 'cost',
+    label: 'Cost',
+    type: 'integer',
+    setValue: ({
+      item,
+      value
+    }) => ({
+      cost: value,
+      total: Number(value) * item.quantity
+    })
+  }, {
+    id: 'quantity',
+    label: 'Quantity',
+    type: 'integer',
+    elements: [{
+      value: 1,
+      label: '1'
+    }, {
+      value: 2,
+      label: '2'
+    }, {
+      value: 3,
+      label: '3'
+    }, {
+      value: 4,
+      label: '4'
+    }, {
+      value: 5,
+      label: '5'
+    }, {
+      value: 6,
+      label: '6'
+    }, {
+      value: 7,
+      label: '7'
+    }, {
+      value: 8,
+      label: '8'
+    }, {
+      value: 9,
+      label: '9'
+    }, {
+      value: 10,
+      label: '10'
+    }],
+    setValue: ({
+      item,
+      value
+    }) => ({
+      quantity: Number(value),
+      total: Number(value) * item.cost
+    })
+  }, {
+    id: 'total',
+    label: 'Total',
+    type: 'integer',
+    readOnly: true
+  }];
+  const form = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => ({
+    fields: [{
+      id: 'customer',
+      label: 'Customer Information',
+      layout: {
+        type: 'row',
+        alignment: 'center'
+      },
+      children: ['name', 'phone', 'email']
+    }, {
+      id: 'addressRow',
+      label: 'Billing & Shipping Addresses',
+      layout: {
+        type: 'row',
+        alignment: 'start'
+      },
+      children: [{
+        id: 'billingAddress',
+        label: 'Billing',
+        children: ['billingAddress', 'billingCity', 'billingPostalCode']
+      }, {
+        id: 'shippingAddress',
+        label: 'Shipping',
+        children: ['shippingAddress', 'shippingCity', 'shippingPostalCode', 'shippingCountry']
+      }]
+    }, {
+      id: 'payments-and-tax',
+      label: 'Payments & Taxes',
+      layout: {
+        type: 'row',
+        alignment: 'center'
+      },
+      children: ['vat', 'commission', 'hasDiscount']
+    }, {
+      id: 'planRow',
+      label: 'Subscription',
+      layout: {
+        type: 'row',
+        alignment: 'center'
+      },
+      children: ['plan', 'renewal']
+    }, {
+      id: 'product',
+      label: 'Product Calculation',
+      layout: {
+        type: 'row',
+        alignment: 'end',
+        styles: {
+          total: {
+            flex: 1
+          },
+          cost: {
+            flex: 3
+          },
+          quantity: {
+            flex: 3
+          }
+        }
+      },
+      children: ['total', 'cost', 'quantity']
+    }]
+  }), []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    data: customer,
+    fields: customerFields,
+    form: form,
+    onChange: edits => setCustomer(prev => ({
+      ...prev,
+      ...edits
+    }))
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RowLayoutExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/ValidationExample.js":
+/*!************************************************************!*\
+  !*** ./src/examples/DataFormExamples/ValidationExample.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/dataviews */ "./node_modules/@wordpress/dataviews/build-module/components/dataform/index.js");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/**
+ * WordPress dependencies
+ */
+
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+
+
+
+/**
+ * Custom hook for form validation
+ */
+
+const useFormValidity = (data, fields, form) => {
+  const validity = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+    const errors = {};
+
+    // Simple validation logic
+    fields.forEach(field => {
+      const value = data[field.id];
+
+      // Required validation
+      if (field.isValid?.required) {
+        if (!value || value === '' || Array.isArray(value) && value.length === 0) {
+          errors[field.id] = {
+            required: {
+              message: `${field.label} is required`
+            }
+          };
+        }
+      }
+
+      // Custom validation
+      if (field.isValid?.custom && value) {
+        const customError = typeof field.isValid.custom === 'function' ? field.isValid.custom(data) : null;
+        if (customError) {
+          errors[field.id] = {
+            ...errors[field.id],
+            custom: {
+              message: customError
+            }
+          };
+        }
+      }
+    });
+    return errors;
+  }, [data, fields]);
+  const isValid = Object.keys(validity).length === 0;
+  return {
+    validity,
+    isValid
+  };
+};
+
+/**
+ * Validation Example
+ * Demonstrates DataForm with various validation rules
+ */
+const ValidationExample = () => {
+  const [post, setPost] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    text: 'Can have letters and spaces',
+    email: 'hi@example.com',
+    telephone: '+306978241796',
+    url: 'https://example.com',
+    integer: 2,
+    number: 3.14,
+    boolean: true,
+    password: 'secretpassword123',
+    categories: ['astronomy']
+  });
+  const customTextRule = value => {
+    if (!/^[a-zA-Z ]+$/.test(value.text)) {
+      return 'Value must only contain letters and spaces.';
+    }
+    return null;
+  };
+  const customEmailRule = value => {
+    if (!/^[a-zA-Z0-9._%+-]+@example\.com$/.test(value.email)) {
+      return 'Email address must be from @example.com domain.';
+    }
+    return null;
+  };
+  const customTelephoneRule = value => {
+    if (!/^\+30\d{10}$/.test(value.telephone)) {
+      return 'Telephone number must start with +30 and have 10 digits after.';
+    }
+    return null;
+  };
+  const customUrlRule = value => {
+    if (!/^https:\/\/example\.com/.test(value.url)) {
+      return 'URL must be from https://example.com domain.';
+    }
+    return null;
+  };
+  const customIntegerRule = value => {
+    if (value.integer % 2 !== 0) {
+      return 'Integer must be an even number.';
+    }
+    return null;
+  };
+  const customPasswordRule = value => {
+    if (value.password.length < 8) {
+      return 'Password must be at least 8 characters long.';
+    }
+    if (!/[A-Z]/.test(value.password)) {
+      return 'Password must contain at least one uppercase letter.';
+    }
+    if (!/[0-9]/.test(value.password)) {
+      return 'Password must contain at least one number.';
+    }
+    return null;
+  };
+  const fields = [{
+    id: 'text',
+    type: 'text',
+    label: 'Text',
+    placeholder: 'Enter text with only letters and spaces',
+    isValid: {
+      required: true,
+      custom: customTextRule
+    }
+  }, {
+    id: 'email',
+    type: 'email',
+    label: 'Email',
+    placeholder: 'email@example.com',
+    isValid: {
+      required: true,
+      custom: customEmailRule
+    }
+  }, {
+    id: 'telephone',
+    type: 'telephone',
+    label: 'Telephone',
+    placeholder: '+30XXXXXXXXXX',
+    isValid: {
+      required: true,
+      custom: customTelephoneRule
+    }
+  }, {
+    id: 'url',
+    type: 'url',
+    label: 'URL',
+    placeholder: 'https://example.com/...',
+    isValid: {
+      required: true,
+      custom: customUrlRule
+    }
+  }, {
+    id: 'integer',
+    type: 'integer',
+    label: 'Integer (Even Number)',
+    isValid: {
+      required: true,
+      custom: customIntegerRule
+    }
+  }, {
+    id: 'number',
+    type: 'number',
+    label: 'Number',
+    isValid: {
+      required: true
+    }
+  }, {
+    id: 'boolean',
+    type: 'boolean',
+    label: 'Boolean (Must be checked)',
+    isValid: {
+      required: true
+    }
+  }, {
+    id: 'categories',
+    label: 'Categories',
+    type: 'array',
+    placeholder: 'Select categories',
+    description: 'Select at least one category',
+    isValid: {
+      required: true
+    },
+    elements: [{
+      value: 'astronomy',
+      label: 'Astronomy'
+    }, {
+      value: 'book-review',
+      label: 'Book review'
+    }, {
+      value: 'event',
+      label: 'Event'
+    }, {
+      value: 'photography',
+      label: 'Photography'
+    }, {
+      value: 'travel',
+      label: 'Travel'
+    }]
+  }, {
+    id: 'password',
+    type: 'password',
+    label: 'Password',
+    placeholder: 'Enter a strong password',
+    isValid: {
+      required: true,
+      custom: customPasswordRule
+    }
+  }];
+  const form = {
+    layout: {
+      type: 'regular'
+    },
+    fields: ['text', 'email', 'telephone', 'url', 'integer', 'number', 'boolean', 'categories', 'password']
+  };
+  const {
+    validity,
+    isValid
+  } = useFormValidity(post, fields, form);
+  const handleSubmit = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useCallback)(() => {
+    if (isValid) {
+      // eslint-disable-next-line no-alert
+      alert('Form submitted successfully!');
+      // eslint-disable-next-line no-console
+      console.log('Form data:', post);
+    }
+  }, [isValid, post]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("form", {
+    onSubmit: e => e.preventDefault(),
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+      alignment: "left",
+      spacing: 4,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_dataviews__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        data: post,
+        fields: fields,
+        form: form,
+        validity: validity,
+        onChange: edits => setPost(prev => ({
+          ...prev,
+          ...edits
+        }))
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+        __next40pxDefaultSize: true,
+        accessibleWhenDisabled: true,
+        disabled: !isValid,
+        variant: "primary",
+        onClick: handleSubmit,
+        children: "Submit"
+      }), !isValid && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        style: {
+          color: '#cc1818'
+        },
+        children: "Please fix the validation errors above."
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ValidationExample);
+
+/***/ }),
+
+/***/ "./src/examples/DataFormExamples/index.js":
+/*!************************************************!*\
+  !*** ./src/examples/DataFormExamples/index.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22243,20 +26137,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DashboardPhotos */ "./src/examples/DataViewsExamples/DashboardPhotos/index.js");
-/* harmony import */ var _DashboardsPlanets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardDefault */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardDefault.js");
-/* harmony import */ var _DashboardsPlanets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardMinimal */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardMinimal.js");
-/* harmony import */ var _DashboardsPlanets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardFree */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardFree.js");
-/* harmony import */ var _DashboardsPlanets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardGroupedByType */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardGroupedByType.js");
-/* harmony import */ var _DashboardsPlanets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardInfiniteScroll */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardInfiniteScroll.js");
-/* harmony import */ var _DashboardsPlanets_DataViewsPickerExample__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./DashboardsPlanets/DataViewsPickerExample */ "./src/examples/DataViewsExamples/DashboardsPlanets/DataViewsPickerExample.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _BasicFormExample__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BasicFormExample */ "./src/examples/DataFormExamples/BasicFormExample.js");
+/* harmony import */ var _PanelLayoutExample__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PanelLayoutExample */ "./src/examples/DataFormExamples/PanelLayoutExample.js");
+/* harmony import */ var _CardLayoutExample__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CardLayoutExample */ "./src/examples/DataFormExamples/CardLayoutExample.js");
+/* harmony import */ var _RowLayoutExample__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./RowLayoutExample */ "./src/examples/DataFormExamples/RowLayoutExample.js");
+/* harmony import */ var _ValidationExample__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ValidationExample */ "./src/examples/DataFormExamples/ValidationExample.js");
+/* harmony import */ var _ConditionalFieldsExample__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ConditionalFieldsExample */ "./src/examples/DataFormExamples/ConditionalFieldsExample.js");
+/* harmony import */ var _NestedDataExample__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./NestedDataExample */ "./src/examples/DataFormExamples/NestedDataExample.js");
+/* harmony import */ var _MixedLayoutExample__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./MixedLayoutExample */ "./src/examples/DataFormExamples/MixedLayoutExample.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
 
-// Import dashboards
+// Import all example components
 
 
 
@@ -22265,87 +26160,84 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const dashboards = [{
-  id: 'photos',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Photos Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('View and manage photo collection with topics and authors'),
-  Component: _DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__["default"]
+
+// DataForm examples configuration
+
+const dataFormExamples = [{
+  id: 'basic-form',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Basic Form'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Simple form with basic field types and regular layout'),
+  Component: _BasicFormExample__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, {
-  id: 'planets',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Planets Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Solar system planets and celestial objects'),
-  Component: _DashboardsPlanets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__["default"]
+  id: 'panel-layout',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Panel Layout'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with panel layout and grouped fields'),
+  Component: _PanelLayoutExample__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
-  id: 'minimal',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal dashboard with restricted features'),
-  Component: _DashboardsPlanets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__["default"]
+  id: 'card-layout',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Card Layout'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with card layout, collapsible sections, and nested structure'),
+  Component: _CardLayoutExample__WEBPACK_IMPORTED_MODULE_5__["default"]
 }, {
-  id: 'free',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Composition Dashboard'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free composition view with planet overview'),
-  Component: _DashboardsPlanets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__["default"]
+  id: 'row-layout',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Row Layout'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with row layout for horizontal field arrangement'),
+  Component: _RowLayoutExample__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
-  id: 'grouped',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Grouped By Type'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Items grouped by type with badge fields'),
-  Component: _DashboardsPlanets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__["default"]
+  id: 'mixed-layout',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Mixed Layouts'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form combining multiple layout types (card, panel, row)'),
+  Component: _MixedLayoutExample__WEBPACK_IMPORTED_MODULE_10__["default"]
 }, {
-  id: 'infinite',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Infinite Scroll'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Progressive loading with infinite scroll'),
-  Component: _DashboardsPlanets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__["default"]
+  id: 'validation-form',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form Validation'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with various validation rules (required, custom, async)'),
+  Component: _ValidationExample__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
-  id: 'dataviews-picker',
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataViews Picker'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataViews Picker component example with planets data'),
-  Component: _DashboardsPlanets_DataViewsPickerExample__WEBPACK_IMPORTED_MODULE_9__["default"]
+  id: 'conditional-fields',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Conditional Fields'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form with fields that show/hide based on other field values'),
+  Component: _ConditionalFieldsExample__WEBPACK_IMPORTED_MODULE_8__["default"]
+}, {
+  id: 'nested-data',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Nested Data'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Form handling nested data structures and derived calculations'),
+  Component: _NestedDataExample__WEBPACK_IMPORTED_MODULE_9__["default"]
 }];
-const DashboardManager = () => {
-  const [selectedDashboard, setSelectedDashboard] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dashboards[0].id);
-  const currentDashboard = dashboards.find(d => d.id === selectedDashboard);
-  const CurrentComponent = currentDashboard?.Component;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+const DataFormExamples = () => {
+  const [selectedExample, setSelectedExample] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dataFormExamples[0].id);
+  const currentExample = dataFormExamples.find(e => e.id === selectedExample);
+  const CurrentComponent = currentExample?.Component;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
     spacing: 5,
-    className: "dashboard-manager",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+    className: "dataform-manager",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
       spacing: 3,
-      className: "dashboard-header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+      className: "dataform-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
         spacing: 4,
         alignment: "left",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select Dashboard'),
-          value: selectedDashboard,
-          options: [{
-            label: dashboards[0].label,
-            value: dashboards[0].id
-          }, {
-            label: '──────────',
-            value: 'separator',
-            disabled: true
-          }, ...dashboards.slice(1).map(d => ({
-            label: d.label,
-            value: d.id
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select DataForm Example'),
+          value: selectedExample,
+          options: [...dataFormExamples.map(e => ({
+            label: e.label,
+            value: e.id
           }))],
-          onChange: value => {
-            if (value !== 'separator') {
-              setSelectedDashboard(value);
-            }
-          },
+          onChange: setSelectedExample,
           __nextHasNoMarginBottom: true
-        }), currentDashboard && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
-          className: "dashboard-description",
-          children: currentDashboard.description
+        }), currentExample && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+          className: "example-description",
+          children: currentExample.description
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
-      className: "dashboard-content",
-      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(CurrentComponent, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)("div", {
+      className: "dataform-content",
+      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(CurrentComponent, {})
     })]
   });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DashboardManager);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DataFormExamples);
 
 /***/ }),
 
@@ -25848,6 +29740,129 @@ const fields = [{
   type: 'array'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fields);
+
+/***/ }),
+
+/***/ "./src/examples/DataViewsExamples/index.js":
+/*!*************************************************!*\
+  !*** ./src/examples/DataViewsExamples/index.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DashboardPhotos */ "./src/examples/DataViewsExamples/DashboardPhotos/index.js");
+/* harmony import */ var _DashboardsPlanets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardDefault */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardDefault.js");
+/* harmony import */ var _DashboardsPlanets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardMinimal */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardMinimal.js");
+/* harmony import */ var _DashboardsPlanets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardFree */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardFree.js");
+/* harmony import */ var _DashboardsPlanets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardGroupedByType */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardGroupedByType.js");
+/* harmony import */ var _DashboardsPlanets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./DashboardsPlanets/DashboardInfiniteScroll */ "./src/examples/DataViewsExamples/DashboardsPlanets/DashboardInfiniteScroll.js");
+/* harmony import */ var _DashboardsPlanets_DataViewsPickerExample__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./DashboardsPlanets/DataViewsPickerExample */ "./src/examples/DataViewsExamples/DashboardsPlanets/DataViewsPickerExample.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__);
+
+
+
+
+// Import dashboards
+
+
+
+
+
+
+
+
+const dashboards = [{
+  id: 'photos',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Photos Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('View and manage photo collection with topics and authors'),
+  Component: _DashboardPhotos__WEBPACK_IMPORTED_MODULE_3__["default"]
+}, {
+  id: 'planets',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Planets Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Solar system planets and celestial objects'),
+  Component: _DashboardsPlanets_DashboardDefault__WEBPACK_IMPORTED_MODULE_4__["default"]
+}, {
+  id: 'minimal',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Minimal dashboard with restricted features'),
+  Component: _DashboardsPlanets_DashboardMinimal__WEBPACK_IMPORTED_MODULE_5__["default"]
+}, {
+  id: 'free',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Composition Dashboard'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free composition view with planet overview'),
+  Component: _DashboardsPlanets_DashboardFree__WEBPACK_IMPORTED_MODULE_6__["default"]
+}, {
+  id: 'grouped',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Grouped By Type'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Items grouped by type with badge fields'),
+  Component: _DashboardsPlanets_DashboardGroupedByType__WEBPACK_IMPORTED_MODULE_7__["default"]
+}, {
+  id: 'infinite',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Infinite Scroll'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Progressive loading with infinite scroll'),
+  Component: _DashboardsPlanets_DashboardInfiniteScroll__WEBPACK_IMPORTED_MODULE_8__["default"]
+}, {
+  id: 'dataviews-picker',
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataViews Picker'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('DataViews Picker component example with planets data'),
+  Component: _DashboardsPlanets_DataViewsPickerExample__WEBPACK_IMPORTED_MODULE_9__["default"]
+}];
+const DashboardManager = () => {
+  const [selectedDashboard, setSelectedDashboard] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(dashboards[0].id);
+  const currentDashboard = dashboards.find(d => d.id === selectedDashboard);
+  const CurrentComponent = currentDashboard?.Component;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+    spacing: 5,
+    className: "dashboard-manager",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalVStack, {
+      spacing: 3,
+      className: "dashboard-header",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalHStack, {
+        spacing: 4,
+        alignment: "left",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Select Dashboard'),
+          value: selectedDashboard,
+          options: [{
+            label: dashboards[0].label,
+            value: dashboards[0].id
+          }, {
+            label: '──────────',
+            value: 'separator',
+            disabled: true
+          }, ...dashboards.slice(1).map(d => ({
+            label: d.label,
+            value: d.id
+          }))],
+          onChange: value => {
+            if (value !== 'separator') {
+              setSelectedDashboard(value);
+            }
+          },
+          __nextHasNoMarginBottom: true
+        }), currentDashboard && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.__experimentalText, {
+          className: "dashboard-description",
+          children: currentDashboard.description
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)("div", {
+      className: "dashboard-content",
+      children: CurrentComponent && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(CurrentComponent, {})
+    })]
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DashboardManager);
 
 /***/ }),
 
