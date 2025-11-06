@@ -1778,12 +1778,16 @@ div.dataviews-view-list {
   font-size: 13px;
   line-height: 20px;
 }
-#dataviews-examples-root {
+#dataviews-examples-root,
+#dataform-examples-root {
   background: white;
 }
 #dataviews-examples-root .dashboard-manager,
 #dataviews-examples-root .dataviews-picker-manager,
-#dataviews-examples-root .dataform-manager {
+#dataviews-examples-root .dataform-manager,
+#dataform-examples-root .dashboard-manager,
+#dataform-examples-root .dataviews-picker-manager,
+#dataform-examples-root .dataform-manager {
   padding: 20px;
 }
 #dataviews-examples-root .dashboard-manager .dashboard-header,
@@ -1794,7 +1798,16 @@ div.dataviews-view-list {
 #dataviews-examples-root .dataviews-picker-manager .dataform-header,
 #dataviews-examples-root .dataform-manager .dashboard-header,
 #dataviews-examples-root .dataform-manager .picker-header,
-#dataviews-examples-root .dataform-manager .dataform-header {
+#dataviews-examples-root .dataform-manager .dataform-header,
+#dataform-examples-root .dashboard-manager .dashboard-header,
+#dataform-examples-root .dashboard-manager .picker-header,
+#dataform-examples-root .dashboard-manager .dataform-header,
+#dataform-examples-root .dataviews-picker-manager .dashboard-header,
+#dataform-examples-root .dataviews-picker-manager .picker-header,
+#dataform-examples-root .dataviews-picker-manager .dataform-header,
+#dataform-examples-root .dataform-manager .dashboard-header,
+#dataform-examples-root .dataform-manager .picker-header,
+#dataform-examples-root .dataform-manager .dataform-header {
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1807,7 +1820,16 @@ div.dataviews-view-list {
 #dataviews-examples-root .dataviews-picker-manager .dataform-header h2,
 #dataviews-examples-root .dataform-manager .dashboard-header h2,
 #dataviews-examples-root .dataform-manager .picker-header h2,
-#dataviews-examples-root .dataform-manager .dataform-header h2 {
+#dataviews-examples-root .dataform-manager .dataform-header h2,
+#dataform-examples-root .dashboard-manager .dashboard-header h2,
+#dataform-examples-root .dashboard-manager .picker-header h2,
+#dataform-examples-root .dashboard-manager .dataform-header h2,
+#dataform-examples-root .dataviews-picker-manager .dashboard-header h2,
+#dataform-examples-root .dataviews-picker-manager .picker-header h2,
+#dataform-examples-root .dataviews-picker-manager .dataform-header h2,
+#dataform-examples-root .dataform-manager .dashboard-header h2,
+#dataform-examples-root .dataform-manager .picker-header h2,
+#dataform-examples-root .dataform-manager .dataform-header h2 {
   margin: 0;
   font-size: 1.5rem;
   color: #1e1e1e;
@@ -1829,7 +1851,25 @@ div.dataviews-view-list {
 #dataviews-examples-root .dataform-manager .picker-header .dashboard-description,
 #dataviews-examples-root .dataform-manager .picker-header .example-description,
 #dataviews-examples-root .dataform-manager .dataform-header .dashboard-description,
-#dataviews-examples-root .dataform-manager .dataform-header .example-description {
+#dataviews-examples-root .dataform-manager .dataform-header .example-description,
+#dataform-examples-root .dashboard-manager .dashboard-header .dashboard-description,
+#dataform-examples-root .dashboard-manager .dashboard-header .example-description,
+#dataform-examples-root .dashboard-manager .picker-header .dashboard-description,
+#dataform-examples-root .dashboard-manager .picker-header .example-description,
+#dataform-examples-root .dashboard-manager .dataform-header .dashboard-description,
+#dataform-examples-root .dashboard-manager .dataform-header .example-description,
+#dataform-examples-root .dataviews-picker-manager .dashboard-header .dashboard-description,
+#dataform-examples-root .dataviews-picker-manager .dashboard-header .example-description,
+#dataform-examples-root .dataviews-picker-manager .picker-header .dashboard-description,
+#dataform-examples-root .dataviews-picker-manager .picker-header .example-description,
+#dataform-examples-root .dataviews-picker-manager .dataform-header .dashboard-description,
+#dataform-examples-root .dataviews-picker-manager .dataform-header .example-description,
+#dataform-examples-root .dataform-manager .dashboard-header .dashboard-description,
+#dataform-examples-root .dataform-manager .dashboard-header .example-description,
+#dataform-examples-root .dataform-manager .picker-header .dashboard-description,
+#dataform-examples-root .dataform-manager .picker-header .example-description,
+#dataform-examples-root .dataform-manager .dataform-header .dashboard-description,
+#dataform-examples-root .dataform-manager .dataform-header .example-description {
   color: #757575;
   font-style: italic;
   margin-top: 8px;
@@ -1842,14 +1882,25 @@ div.dataviews-view-list {
 #dataviews-examples-root .dataviews-picker-manager .dataform-content,
 #dataviews-examples-root .dataform-manager .dashboard-content,
 #dataviews-examples-root .dataform-manager .picker-content,
-#dataviews-examples-root .dataform-manager .dataform-content {
+#dataviews-examples-root .dataform-manager .dataform-content,
+#dataform-examples-root .dashboard-manager .dashboard-content,
+#dataform-examples-root .dashboard-manager .picker-content,
+#dataform-examples-root .dashboard-manager .dataform-content,
+#dataform-examples-root .dataviews-picker-manager .dashboard-content,
+#dataform-examples-root .dataviews-picker-manager .picker-content,
+#dataform-examples-root .dataviews-picker-manager .dataform-content,
+#dataform-examples-root .dataform-manager .dashboard-content,
+#dataform-examples-root .dataform-manager .picker-content,
+#dataform-examples-root .dataform-manager .dataform-content {
   min-height: 400px;
 }
-#dataviews-examples-root .topic_photos {
+#dataviews-examples-root .topic_photos,
+#dataform-examples-root .topic_photos {
   display: flex;
   flex-wrap: wrap;
 }
-#dataviews-examples-root .topic_photos span {
+#dataviews-examples-root .topic_photos span,
+#dataform-examples-root .topic_photos span {
   background-color: rgb(166, 165, 165);
   color: white;
   padding: 2px 4px;
