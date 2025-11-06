@@ -12,7 +12,7 @@
     "@wordpress/scripts": "^30.6.2"
   },
   "dependencies": {
-    "@wordpress/dataviews": "^10.1.0",
+    "@wordpress/dataviews": "next",
     "@wordpress/icons": "^11.0.0"
   }
 }

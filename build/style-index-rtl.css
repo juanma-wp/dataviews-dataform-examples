@@ -1,6 +1,6 @@
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/dataviews/build-style/style.css ***!
-  \*************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /**
  * Colors
  */
@@ -99,7 +99,6 @@
   font-size: 13px;
   line-height: 1.4;
 }
-
 .dataviews__view-actions,
 .dataviews-filters__container {
   box-sizing: border-box;
@@ -114,7 +113,6 @@
     transition: padding ease-out 0.1s;
   }
 }
-
 .dataviews-no-results,
 .dataviews-loading {
   padding: 0 48px;
@@ -129,11 +127,9 @@
     transition: padding ease-out 0.1s;
   }
 }
-
 .dataviews-loading-more {
   text-align: center;
 }
-
 @container (max-width: 430px) {
   .dataviews__view-actions,
   .dataviews-filters__container {
@@ -147,7 +143,7 @@
 }
 .dataviews-title-field {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 499;
   color: #2f2f2f;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -183,7 +179,6 @@
 .dataviews-title-field button.components-button.is-link:hover {
   color: var(--wp-admin-theme-color);
 }
-
 .dataviews-title-field--clickable {
   cursor: pointer;
   color: #2f2f2f;
@@ -196,7 +191,6 @@
   box-shadow: 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color, #007cba);
   border-radius: 2px;
 }
-
 /**
  * Applying a consistent 24px padding when DataViews are placed within cards.
  */
@@ -231,34 +225,28 @@
 .components-card__body:has(> .dataviews-picker-wrapper) .dataviews-view-table tr th:last-child {
   padding-inline-end: 24px;
 }
-
 .dataviews-bulk-actions-footer__item-count {
   color: #1e1e1e;
-  font-weight: 500;
+  font-weight: 499;
   font-size: 11px;
   text-transform: uppercase;
 }
-
 .dataviews-bulk-actions-footer__container {
   margin-left: auto;
   min-height: 32px;
 }
-
 .dataviews-filters__button {
   position: relative;
 }
-
 .dataviews-filters__container {
   padding-top: 0;
 }
-
 .dataviews-filters__reset-button.dataviews-filters__reset-button[aria-disabled=true], .dataviews-filters__reset-button.dataviews-filters__reset-button[aria-disabled=true]:hover {
   opacity: 0;
 }
 .dataviews-filters__reset-button.dataviews-filters__reset-button[aria-disabled=true]:focus {
   opacity: 1;
 }
-
 .dataviews-filters__summary-popover {
   font-size: 13px;
   line-height: 1.4;
@@ -272,7 +260,6 @@
 .dataviews-filters__summary-popover.components-dropdown__content .components-popover__content {
   padding: 0;
 }
-
 .dataviews-filters__summary-operators-container {
   padding: 8px 16px;
 }
@@ -295,7 +282,6 @@
   white-space: nowrap;
   overflow: hidden;
 }
-
 .dataviews-filters__summary-chip-container {
   position: relative;
   white-space: pre-wrap;
@@ -335,7 +321,7 @@
   box-shadow: 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color);
 }
 .dataviews-filters__summary-chip-container .dataviews-filters__summary-chip .dataviews-filters-__summary-filter-text-name {
-  font-weight: 500;
+  font-weight: 499;
 }
 .dataviews-filters__summary-chip-container .dataviews-filters__summary-chip-remove {
   width: 24px;
@@ -372,7 +358,6 @@
   outline: none;
   box-shadow: 0 0 0 var(--wp-admin-border-width-focus) var(--wp-admin-theme-color);
 }
-
 .dataviews-filters__search-widget-filter-combobox-list {
   max-height: 184px;
   padding: 4px;
@@ -382,12 +367,10 @@
 .dataviews-filters__search-widget-filter-combobox-list .dataviews-filters__search-widget-filter-combobox-item-value [data-user-value] {
   font-weight: 600;
 }
-
 .dataviews-filters__search-widget-listbox {
   padding: 4px;
   overflow: auto;
 }
-
 .dataviews-filters__search-widget-listitem {
   display: flex;
   align-items: center;
@@ -641,7 +624,6 @@
     --checkmark-size: calc(var(--checkbox-size) + 4px);
   }
 }
-
 .dataviews-filters__search-widget-filter-combobox__wrapper {
   position: relative;
   padding: 8px;
@@ -724,12 +706,10 @@
 .dataviews-filters__search-widget-filter-combobox__wrapper .dataviews-filters__search-widget-filter-combobox__icon:dir(ltr) {
   transform: scaleX(-1);
 }
-
 .dataviews-filters__container-visibility-toggle {
   position: relative;
   flex-shrink: 0;
 }
-
 .dataviews-filters-toggle__count {
   position: absolute;
   top: 0;
@@ -747,26 +727,22 @@
   color: #fff;
   box-sizing: border-box;
 }
-
 .dataviews-search {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 .dataviews-filters__user-input-widget {
   padding: 16px;
 }
 .dataviews-filters__user-input-widget .components-input-control__prefix {
   padding-right: 8px;
 }
-
 .dataviews-filters__search-widget-no-elements {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
 }
-
 .dataviews-footer {
   position: sticky;
   bottom: 0;
@@ -784,7 +760,6 @@
 .dataviews-footer {
   z-index: 2;
 }
-
 @container (max-width: 430px) {
   .dataviews-footer {
     padding: 12px 24px;
@@ -807,29 +782,25 @@
 }
 .dataviews-pagination__page-select {
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 499;
   text-transform: uppercase;
 }
 @media (min-width: 600px) {
   .dataviews-pagination__page-select .components-select-control__input {
     font-size: 11px !important;
-    font-weight: 500;
+    font-weight: 499;
   }
 }
-
 .dataviews-action-modal {
   z-index: 1000001;
 }
-
 .dataviews-picker-footer__bulk-selection {
   align-self: flex-start;
   height: 32px;
 }
-
 .dataviews-picker-footer__actions {
   align-self: flex-end;
 }
-
 .dataviews-selection-checkbox {
   --checkbox-input-size: 24px;
 }
@@ -845,7 +816,6 @@
 .dataviews-selection-checkbox .components-checkbox-control__input-container {
   margin: 0;
 }
-
 .dataviews-view-config {
   width: 320px;
   /* stylelint-disable-next-line property-no-unknown -- the linter needs to be updated to accepted the container-type property */
@@ -853,7 +823,6 @@
   font-size: 13px;
   line-height: 1.4;
 }
-
 .dataviews-config__popover.is-expanded .dataviews-config__popover-content-wrapper {
   overflow-y: scroll;
   height: 100%;
@@ -861,36 +830,29 @@
 .dataviews-config__popover.is-expanded .dataviews-config__popover-content-wrapper .dataviews-view-config {
   width: auto;
 }
-
 .dataviews-view-config__sort-direction .components-toggle-group-control-option-base {
   text-transform: uppercase;
 }
-
 .dataviews-settings-section__title.dataviews-settings-section__title {
   line-height: 24px;
   font-size: 15px;
 }
-
 .dataviews-settings-section__sidebar {
   grid-column: span 4;
 }
-
 .dataviews-settings-section__content,
 .dataviews-settings-section__content > * {
   grid-column: span 8;
 }
-
 .dataviews-settings-section__content .is-divided-in-two {
   display: contents;
 }
 .dataviews-settings-section__content .is-divided-in-two > * {
   grid-column: span 4;
 }
-
 .dataviews-settings-section:has(.dataviews-settings-section__content:empty) {
   display: none;
 }
-
 @container (max-width: 500px) {
   .dataviews-settings-section.dataviews-settings-section {
     grid-template-columns: repeat(2, 1fr);
@@ -905,36 +867,29 @@
 .dataviews-field-control__field {
   height: 32px;
 }
-
 .dataviews-field-control__actions {
   position: absolute;
   top: -9999em;
 }
-
 .dataviews-field-control__actions.dataviews-field-control__actions {
   gap: 4px;
 }
-
 .dataviews-field-control__field:hover .dataviews-field-control__actions,
 .dataviews-field-control__field:focus-within .dataviews-field-control__actions,
 .dataviews-field-control__field.is-interacting .dataviews-field-control__actions {
   position: unset;
   top: unset;
 }
-
 .dataviews-field-control__icon {
   display: flex;
   width: 24px;
 }
-
 .dataviews-field-control__label-sub-label-container {
   flex-grow: 1;
 }
-
 .dataviews-field-control__label {
   display: block;
 }
-
 .dataviews-field-control__sub-label {
   margin-top: 8px;
   margin-bottom: 0;
@@ -942,7 +897,6 @@
   font-style: normal;
   color: #757575;
 }
-
 .dataviews-view-grid-items {
   margin-bottom: auto;
   display: grid;
@@ -967,7 +921,6 @@
     transition: padding ease-out 0.1s;
   }
 }
-
 .dataviews-view-grid .dataviews-view-grid__card {
   height: 100%;
   justify-content: flex-start;
@@ -1060,12 +1013,10 @@
 .dataviews-view-grid .dataviews-view-grid__badge-fields:not(:empty) {
   padding-bottom: 12px;
 }
-
 .dataviews-view-grid__field-value:empty,
 .dataviews-view-grid__field:empty {
   display: none;
 }
-
 .dataviews-view-grid__card .dataviews-selection-checkbox {
   position: absolute;
   top: -9999em;
@@ -1084,14 +1035,12 @@
     top: 8px;
   }
 }
-
 .dataviews-view-grid__card:hover .dataviews-selection-checkbox,
 .dataviews-view-grid__card:focus-within .dataviews-selection-checkbox,
 .dataviews-view-grid__card.is-selected .dataviews-selection-checkbox {
   opacity: 1;
   top: 8px;
 }
-
 .dataviews-view-grid__card .dataviews-view-grid__media-actions {
   position: absolute;
   top: 4px;
@@ -1112,20 +1061,17 @@
     top: 4px;
   }
 }
-
 .dataviews-view-grid__card:hover .dataviews-view-grid__media-actions,
 .dataviews-view-grid__card:focus-within .dataviews-view-grid__media-actions,
 .dataviews-view-grid__card .dataviews-view-grid__media-actions:has(.dataviews-all-actions-button[aria-expanded=true]) {
   opacity: 1;
 }
-
 .dataviews-view-grid__media--clickable {
   cursor: pointer;
 }
-
 .dataviews-view-grid__group-header {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 499;
   color: #1e1e1e;
   margin: 0 0 8px 0;
   padding: 0 48px;
@@ -1137,11 +1083,9 @@
     padding-left: 24px;
   }
 }
-
 div.dataviews-view-list {
   list-style-type: none;
 }
-
 .dataviews-view-list {
   margin: 0 0 auto;
 }
@@ -1327,15 +1271,13 @@ div.dataviews-view-list {
 .dataviews-view-list + .dataviews-pagination {
   justify-content: space-between;
 }
-
 .dataviews-view-list__group-header {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 499;
   color: #1e1e1e;
   margin: 0 0 8px 0;
   padding: 0 24px;
 }
-
 .dataviews-view-table {
   width: 100%;
   text-indent: 0;
@@ -1465,7 +1407,7 @@ div.dataviews-view-list {
   padding-right: 12px;
   font-size: 11px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 499;
 }
 .dataviews-view-table thead th:has(.dataviews-view-table-header-button):not(:first-child) {
   padding-right: 4px;
@@ -1491,7 +1433,7 @@ div.dataviews-view-list {
   padding: 4px 8px;
   font-size: 11px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 499;
 }
 .dataviews-view-table .dataviews-view-table-header-button:not(:hover) {
   color: #1e1e1e;
@@ -1528,7 +1470,6 @@ div.dataviews-view-list {
 .dataviews-view-table.has-comfortable-density th.dataviews-view-table__checkbox-column {
   padding-left: 0;
 }
-
 @container (max-width: 430px) {
   .dataviews-view-table tr td:first-child,
   .dataviews-view-table tr th:first-child {
@@ -1547,7 +1488,6 @@ div.dataviews-view-list {
     --checkbox-input-size: 16px;
   }
 }
-
 .dataviews-column-primary__media {
   max-width: 60px;
   overflow: hidden;
@@ -1572,19 +1512,16 @@ div.dataviews-view-list {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
-
 .dataviews-view-table__cell-content-wrapper:not(.dataviews-column-primary__media),
 .dataviews-view-table__primary-column-content:not(.dataviews-column-primary__media) {
   min-width: 15ch;
   max-width: 80ch;
 }
-
 .dataviews-view-table__group-header-row .dataviews-view-table__group-header-cell {
-  font-weight: 500;
+  font-weight: 499;
   padding: 12px 48px;
   color: #1e1e1e;
 }
-
 .dataviews-view-picker-grid .dataviews-view-picker-grid__card {
   height: 100%;
   justify-content: flex-start;
@@ -1688,12 +1625,10 @@ div.dataviews-view-list {
 .dataviews-view-picker-grid .dataviews-view-picker-grid__badge-fields:not(:empty) {
   padding-bottom: 12px;
 }
-
 .dataviews-view-picker-grid__field-value:empty,
 .dataviews-view-picker-grid__field:empty {
   display: none;
 }
-
 .dataviews-view-picker-grid__card .dataviews-selection-checkbox {
   position: absolute;
   top: -9999em;
@@ -1705,55 +1640,46 @@ div.dataviews-view-list {
     top: 8px;
   }
 }
-
 .dataviews-view-picker-grid__card:hover .dataviews-selection-checkbox,
 .dataviews-view-picker-grid__card:focus-within .dataviews-selection-checkbox,
 .dataviews-view-picker-grid__card.is-selected .dataviews-selection-checkbox {
   top: 8px;
 }
-
 .dataviews-view-picker-grid__media--clickable {
   cursor: pointer;
 }
-
 .dataviews-view-picker-grid-group__header {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 499;
   color: #1e1e1e;
   margin: 0 0 8px 0;
   padding: 0 48px;
 }
-
 .dataviews-controls__datetime {
   border: none;
   padding: 0;
 }
-
 .dataviews-controls__relative-date-number,
 .dataviews-controls__relative-date-unit {
   flex: 1 1 50%;
 }
-
 .dataviews-controls__date input[type=date]::-webkit-inner-spin-button,
 .dataviews-controls__date input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
-
 .dataviews-controls__date-preset {
   border: 1px solid #ddd;
 }
 .dataviews-controls__date-preset:active {
   background-color: #000;
 }
-
 .dataforms-layouts-panel__field {
   width: 100%;
   min-height: 32px;
   justify-content: flex-start !important;
   align-items: flex-start !important;
 }
-
 .dataforms-layouts-panel__field-label {
   width: 38%;
   flex-shrink: 0;
@@ -1761,13 +1687,11 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .dataforms-layouts-panel__field-label--label-position-side {
   align-self: center;
 }
-
 .dataforms-layouts-panel__field-control {
   flex-grow: 1;
   min-height: 32px;
@@ -1788,31 +1712,25 @@ div.dataviews-view-list {
 .dataforms-layouts-panel__field-control .components-dropdown {
   max-width: 100%;
 }
-
 .dataforms-layouts-panel__field-dropdown .components-popover__content {
   min-width: 320px;
   padding: 16px;
 }
-
 .dataforms-layouts-panel__dropdown-header {
   margin-bottom: 16px;
 }
-
 .dataforms-layouts-panel__modal-footer {
   margin-top: 16px;
 }
-
 .components-popover.components-dropdown__content.dataforms-layouts-panel__field-dropdown {
   z-index: 159990;
 }
-
 .dataforms-layouts-regular__field {
   width: 100%;
   min-height: 32px;
   justify-content: flex-start !important;
   align-items: flex-start !important;
 }
-
 .dataforms-layouts-regular__field-label {
   width: 38%;
   flex-shrink: 0;
@@ -1820,57 +1738,46 @@ div.dataviews-view-list {
   display: flex;
   align-items: center;
   line-height: 20px;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
 .dataforms-layouts-regular__field-label--label-position-side {
   align-self: center;
 }
-
 .dataforms-layouts-regular__field-control {
   flex-grow: 1;
   min-height: 32px;
   display: flex;
   align-items: center;
 }
-
 .dataforms-layouts-card__field-header-label {
   font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 500;
+  font-weight: 499;
   font-size: 15px;
   line-height: 20px;
 }
-
 .dataforms-layouts-card__field {
   width: 100%;
 }
-
 .dataforms-layouts-card__field-description {
   color: #757575;
   display: block;
   font-size: 13px;
   margin-bottom: 16px;
 }
-
 .dataforms-layouts-card__field-summary {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-
 .dataforms-layouts-row__field-control {
   width: 100%;
 }
-
 .dataforms-layouts__wrapper {
   font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
 }
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************/
 #dataviews-examples-root {
   background: white;
 }
@@ -1948,7 +1855,6 @@ div.dataviews-view-list {
   padding: 2px 4px;
   margin: 2px;
 }
-
 #add-media-from-third-party-service {
   background: white;
 }

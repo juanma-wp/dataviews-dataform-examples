@@ -3,9 +3,18 @@ import { createRoot } from '@wordpress/element';
 import App from './App';
 
 domReady( () => {
-	const rootElement = document.getElementById( 'dataviews-examples-root' );
+	// Check for either root element
+	const dataViewsRoot = document.getElementById( 'dataviews-examples-root' );
+	const dataFormRoot = document.getElementById( 'dataform-examples-root' );
+
+	const rootElement = dataViewsRoot || dataFormRoot;
+
 	if ( rootElement ) {
+		// Determine which page we're on
+		const currentPage = dataViewsRoot ? 'dataviews' : 'dataform';
+
 		const root = createRoot( rootElement );
-		root.render( <App /> );
+		console.log( 'rootElement', rootElement );
+		root.render( <App currentPage={ currentPage } /> );
 	}
 } );

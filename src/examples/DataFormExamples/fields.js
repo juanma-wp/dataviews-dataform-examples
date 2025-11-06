@@ -1,4 +1,4 @@
-import { Badge } from '@wordpress/components';
+//import { Badge } from '@wordpress/components';
 
 export const fields = [
 	{
@@ -61,8 +61,7 @@ export const fields = [
 				<p>
 					The customer has made a total of { item.totalOrders }{ ' ' }
 					orders, amounting to { item.totalRevenue } dollars. The
-					average order value is { item.averageOrderValue }{ ' ' }
-					dollars.
+					average order value is { item.averageOrderValue } dollars.
 				</p>
 			);
 		},
@@ -82,7 +81,7 @@ export const fields = [
 		id: 'dueDate',
 		label: 'Due Date',
 		render: ( { item } ) => {
-			return <Badge>Due on: { item.dueDate }</Badge>;
+			return <p>Due on: { item.dueDate }</p>;
 		},
 		type: 'text',
 	},
@@ -90,7 +89,7 @@ export const fields = [
 		id: 'plan-summary',
 		readOnly: true,
 		render: ( { item } ) => {
-			return <Badge>{ item.plan }</Badge>;
+			return <p>{ item.plan }</p>;
 		},
 		type: 'text',
 	},

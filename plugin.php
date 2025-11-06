@@ -59,7 +59,7 @@ function dataviews_dataform_examples_admin_menu() {
  */
 function dataviews_dataform_examples_main_page() {
 	printf(
-		'<h1>%s</h1><div id="dataviews-examples-root" data-page="dataviews"></div>',
+		'<h1>%s</h1><div id="dataviews-examples-root"></div>',
 		esc_html__( 'DataViews Examples', 'dataviews-dataform-plugin' )
 	);
 }
@@ -69,7 +69,7 @@ function dataviews_dataform_examples_main_page() {
  */
 function dataviews_dataform_examples_dataform_page() {
 	printf(
-		'<h1>%s</h1><div id="dataviews-examples-root" data-page="dataform"></div>',
+		'<h1>%s</h1><div id="dataform-examples-root"></div>',
 		esc_html__( 'DataForm Examples', 'dataviews-dataform-plugin' )
 	);
 }
