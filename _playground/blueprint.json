@@ -3,7 +3,7 @@
 	"landingPage": "/wp-admin/admin.php?page=dataform-examples",
 	"preferredVersions": {
 		"php": "8.0",
-		"wp": "6.6"
+		"wp": "latest"
 	},
 	"features": {
 		"networking": true
