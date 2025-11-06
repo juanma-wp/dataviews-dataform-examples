@@ -15,7 +15,8 @@
 			"pluginData": {
 				"resource": "git:directory",
 				"url": "https://github.com/juanma-wp/dataviews-dataform-examples",
-				"ref": "trunk"
+				"ref": "HEAD",
+				"path": "/"
 			},
 			"options": {
 				"activate": true
