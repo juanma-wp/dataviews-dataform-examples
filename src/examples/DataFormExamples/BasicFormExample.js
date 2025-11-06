@@ -3,9 +3,8 @@
  */
 import { useState } from '@wordpress/element';
 // Note: @wordpress/dataviews is bundled in our build, not loaded as external
-import { DataForm } from '@wordpress/dataviews';
+import { DataForm } from '@wordpress/dataviews/wp';
 
-console.log( 'DataForm', DataForm );
 /**
  * Basic DataForm Example
  * Demonstrates simple form with basic field types

@@ -12,7 +12,8 @@
     "@wordpress/scripts": "^30.6.2"
   },
   "dependencies": {
-    "@wordpress/dataviews": "^10.1.0",
+    "@wordpress/components": "^30.7.2-next.2f1c7c01b.0",
+    "@wordpress/dataviews": "next",
     "@wordpress/icons": "^11.0.0"
   }
 }

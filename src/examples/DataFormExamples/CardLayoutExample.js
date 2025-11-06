@@ -3,8 +3,7 @@
  */
 import { useState, useMemo } from '@wordpress/element';
 // Note: @wordpress/dataviews is bundled in our build, not loaded as external
-import { DataForm } from '@wordpress/dataviews';
-import { Badge } from '@wordpress/components';
+import { DataForm } from '@wordpress/dataviews/wp';
 
 /**
  * Card Layout Example
@@ -102,7 +101,7 @@ const CardLayoutExample = () => {
 			label: 'Due Date',
 			type: 'text',
 			render: ( { item } ) => {
-				return <Badge>Due on: { item.dueDate }</Badge>;
+				return <p style={{ fontWeight: 'bold' }}>Due on: { item.dueDate }</p>;
 			},
 		},
 		{
@@ -110,7 +109,7 @@ const CardLayoutExample = () => {
 			type: 'text',
 			readOnly: true,
 			render: ( { item } ) => {
-				return <Badge>{ item.plan }</Badge>;
+				return <p style={{ fontWeight: 'bold' }}>{ item.plan }</p>;
 			},
 		},
 	];
