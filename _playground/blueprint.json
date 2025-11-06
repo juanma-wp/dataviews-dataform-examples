@@ -1,6 +1,6 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
-	"landingPage": "/wp-admin/admin.php?page=add-media-from-third-party-service",
+	"landingPage": "/wp-admin/admin.php?page=dataform-examples",
 	"preferredVersions": {
 		"php": "8.0",
 		"wp": "6.6"
@@ -9,7 +9,17 @@
 		"networking": true
 	},
 	"login": true,
-	"plugins": [
-		"https://github-proxy.com/proxy/?repo=wptrainingteam/devblog-dataviews-plugin"
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/juanma-wp/dataviews-dataform-examples",
+				"ref": "trunk"
+			},
+			"options": {
+				"activate": true
+			}
+		}
 	]
 }
