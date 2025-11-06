@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 import { useState } from '@wordpress/element';
-import { DataForm } from '@wordpress/dataviews';
+import { DataForm } from '@wordpress/dataviews/wp';
 
 /**
  * Simple DataForm Example
