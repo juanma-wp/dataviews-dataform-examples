@@ -3,7 +3,7 @@
  */
 import { useState, useMemo } from '@wordpress/element';
 // Note: @wordpress/dataviews is bundled in our build, not loaded as external
-import { DataForm } from '@wordpress/dataviews';
+import { DataForm } from '@wordpress/dataviews/wp';
 
 /**
  * Panel Layout Example

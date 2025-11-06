@@ -2,7 +2,8 @@
  * WordPress dependencies
  */
 import { useState } from '@wordpress/element';
-import { DataForm } from '@wordpress/dataviews';
+// Note: @wordpress/dataviews is bundled in our build, not loaded as external
+import { DataForm } from '@wordpress/dataviews/wp';
 
 /**
  * Basic DataForm Example - Simplest possible implementation

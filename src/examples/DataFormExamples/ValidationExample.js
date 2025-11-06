@@ -3,7 +3,7 @@
  */
 import { useState, useCallback, useMemo } from '@wordpress/element';
 // Note: @wordpress/dataviews is bundled in our build, not loaded as external
-import { DataForm } from '@wordpress/dataviews';
+import { DataForm } from '@wordpress/dataviews/wp';
 import { Button, __experimentalVStack as VStack } from '@wordpress/components';
 
 /**
@@ -57,7 +57,7 @@ const ValidationExample = () => {
 		integer: 2,
 		number: 3.14,
 		boolean: true,
-		password: 'secretpassword123',
+		password: 'secret',  // Too short, missing uppercase and number
 		categories: [ 'astronomy' ],
 	} );
 
@@ -115,6 +115,7 @@ const ValidationExample = () => {
 			type: 'text',
 			label: 'Text',
 			placeholder: 'Enter text with only letters and spaces',
+			description: 'Must contain only letters and spaces',
 			isValid: {
 				required: true,
 				custom: customTextRule,
@@ -125,6 +126,7 @@ const ValidationExample = () => {
 			type: 'email',
 			label: 'Email',
 			placeholder: 'email@example.com',
+			description: 'Must be from @example.com domain',
 			isValid: {
 				required: true,
 				custom: customEmailRule,
@@ -135,6 +137,7 @@ const ValidationExample = () => {
 			type: 'telephone',
 			label: 'Telephone',
 			placeholder: '+30XXXXXXXXXX',
+			description: 'Must start with +30 followed by 10 digits',
 			isValid: {
 				required: true,
 				custom: customTelephoneRule,
@@ -145,6 +148,7 @@ const ValidationExample = () => {
 			type: 'url',
 			label: 'URL',
 			placeholder: 'https://example.com/...',
+			description: 'Must be from https://example.com domain',
 			isValid: {
 				required: true,
 				custom: customUrlRule,
@@ -154,6 +158,7 @@ const ValidationExample = () => {
 			id: 'integer',
 			type: 'integer',
 			label: 'Integer (Even Number)',
+			description: 'Must be an even number',
 			isValid: {
 				required: true,
 				custom: customIntegerRule,
@@ -197,6 +202,7 @@ const ValidationExample = () => {
 			type: 'password',
 			label: 'Password',
 			placeholder: 'Enter a strong password',
+			description: 'Must be at least 8 characters with 1 uppercase letter and 1 number',
 			isValid: {
 				required: true,
 				custom: customPasswordRule,
@@ -255,9 +261,22 @@ const ValidationExample = () => {
 					Submit
 				</Button>
 				{ ! isValid && (
-					<p style={ { color: '#cc1818' } }>
-						Please fix the validation errors above.
-					</p>
+					<div style={ { color: '#cc1818' } }>
+						<p><strong>Please fix the validation errors:</strong></p>
+						<ul style={ { marginTop: '8px', paddingLeft: '20px' } }>
+							{ Object.entries( validity ).map( ( [ fieldId, errors ] ) => {
+								const field = fields.find( f => f.id === fieldId );
+								const errorMessages = [];
+								if ( errors.required ) errorMessages.push( errors.required.message );
+								if ( errors.custom ) errorMessages.push( errors.custom.message );
+								return errorMessages.map( ( msg, idx ) => (
+									<li key={ `${fieldId}-${idx}` }>
+										<strong>{ field?.label }:</strong> { msg }
+									</li>
+								) );
+							} ) }
+						</ul>
+					</div>
 				) }
 			</VStack>
 		</form>
