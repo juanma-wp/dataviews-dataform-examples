@@ -1,31 +1,40 @@
 # DataViews & DataForm Examples Plugin
 
-[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://raw.githubusercontent.com/juanma-wp/dataviews-dataform-examples/refs/heads/main/_playground/blueprint.json)
+[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/dataviews-dataform-examples/refs/heads/main/_playground/blueprint.json)
 
-A WordPress plugin showcasing multiple examples of DataViews and DataForm components for displaying and interacting with data.
+A comprehensive WordPress plugin showcasing multiple examples of DataViews and DataForm components for displaying, managing, and interacting with data in modern WordPress development.
 
 ## Features
 
-- **Multiple Dashboard Examples**: Switch between different data visualization dashboards
+### DataViews Examples
 - **Photos Dashboard**: Browse and manage a collection of images from Unsplash API with topics and authors
-- **Planets Dashboard**: Explore solar system planets and celestial objects data
-- **Demo Dashboard 2**: Additional DataViews implementation example
+- **Planets Dashboard**: Explore solar system planets and celestial objects data with filtering and sorting
+- **Demo Dashboards**: Additional DataViews implementation examples showcasing different layouts and configurations
+
+### DataForm Examples
+- **Simple Form**: Basic form implementation with text inputs and validation
+- **Advanced Form**: Complex form with multiple field types, conditional logic, and custom validation
+- **Nested Fields**: Form with nested data structures and array field handling
+- **Custom Validation**: Form with comprehensive validation patterns and error handling
+- **Dynamic Form**: Form with dynamic field generation and real-time updates
 
 ## Project Structure
 
 ```
 src/
-├── dashboards/          # Dashboard components
-│   ├── PhotosDashboard.js
-│   ├── DemoDataViews1.js
-│   └── DemoDataViews2.js
-├── data/               # Data sources
-│   ├── photos.js       # Unsplash photos dataset
-│   └── planets.js      # Solar system planets dataset
-├── DashboardManager.js # Main dashboard switcher component
-├── index.js           # Entry point
-├── utils.js          # Utility functions
-└── style.scss        # Styles
+├── examples/
+│   ├── DataFormExamples/     # Form components showcasing different layouts and features
+│       ├── data/             # dataset
+│       ├── fields/         # Field configuration
+│   └── DataViewsExamples/    # Data table implementations with various configurations
+│       ├── DashboardPhotos/  # Photo gallery with Unsplash data
+│       ├── DashboardsPlanets/ # Solar system data with multiple view types
+│       ├── data/             # Shared datasets
+│       └── fields/           # Field configurations
+├── utils/                    # Shared utility functions
+├── App.js                    # Main application with navigation
+├── index.js                  # WordPress admin integration
+└── style.scss               # Global styles
 ```
 
 ## Related Articles
@@ -70,7 +79,12 @@ The development process is documented in the [WordPress Developer Blog](https://
 
 ## Usage
 
-Once activated, the plugin adds a new top-level menu item "DataViews & DataForm Examples" in the WordPress admin sidebar. Click on it to access the dashboard manager where you can switch between different DataViews examples.
+Once activated, the plugin adds a new top-level menu item "DataViews & DataForm Examples" in the WordPress admin sidebar. Navigate through the interface to explore:
+
+- **DataViews Examples**: Interactive data tables with filtering, sorting, and bulk actions
+- **DataForm Examples**: Various form implementations demonstrating different field types, validation patterns, and data handling approaches
+
+Each example includes live data interaction and demonstrates best practices for implementing these components in WordPress plugins.
 
 ## Available Scripts
 

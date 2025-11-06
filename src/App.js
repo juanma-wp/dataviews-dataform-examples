@@ -1,17 +1,15 @@
 // Import page components
-import DashboardManager from '@/examples/DataViewsExamples';
-//import DataFormExamples from '@/examples/DataFormExamples';
-import { SimpleDataFormExample } from '@/examples/DataFormExamples/SimpleDataForm';
+import DataViewsDashboardManager from '@/examples/DataViewsExamples';
+import DataFormDashboardManager from '@/examples/DataFormExamples';
 
 const App = ( { currentPage = 'dataviews' } ) => {
-	console.log( 'App component rendered with currentPage:', currentPage );
 	// Render the appropriate component based on the current page
 	switch ( currentPage ) {
 		case 'dataform':
-			return <SimpleDataFormExample />;
+			return <DataFormDashboardManager />;
 		case 'dataviews':
 		default:
-			return <DashboardManager />;
+			return <DataViewsDashboardManager />;
 	}
 };
 

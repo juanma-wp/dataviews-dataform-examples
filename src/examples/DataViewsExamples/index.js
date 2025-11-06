@@ -58,12 +58,14 @@ const dashboards = [
 	{
 		id: 'dataviews-picker',
 		label: __( 'DataViews Picker' ),
-		description: __( 'DataViews Picker component example with planets data' ),
+		description: __(
+			'DataViews Picker component example with planets data'
+		),
 		Component: DataViewsPickerExample,
 	},
 ];
 
-const DashboardManager = () => {
+const DataViewsDashboardManager = () => {
 	const [ selectedDashboard, setSelectedDashboard ] = useState(
 		dashboards[ 0 ].id
 	);
@@ -117,4 +119,4 @@ const DashboardManager = () => {
 	);
 };
 
-export default DashboardManager;
+export default DataViewsDashboardManager;

@@ -236,12 +236,11 @@ const PanelLayoutExample = () => {
 			data={ post }
 			fields={ fields }
 			form={ form }
-			onChange={ ( edits ) =>
-				setPost( ( prev ) => ( {
-					...prev,
-					...edits,
-				} ) )
-			}
+			onChange={ ( edits ) => {
+				const newData = { ...post, ...edits };
+				console.log( 'newData', newData );
+				setPost( newData );
+			} }
 		/>
 	);
 };
