@@ -1,0 +1,16 @@
+export const data = {
+	name: 'Danyka Romaguera',
+	email: 'aromaguera@example.org',
+	phone: '1-828-352-1250',
+	plan: 'Business',
+	shippingAddress: 'N/A',
+	billingAddress: 'Danyka Romaguera, West Myrtiehaven, 80240-4282, BI',
+	displayPayments: true,
+	totalOrders: 2,
+	totalRevenue: 1430,
+	averageOrderValue: 715,
+	hasVat: true,
+	vat: 10,
+	commission: 5,
+	dueDate: 'March 1st, 2028',
+};

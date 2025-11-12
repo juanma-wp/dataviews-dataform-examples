@@ -1,0 +1,17 @@
+export const data = {
+	title: 'Hello, World!',
+	order: 2,
+	author: 1,
+	status: 'draft',
+	reviewer: 'john',
+	date: '2021-01-01T12:00:00',
+	birthdate: '1950-02-23T12:00:00',
+	filesize: 1024,
+	dimensions: '1920x1080',
+	category: 'technology',
+	tags: [ 'web', 'design' ],
+	featured: true,
+	visibility: 'public',
+	commentStatus: 'open',
+	pingStatus: true,
+};

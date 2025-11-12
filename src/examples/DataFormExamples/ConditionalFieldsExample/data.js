@@ -1,0 +1,16 @@
+export const data = {
+	name: '',
+	email: '',
+	isActive: true,
+	homepageDisplay: 'latest',
+	staticHomepage: '',
+	showAdvanced: false,
+	advancedOption1: '',
+	advancedOption2: '',
+	userType: 'basic',
+	companyName: '',
+	taxId: '',
+	subscriptionType: 'free',
+	paymentMethod: '',
+	billingFrequency: '',
+};

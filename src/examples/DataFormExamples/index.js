@@ -6,7 +6,6 @@ import {
 	__experimentalText as Text,
 } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { DataForm } from '@wordpress/dataviews/wp';
 
 // Import all example components
 import BasicFormExample from './BasicFormExample';
