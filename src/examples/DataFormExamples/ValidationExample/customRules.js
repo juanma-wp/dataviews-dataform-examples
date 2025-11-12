@@ -5,6 +5,13 @@ export const customTextRule = ( value ) => {
 	return null;
 };
 
+export const customSelectRule = ( value ) => {
+	if ( value.select !== 'option1' ) {
+		return 'Value must be Option 1.';
+	}
+	return null;
+};
+
 export const customEmailRule = ( value ) => {
 	if ( ! /^[a-zA-Z0-9._%+-]+@example\.com$/.test( value.email ) ) {
 		return 'Email address must be from @example.com domain.';
@@ -20,8 +27,15 @@ export const customTelephoneRule = ( value ) => {
 };
 
 export const customUrlRule = ( value ) => {
-	if ( ! /^https:\/\/example\.com/.test( value.url ) ) {
-		return 'URL must be from https://example.com domain.';
+	if ( value.url !== 'https://example.com' ) {
+		return 'URL must be exactly https://example.com';
+	}
+	return null;
+};
+
+export const customColorRule = ( value ) => {
+	if ( value.color === '#ff0000' ) {
+		return 'Color cannot be red (#ff0000).';
 	}
 	return null;
 };
@@ -43,5 +57,30 @@ export const customPasswordRule = ( value ) => {
 	if ( ! /[0-9]/.test( value.password ) ) {
 		return 'Password must contain at least one number.';
 	}
+	return null;
+};
+
+export const customDateRule = ( value ) => {
+	const selectedDate = new Date( value.date );
+	const today = new Date();
+	today.setHours( 0, 0, 0, 0 );
+
+	if ( selectedDate < today ) {
+		return 'Date cannot be in the past.';
+	}
+	return null;
+};
+
+// Async validation example
+export const asyncValidateTitle = async ( value ) => {
+	// Simulate API call delay
+	await new Promise( ( resolve ) => setTimeout( resolve, 500 ) );
+
+	// Simulate checking if title is unique
+	const existingTitles = [ 'existing', 'taken', 'duplicate' ];
+	if ( existingTitles.includes( value.title?.toLowerCase() ) ) {
+		return 'Title is already taken. Please choose a different one.';
+	}
+
 	return null;
 };

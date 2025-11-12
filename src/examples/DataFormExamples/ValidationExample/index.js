@@ -21,18 +21,22 @@ const ValidationExample = () => {
 		layout: { type: 'regular' },
 		fields: [
 			'text',
+			'select',
 			'email',
 			'telephone',
 			'url',
+			'color',
 			'integer',
 			'number',
 			'boolean',
+			'date',
 			'categories',
 			'password',
+			'title',
 		],
 	};
 
-	const { validity, isValid } = useFormValidity( post, fields, form );
+	const { validity, isValid, isValidating } = useFormValidity( post, fields, form );
 
 	const handleSubmit = useCallback( () => {
 		if ( isValid ) {
@@ -61,11 +65,11 @@ const ValidationExample = () => {
 				<Button
 					__next40pxDefaultSize
 					accessibleWhenDisabled
-					disabled={ ! isValid }
+					disabled={ ! isValid || isValidating }
 					variant="primary"
 					onClick={ handleSubmit }
 				>
-					Submit
+					{ isValidating ? 'Validating...' : 'Submit' }
 				</Button>
 				{ ! isValid && (
 					<div style={ { color: '#cc1818' } }>
