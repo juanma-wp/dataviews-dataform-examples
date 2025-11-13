@@ -1,6 +1,6 @@
 # DataViews & DataForm Examples Plugin
 
-[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/dataviews-dataform-examples/refs/heads/main/_playground/blueprint.json)
+[![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/wptrainingteam/dataviews-dataform-examples/refs/heads/main/_playground/blueprint.json)
 
 A comprehensive WordPress plugin showcasing multiple examples of DataViews and DataForm components for displaying, managing, and interacting with data in modern WordPress development.
 
