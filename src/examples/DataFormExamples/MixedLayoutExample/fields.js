@@ -20,6 +20,9 @@ export const fields = [
 			{ value: 3, label: 'Alice' },
 			{ value: 4, label: 'Bob' },
 		],
+		setValue: ( { value } ) => ( {
+			author: Number( value ),
+		} ),
 	},
 	{
 		id: 'status',
